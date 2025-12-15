@@ -2,8 +2,12 @@
 // 依赖：npm i cap
 const { Cap, decoders } = require("cap");
 const PROTOCOL = decoders.PROTOCOL;
-
 const { SRPacketParser } = require("./protocol/sr_packet");
+
+// ===== 新增：全局日志+统计 =====
+let totalPacketCount = 0; // 总抓包数
+let totalAoiDeltaCount = 0; // 总AOI Delta数
+let lastPacketTime = Date.now();
 
 // ------------------- 设备选择 -------------------
 function listDevices() {
@@ -26,9 +30,9 @@ function resolveDevice(input) {
 
   const key = s.toLowerCase();
   const hit = devs.find(
-    (d) =>
-      (d.name || "").toLowerCase().includes(key) ||
-      (d.description || "").toLowerCase().includes(key)
+      (d) =>
+          (d.name || "").toLowerCase().includes(key) ||
+          (d.description || "").toLowerCase().includes(key)
   );
   return hit?.name || null;
 }
@@ -44,10 +48,10 @@ function getIPv4PayloadReassembled(frameBuffer, ethOffset) {
   const isFragment = ipInfo.fragoffset > 0 || (ipInfo.flags && ipInfo.flags.mf);
   if (!isFragment) {
     return Buffer.from(
-      frameBuffer.subarray(
-        ipPacket.offset,
-        ipPacket.offset + (ipInfo.totallen - ipPacket.hdrlen)
-      )
+        frameBuffer.subarray(
+            ipPacket.offset,
+            ipPacket.offset + (ipInfo.totallen - ipPacket.hdrlen)
+        )
     );
   }
 
@@ -100,13 +104,23 @@ function startFragmentCleaner() {
 
 // ------------------- 抓包 + TCP 重组 + 切包 -------------------
 function startCapture({ device, logger = console, onPacket }) {
+  // ===== 新增：抓包启动日志 =====
+  logger.log("[🚀 抓包启动] 设备：", device);
+  logger.log("[ℹ️  提示] 游戏内放技能/触发被动，才能看到Buff解析结果");
+
+  // 每2秒打印统计
+  const statInterval = setInterval(() => {
+    const idleTime = Date.now() - lastPacketTime;
+    logger.log(`[📊 抓包统计] 总抓包：${totalPacketCount} | AOI Delta：${totalAoiDeltaCount} | 最后抓包：${idleTime}ms前`);
+  }, 2000);
+
   const c = new Cap();
   const filter = "ip and tcp";
   const bufSize = 10 * 1024 * 1024;
   const buffer = Buffer.alloc(65535);
 
   const linkType = c.open(device, filter, bufSize, buffer);
-  logger.log("[cap] open device =", device, "linkType =", linkType);
+  logger.log("[cap] 设备已打开 | 链路类型：", linkType);
 
   c.setMinBytes && c.setMinBytes(0);
 
@@ -117,6 +131,8 @@ function startCapture({ device, logger = console, onPacket }) {
 
   const queue = [];
   c.on("packet", (nbytes) => {
+    totalPacketCount++; // 累计抓包数
+    lastPacketTime = Date.now();
     queue.push(Buffer.from(buffer.subarray(0, nbytes)));
   });
 
@@ -182,7 +198,7 @@ function startCapture({ device, logger = console, onPacket }) {
     }
 
     if (tcp_last_time && Date.now() - tcp_last_time > FRAGMENT_TIMEOUT) {
-      logger.warn("[cap] stream timeout, reset");
+      logger.warn("[cap] 流超时，重置");
       _data = Buffer.alloc(0);
       tcp_cache.clear();
       tcp_next_seq = -1;
@@ -202,7 +218,9 @@ function startCapture({ device, logger = console, onPacket }) {
     stop() {
       running = false;
       clearInterval(cleaner);
+      clearInterval(statInterval); // 停止统计
       try { c.close(); } catch {}
+      logger.log("[🛑 抓包停止] 总抓包：", totalPacketCount);
     },
   };
 }
@@ -213,11 +231,16 @@ function startCapture({ device, logger = console, onPacket }) {
  * @param {(delta:any)=>void} onAoiDelta  回调 AOI delta（你在这里抽 buff）
  */
 function startLive({ device, logger = console, onAoiDelta }) {
+  // ===== 新增：AOI Delta 日志 =====
+  const wrappedOnAoiDelta = (delta) => {
+    totalAoiDeltaCount++;
+    logger.log(`[🔍 收到AOI Delta(${totalAoiDeltaCount})] 字段数：${delta.Fields ? delta.Fields.length : 0}`);
+    try { onAoiDelta && onAoiDelta(delta); }
+    catch (e) { logger.error("[onAoiDelta] 错误:", e); }
+  };
+
   const parser = new SRPacketParser({
-    onAoiDelta: (delta) => {
-      try { onAoiDelta && onAoiDelta(delta); }
-      catch (e) { logger.error("[onAoiDelta] error:", e); }
-    },
+    onAoiDelta: wrappedOnAoiDelta,
   });
 
   return startCapture({
@@ -227,10 +250,11 @@ function startLive({ device, logger = console, onAoiDelta }) {
       try {
         parser.processPacket(packetBytes);
       } catch (e) {
-        logger.error("[SRPacketParser] error:", e);
+        logger.error("[SRPacketParser] 错误:", e);
       }
     },
   });
 }
 
-module.exports = { listDevices, resolveDevice, startLive };
+// ------------------- 导出 -------------------
+module.exports = { listDevices, resolveDevice, startCapture, startLive };

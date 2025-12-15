@@ -1,4 +1,4 @@
-// buff_state.js
+ï»¿// buff_state.js
 class BuffState {
   constructor({ icdConfig = {} } = {}) {
     this.icdConfig = icdConfig;           // { buffId: icdMs }
@@ -6,25 +6,26 @@ class BuffState {
     this.active = new Map();              // key -> {buffId, stack, durationMs, lastSeenMs}
   }
 
-  // key ²ßÂÔ£ºÏÈÓÃ slot£¬ºóÃæÄãÈç¹ûÄÜÄÃµ½ actorUuid/ownerUuid ÔÙÉı¼¶
+  // key ç­–ç•¥ï¼šå…ˆç”¨ slotï¼Œåé¢ä½ å¦‚æœèƒ½æ‹¿åˆ° actorUuid/ownerUuid å†å‡çº§
   _keyOf(e) {
-    return `${e.ownerSlot ?? "?"}:${e.slot};
+    // âœ… ä¿®å¤ï¼šä½ åŸæ¥è¿™é‡Œå°‘äº†åå¼•å·/å¼•å·ï¼Œå¯¼è‡´åé¢å…¨ç‚¸
+    return String(e.ownerSlot ?? "?") + ":" + String(e.slot);
   }
 
   feedBuffEvents(events, nowMs = Date.now()) {
     for (const e of events) {
-      // ºöÂÔ Lite Entry£¨Ö»ÓĞ slot Ã» buffId£©
+      // å¿½ç•¥ Lite Entryï¼ˆåªæœ‰ slot æ²¡ buffIdï¼‰
       if (e.buffId == null) continue;
 
       const key = this._keyOf(e);
 
-      // Äãµ±Ç°µÄ opType »¹Ã»ÍêÕûÑéÖ¤ remove=2£¬µ«ÏÈÁô×Å
+      // removeï¼ˆå…ˆæŒ‰ 2 å¤„ç†ï¼‰
       if (e.opType === 2) {
         this.active.delete(key);
         continue;
       }
 
-      // ¸üĞÂµ±Ç° Buff ÁĞ±í
+      // æ›´æ–°å½“å‰ Buff åˆ—è¡¨
       this.active.set(key, {
         buffId: e.buffId,
         stack: e.stack ?? null,
@@ -32,8 +33,8 @@ class BuffState {
         lastSeenMs: nowMs,
       });
 
-      // ===== ICD ´¥·¢µã£º°Ñ ¡°³öÏÖ Full Entry¡± µ±×÷Ò»´Î proc =====
-      // È¥¶¶£ºÍ¬Ò»¸ö buffId ÔÚ 500ms ÄÚÖØ¸´³öÏÖ²»Ëã¶à´Î
+      // ===== ICD è§¦å‘ç‚¹ï¼šæŠŠ â€œå‡ºç° Full Entryâ€ å½“ä½œä¸€æ¬¡ proc =====
+      // å»æŠ–ï¼šåŒä¸€ä¸ª buffId åœ¨ 500ms å†…é‡å¤å‡ºç°ä¸ç®—å¤šæ¬¡
       const last = this.lastProcAt.get(e.buffId) ?? 0;
       if (nowMs - last > 500) {
         this.lastProcAt.set(e.buffId, nowMs);
@@ -41,27 +42,41 @@ class BuffState {
     }
   }
 
-  // Êä³ö ICD Ãæ°å£¨ÓÃÓÚ CLI£©
+  // è¾“å‡º ICD é¢æ¿ï¼ˆç”¨äº CLIï¼‰
   getIcdLines(nowMs = Date.now()) {
     const lines = [];
+
     for (const [buffIdStr, icdMs] of Object.entries(this.icdConfig)) {
       const buffId = Number(buffIdStr);
       const last = this.lastProcAt.get(buffId);
+
       if (!last) {
-        lines.push(`buffId=${buffId} ICD=${(icdMs/1000).toFixed(1)}s  (Î´´¥·¢¹ı)`);
+        // âœ… ä¿®å¤ï¼šä½ åŸæ¥è¿™é‡Œç”¨äº† key/vï¼ˆæ ¹æœ¬ä¸å­˜åœ¨ï¼‰ï¼Œç›´æ¥è¾“å‡ºä¸€æ¡â€œæœªè§¦å‘â€
+        lines.push("buffId=" + buffId + "  remain=" + (icdMs / 1000).toFixed(2) + "s (not yet)");
         continue;
       }
+
       const remain = Math.max(0, icdMs - (nowMs - last));
-      lines.push(`buffId=${buffId}  remain=${(remain/1000).toFixed(2)}s`);
+      lines.push(
+        "buffId=" + buffId +
+        "  remain=" + (remain / 1000).toFixed(2) + "s"
+      );
     }
+
     return lines;
   }
 
-  // Êä³öµ±Ç° Buff ÁĞ±í£¨ÓÃÓÚ CLI£©
+  // è¾“å‡ºå½“å‰ Buff åˆ—è¡¨ï¼ˆç”¨äº CLIï¼‰
   getActiveLines() {
     const lines = [];
     for (const [key, v] of this.active.entries()) {
-      lines.push(`${key} buffId=${v.buffId} stack=${v.stack} dur=${v.durationMs}`);
+      // âœ… å…ˆåˆ«ç”¨æ¨¡æ¿å­—ç¬¦ä¸²ï¼Œé¿å…ä½ ç¯å¢ƒé‡Œå†ç‚¸ï¼›ç­‰ä½ ç¡®è®¤éƒ½æ­£å¸¸äº†å†æ¢å›ä¹Ÿè¡Œ
+      lines.push(
+        String(key) +
+        " buffId=" + v.buffId +
+        " stack=" + v.stack +
+        " dur=" + v.durationMs
+      );
     }
     return lines;
   }

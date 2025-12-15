@@ -1,7 +1,7 @@
 // buff_decode_min.js
-// ¼«¼ò°æ£ºÖ»¸ºÔð½âÎö AOI Àï field=10 ÄÇÒ»Ûç Buff Êý¾Ý£¬²»ÒÀÀµ protobuf ¿â
+// ï¿½ï¿½ï¿½ï¿½æ£ºÖ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ AOI ï¿½ï¿½ field=10 ï¿½ï¿½Ò»ï¿½ï¿½ Buff ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ protobuf ï¿½ï¿½
 
-// --------- »ù´¡¹¤¾ß£º¶Á varint / int32 ---------
+// --------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ varint / int32 ---------
 
 function readVarint(buf, pos) {
   let x = 0;
@@ -21,26 +21,26 @@ function readVarint(buf, pos) {
 function readInt32(buf, pos) {
   const info = readVarint(buf, pos);
   if (!info) return null;
-  let v = info.value | 0; // ×ª³ÉÓÐ·ûºÅ 32 Î»
+  let v = info.value | 0; // ×ªï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ 32 Î»
   return { value: v, pos: info.pos };
 }
 
-// --------- ¶¥²ã£º½âÎö AOI.field=10 µÄÕû¸ö payload ---------
+// --------- ï¿½ï¿½ï¿½ã£ºï¿½ï¿½ï¿½ï¿½ AOI.field=10 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ payload ---------
 
 /**
- * ½â AOI Àï field=10 µÄ payload£¨Ò²¾ÍÊÇÎÒÃÇÈ·ÈÏµÄ Buff ÇøÓò£©
- * @param {Uint8Array|Buffer} bytes - Õû¸ö field=10 µÄ payload£¨²»º¬ tag ºÍ length£©
- * @returns {Array<Object>} events - ½â³öÀ´µÄÒ»¶Ñ buff ÊÂ¼þ
+ * ï¿½ï¿½ AOI ï¿½ï¿½ field=10 ï¿½ï¿½ payloadï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½Ïµï¿½ Buff ï¿½ï¿½ï¿½ï¿½
+ * @param {Uint8Array|Buffer} bytes - ï¿½ï¿½ï¿½ï¿½ field=10 ï¿½ï¿½ payloadï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ tag ï¿½ï¿½ lengthï¿½ï¿½
+ * @returns {Array<Object>} events - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ buff ï¿½Â¼ï¿½
  *
- * ·µ»ØµÄÃ¿Ìõ event ´ó¸Å³¤ÕâÑù£º
+ * ï¿½ï¿½ï¿½Øµï¿½Ã¿ï¿½ï¿½ event ï¿½ï¿½Å³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *  {
- *    opType,         // 1 = Add/Update, 2 = Remove£¨ÎÒÃÇÍÆ²â£©
- *    slot,           // ²ÛÎ»/Ë÷Òý£¨73/74/75 ...£©
- *    ownerSlot,      // ×îÀï²ã ownerSlot
- *    buffId,         // ¾²Ì¬ Buff ÅäÖÃ ID£¨Èç 2205261¡¢31201£©
- *    stack,          // ²ãÊý/µÈ¼¶
- *    durationMs,     // ³ÖÐøÊ±¼ä ms£¨8000/15000 Ö®Àà£©
- *    raw: {...}      // ÆäËüÔ­Ê¼×Ö¶Î£¨Ê±¼ä´ÁµÈ£©
+ *    opType,         // 1 = Add/Update, 2 = Removeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ²â£©
+ *    slot,           // ï¿½ï¿½Î»/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½73/74/75 ...ï¿½ï¿½
+ *    ownerSlot,      // ï¿½ï¿½ï¿½ï¿½ï¿½ ownerSlot
+ *    buffId,         // ï¿½ï¿½Ì¬ Buff ï¿½ï¿½ï¿½ï¿½ IDï¿½ï¿½ï¿½ï¿½ 2205261ï¿½ï¿½31201ï¿½ï¿½
+ *    stack,          // ï¿½ï¿½ï¿½ï¿½/ï¿½È¼ï¿½
+ *    durationMs,     // ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ msï¿½ï¿½8000/15000 Ö®ï¿½à£©
+ *    raw: {...}      // ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½Ö¶Î£ï¿½Ê±ï¿½ï¿½ï¿½ï¿½È£ï¿½
  *  }
  */
 function decodeBuffField10(bytes) {
@@ -70,7 +70,7 @@ function decodeBuffField10(bytes) {
       if (ev) events.push(ev);
       pos = end;
     } else {
-      // ÆäÓà×Ö¶ÎÔÝÊ±Ìø¹ý£¨Ò»°ã²»»áÓÐ£©
+      // ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ã²»ï¿½ï¿½ï¿½Ð£ï¿½
       pos = skipByWireType(buf, pos, wt);
     }
   }
@@ -78,7 +78,7 @@ function decodeBuffField10(bytes) {
   return events;
 }
 
-// ¸ù¾Ý wire type Ìø¹ý£¨¼òµ¥¹»ÓÃ°æ£©
+// ï¿½ï¿½ï¿½ï¿½ wire type ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½òµ¥¹ï¿½ï¿½Ã°æ£©
 function skipByWireType(buf, pos, wt) {
   switch (wt) {
     case 0: {
@@ -99,7 +99,7 @@ function skipByWireType(buf, pos, wt) {
   }
 }
 
-// --------- ½âÃ¿¸ö BuffRuntimeEntry ---------
+// --------- ï¿½ï¿½Ã¿ï¿½ï¿½ BuffRuntimeEntry ---------
 
 function decodeBuffEntry(bytes) {
   let pos = 0;
@@ -107,7 +107,7 @@ function decodeBuffEntry(bytes) {
 
   let opType = null;      // field1
   let slot = null;        // field2
-  let timeOrUid = null;   // field3£¨Ä¿Ç°Ã»Ï¸·Ö£©
+  let timeOrUid = null;   // field3ï¿½ï¿½Ä¿Ç°Ã»Ï¸ï¿½Ö£ï¿½
   let payload = null;     // field5
 
   while (pos < len) {
@@ -134,7 +134,7 @@ function decodeBuffEntry(bytes) {
         pos = info.pos;
         break;
       }
-      case 3: { // time/uid£¨int64£¬´óÖÂÏÈµ± int32£©
+      case 3: { // time/uidï¿½ï¿½int64ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½ int32ï¿½ï¿½
         const info = readInt32(bytes, pos);
         if (!info) return null;
         timeOrUid = info.value;
@@ -182,12 +182,12 @@ function decodeBuffEntry(bytes) {
   return ev;
 }
 
-// --------- ½â BuffRuntimePayload ---------
+// --------- ï¿½ï¿½ BuffRuntimePayload ---------
 
 function decodeBuffPayload(bytes) {
   let pos = 0;
   const len = bytes.length;
-  let payloadType = null;  // field1: 18 / 11 Ö®Àà
+  let payloadType = null;  // field1: 18 / 11 Ö®ï¿½ï¿½
   let data = null;         // field2: BuffRuntimeData
 
   while (pos < len) {
@@ -231,7 +231,7 @@ function decodeBuffPayload(bytes) {
   };
 }
 
-// --------- ½â×îÀï²ã BuffRuntimeData£¨ÓÐ¾²Ì¬ Buff ID µÈ£© ---------
+// --------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ BuffRuntimeDataï¿½ï¿½ï¿½Ð¾ï¿½Ì¬ Buff ID ï¿½È£ï¿½ ---------
 
 function decodeBuffData(bytes) {
   let pos = 0;
@@ -239,9 +239,9 @@ function decodeBuffData(bytes) {
 
   const d = {
     ownerSlot: null,   // field1
-    buffId: null,      // field2£¨¾²Ì¬ Buff ÅäÖÃ ID£©
+    buffId: null,      // field2ï¿½ï¿½ï¿½ï¿½Ì¬ Buff ï¿½ï¿½ï¿½ï¿½ IDï¿½ï¿½
     stack: null,       // field3
-    buffId2: null,     // field5£¨Ò»°ãµÈÓÚ buffId£©
+    buffId2: null,     // field5ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ buffIdï¿½ï¿½
     time1: null,       // field6
     time2: null,       // field7
     flag: null,        // field8
@@ -343,23 +343,23 @@ function decodeBuffData(bytes) {
   return d;
 }
 
-// --------- µ¼³ö¸ø±ðµÄ½Å±¾ÓÃ ---------
+// --------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½Å±ï¿½ï¿½ï¿½ ---------
 module.exports = {
   decodeBuffField10,
 };
 
-// --------- ¼òµ¥ÃüÁîÐÐÊ¾Àý£¨¿ÉÑ¡£© ---------
-// ÓÃ·¨£ºnode buff_decode_min.js buff_chunk.bin
+// --------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ ---------
+// ï¿½Ã·ï¿½ï¿½ï¿½node buff_decode_min.js buff_chunk.bin
 if (require.main === module) {
   const fs = require("fs");
   const path = process.argv[2];
   if (!path) {
-    console.log("ÓÃ·¨: node buff_decode_min.js <field10_payload.bin>");
+    console.log("ï¿½Ã·ï¿½: node buff_decode_min.js <field10_payload.bin>");
     process.exit(1);
   }
   const buf = fs.readFileSync(path);
   const events = decodeBuffField10(buf);
-  console.log("½âÎöµ½ Buff ÊÂ¼þÊý£º", events.length);
+  console.log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Buff ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½", events.length);
   for (const e of events) {
     console.log(e);
   }

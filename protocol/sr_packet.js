@@ -1,7 +1,6 @@
 ﻿// protocol/sr_packet.js
+const pb = require("./sr_blueprotobuf"); // 必须：提供 SyncNearDeltaInfo / SyncToMeDeltaInfo 的 decode
 const zlib = require("zlib");
-const pb = require("./blueprotobuf"); // 你自己的 proto / decode
-const Long = require("long");
 
 class BinaryReader {
   constructor(buffer, offset = 0) {
@@ -27,11 +26,17 @@ const NotifyMethod = {
 };
 
 class SRPacketParser {
-  constructor({ onAoiDelta }) {
-    this.onAoiDelta = onAoiDelta; // 👈 只关心这个
+  constructor(opts = {}) {
+    this.onAoiDelta = opts.onAoiDelta || null;
   }
 
-  _decompress(buf) {
+  // ✅ 兼容你 CLI：永远有这个方法
+  feedPacket(packetBytes) {
+    return this.processPacket(packetBytes);
+  }
+
+  _decompressZstd(buf) {
+    // Node >= 20 有 zstdDecompressSync
     return zlib.zstdDecompressSync(buf);
   }
 
@@ -41,25 +46,21 @@ class SRPacketParser {
     const methodId = reader.readUInt32();
 
     let payload = reader.readBytes(reader.remaining());
-    if (isZstd) payload = this._decompress(payload);
+    if (isZstd) payload = this._decompressZstd(payload);
 
-    switch (methodId) {
-      case NotifyMethod.SyncNearDeltaInfo: {
-        const msg = pb.SyncNearDeltaInfo.decode(payload);
-        for (const delta of msg.DeltaInfos || []) {
-          this.onAoiDelta?.(delta);
-        }
-        break;
+    if (methodId === NotifyMethod.SyncNearDeltaInfo) {
+      const msg = pb.SyncNearDeltaInfo.decode(payload);
+      for (const delta of msg.DeltaInfos || []) {
+        this.onAoiDelta && this.onAoiDelta(delta);
       }
-      case NotifyMethod.SyncToMeDeltaInfo: {
-        const msg = pb.SyncToMeDeltaInfo.decode(payload);
-        if (msg.DeltaInfo?.BaseDelta) {
-          this.onAoiDelta?.(msg.DeltaInfo.BaseDelta);
-        }
-        break;
-      }
-      default:
-        break;
+      return;
+    }
+
+    if (methodId === NotifyMethod.SyncToMeDeltaInfo) {
+      const msg = pb.SyncToMeDeltaInfo.decode(payload);
+      const base = msg?.DeltaInfo?.BaseDelta;
+      if (base) this.onAoiDelta && this.onAoiDelta(base);
+      return;
     }
   }
 
@@ -67,28 +68,30 @@ class SRPacketParser {
     const r = new BinaryReader(buffer);
 
     while (r.remaining() > 0) {
+      if (r.remaining() < 6) break;
+
       const packetSize = r.peekUInt32();
-      if (packetSize < 6) break;
+      if (packetSize < 6 || packetSize > 0x0fffff) break;
+      if (r.remaining() < packetSize) break;
 
       const pkt = new BinaryReader(r.readBytes(packetSize));
       pkt.readUInt32(); // size
       const type = pkt.readUInt16();
+
       const isZstd = (type & 0x8000) !== 0;
       const msgType = type & 0x7fff;
 
-      switch (msgType) {
-        case MessageType.Notify:
-          this._processNotify(pkt, isZstd);
-          break;
-        case MessageType.FrameDown: {
-          pkt.readUInt32(); // seq
-          let nested = pkt.readBytes(pkt.remaining());
-          if (isZstd) nested = this._decompress(nested);
-          this.processPacket(nested);
-          break;
-        }
-        default:
-          break;
+      if (msgType === MessageType.Notify) {
+        this._processNotify(pkt, isZstd);
+        continue;
+      }
+
+      if (msgType === MessageType.FrameDown) {
+        pkt.readUInt32(); // seq
+        let nested = pkt.readBytes(pkt.remaining());
+        if (isZstd) nested = this._decompressZstd(nested);
+        this.processPacket(nested);
+        continue;
       }
     }
   }
