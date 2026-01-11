@@ -1,0 +1,8966 @@
+{
+  "1": {
+    "firstSeen": 1765927513369,
+    "count": 292,
+    "sample": {
+      "slot": 223,
+      "durMs": null,
+      "stack": null
+    }
+  },
+  "400": {
+    "firstSeen": 1766479049234,
+    "count": 1,
+    "sample": {
+      "slot": 306,
+      "durMs": null,
+      "stack": 1247493626
+    }
+  },
+  "1100": {
+    "firstSeen": 1767093906698,
+    "count": 12,
+    "sample": {
+      "slot": 1540,
+      "durMs": null,
+      "stack": 1862353853
+    }
+  },
+  "2500": {
+    "firstSeen": 1767089174712,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "2800": {
+    "firstSeen": 1767089174712,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "3100": {
+    "firstSeen": 1767089174542,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "3400": {
+    "firstSeen": 1767089174300,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "3700": {
+    "firstSeen": 1767089174220,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "4000": {
+    "firstSeen": 1767089174220,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "4300": {
+    "firstSeen": 1767089174151,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "4600": {
+    "firstSeen": 1767089174151,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "4900": {
+    "firstSeen": 1767089173989,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "5000": {
+    "firstSeen": 1765927609527,
+    "count": 744,
+    "sample": {
+      "slot": 232,
+      "durMs": null,
+      "stack": 696052633
+    }
+  },
+  "5200": {
+    "firstSeen": 1766139345648,
+    "count": 17,
+    "sample": {
+      "slot": 872,
+      "durMs": null,
+      "stack": 907782106
+    }
+  },
+  "5500": {
+    "firstSeen": 1767089173887,
+    "count": 2,
+    "sample": {
+      "slot": 3122,
+      "durMs": null,
+      "stack": 1857619418
+    }
+  },
+  "5800": {
+    "firstSeen": 1765927677932,
+    "count": 29,
+    "sample": {
+      "slot": 274,
+      "durMs": null,
+      "stack": 696119294
+    }
+  },
+  "6100": {
+    "firstSeen": 1767089168922,
+    "count": 3,
+    "sample": {
+      "slot": 3042,
+      "durMs": null,
+      "stack": 1857610141
+    }
+  },
+  "6400": {
+    "firstSeen": 1765927613238,
+    "count": 40,
+    "sample": {
+      "slot": 249,
+      "durMs": null,
+      "stack": 696055737
+    }
+  },
+  "6700": {
+    "firstSeen": 1767089137207,
+    "count": 4,
+    "sample": {
+      "slot": 3024,
+      "durMs": null,
+      "stack": 1857577912
+    }
+  },
+  "7000": {
+    "firstSeen": 1767089136800,
+    "count": 4,
+    "sample": {
+      "slot": 3024,
+      "durMs": null,
+      "stack": 1857577912
+    }
+  },
+  "7300": {
+    "firstSeen": 1767088383279,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "7600": {
+    "firstSeen": 1767088382177,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "7900": {
+    "firstSeen": 1767088381928,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "8200": {
+    "firstSeen": 1767088379527,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "8500": {
+    "firstSeen": 1767088379183,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "8800": {
+    "firstSeen": 1767088378931,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "9100": {
+    "firstSeen": 1767088378680,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "9300": {
+    "firstSeen": 1766866541141,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "9400": {
+    "firstSeen": 1767088377619,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "9600": {
+    "firstSeen": 1766866539591,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "9700": {
+    "firstSeen": 1767088376846,
+    "count": 5,
+    "sample": {
+      "slot": 2973,
+      "durMs": null,
+      "stack": 1856823775
+    }
+  },
+  "9900": {
+    "firstSeen": 1766866539159,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "10000": {
+    "firstSeen": 1765929216073,
+    "count": 733,
+    "sample": {
+      "slot": 862,
+      "durMs": null,
+      "stack": 697659326
+    }
+  },
+  "10200": {
+    "firstSeen": 1766866538918,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "10500": {
+    "firstSeen": 1766866537529,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "10800": {
+    "firstSeen": 1766866537529,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "11100": {
+    "firstSeen": 1766866537448,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "11400": {
+    "firstSeen": 1766866537357,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "11700": {
+    "firstSeen": 1766866536474,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "12000": {
+    "firstSeen": 1766866536310,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "12250": {
+    "firstSeen": 1766134523547,
+    "count": 1,
+    "sample": {
+      "slot": 84,
+      "durMs": null,
+      "stack": 902964120
+    }
+  },
+  "12300": {
+    "firstSeen": 1766866536230,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "12600": {
+    "firstSeen": 1766866535344,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "12900": {
+    "firstSeen": 1766866535023,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "13200": {
+    "firstSeen": 1766866534620,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "13500": {
+    "firstSeen": 1766866534458,
+    "count": 2,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "13800": {
+    "firstSeen": 1766866533734,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "14000": {
+    "firstSeen": 1767089168108,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "14100": {
+    "firstSeen": 1766866533734,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "14400": {
+    "firstSeen": 1766866533553,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "14500": {
+    "firstSeen": 1767089168108,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "14700": {
+    "firstSeen": 1766866533393,
+    "count": 1,
+    "sample": {
+      "slot": 388,
+      "durMs": null,
+      "stack": 1634973656
+    }
+  },
+  "15000": {
+    "firstSeen": 1767089168590,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "15500": {
+    "firstSeen": 1767089168591,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "16000": {
+    "firstSeen": 1767089169084,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "16500": {
+    "firstSeen": 1767089169085,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "17000": {
+    "firstSeen": 1767089169541,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "17500": {
+    "firstSeen": 1767089169541,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "18000": {
+    "firstSeen": 1767089170536,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "18500": {
+    "firstSeen": 1767089170536,
+    "count": 1,
+    "sample": {
+      "slot": 3048,
+      "durMs": null,
+      "stack": 1857614811
+    }
+  },
+  "20000": {
+    "firstSeen": 1765927610744,
+    "count": 234,
+    "sample": {
+      "slot": 242,
+      "durMs": null,
+      "stack": 696054238
+    }
+  },
+  "20301": {
+    "firstSeen": 1767666666483,
+    "count": 3,
+    "sample": {
+      "slot": 13434,
+      "durMs": 2080,
+      "stack": 30
+    }
+  },
+  "21402": {
+    "firstSeen": 1767389056138,
+    "count": 140,
+    "sample": {
+      "slot": 574,
+      "durMs": 5000,
+      "stack": 30
+    }
+  },
+  "21404": {
+    "firstSeen": 1766478906199,
+    "count": 20,
+    "sample": {
+      "slot": 273,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "21408": {
+    "firstSeen": 1767389945445,
+    "count": 17,
+    "sample": {
+      "slot": 653,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "21410": {
+    "firstSeen": 1767306222502,
+    "count": 131,
+    "sample": {
+      "slot": 485456,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "21411": {
+    "firstSeen": 1767389056219,
+    "count": 152,
+    "sample": {
+      "slot": 577,
+      "durMs": 5000,
+      "stack": 30
+    }
+  },
+  "21413": {
+    "firstSeen": 1767186400605,
+    "count": 1,
+    "sample": {
+      "slot": 3722,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "21418": {
+    "firstSeen": 1767389081479,
+    "count": 8,
+    "sample": {
+      "slot": 983,
+      "durMs": 2080,
+      "stack": 30
+    }
+  },
+  "21422": {
+    "firstSeen": 1767389049624,
+    "count": 49,
+    "sample": {
+      "slot": 421,
+      "durMs": 15000,
+      "stack": 30
+    }
+  },
+  "21423": {
+    "firstSeen": 1767306373569,
+    "count": 64,
+    "sample": {
+      "slot": 485505,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "21424": {
+    "firstSeen": 1767666426817,
+    "count": 46,
+    "sample": {
+      "slot": 1884,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "21426": {
+    "firstSeen": 1767389048811,
+    "count": 12,
+    "sample": {
+      "slot": 414,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "21427": {
+    "firstSeen": 1767306198866,
+    "count": 8,
+    "sample": {
+      "slot": 485415,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "21428": {
+    "firstSeen": 1767306199318,
+    "count": 2,
+    "sample": {
+      "slot": 485417,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "21429": {
+    "firstSeen": 1767396382435,
+    "count": 1,
+    "sample": {
+      "slot": 453,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "21431": {
+    "firstSeen": 1767389061726,
+    "count": 9,
+    "sample": {
+      "slot": 713,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "21432": {
+    "firstSeen": 1767666449863,
+    "count": 194,
+    "sample": {
+      "slot": 1900,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "25204": {
+    "firstSeen": 1767665609253,
+    "count": 64,
+    "sample": {
+      "slot": 9,
+      "durMs": 3000,
+      "stack": 30
+    }
+  },
+  "25205": {
+    "firstSeen": 1767665609253,
+    "count": 6,
+    "sample": {
+      "slot": 11,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "25206": {
+    "firstSeen": 1767665609253,
+    "count": 9,
+    "sample": {
+      "slot": 10,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "25401": {
+    "firstSeen": 1767665608284,
+    "count": 60,
+    "sample": {
+      "slot": 121,
+      "durMs": 2000,
+      "stack": 30
+    }
+  },
+  "27001": {
+    "firstSeen": 1767665609723,
+    "count": 337,
+    "sample": {
+      "slot": 134,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "27004": {
+    "firstSeen": 1767665608284,
+    "count": 5,
+    "sample": {
+      "slot": 120,
+      "durMs": 1100,
+      "stack": 30
+    }
+  },
+  "27005": {
+    "firstSeen": 1767665835282,
+    "count": 8,
+    "sample": {
+      "slot": 4251,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "27006": {
+    "firstSeen": 1767665611512,
+    "count": 16,
+    "sample": {
+      "slot": 156,
+      "durMs": 2000,
+      "stack": 30
+    }
+  },
+  "27007": {
+    "firstSeen": 1767665609649,
+    "count": 11,
+    "sample": {
+      "slot": 132,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "27013": {
+    "firstSeen": 1767666678525,
+    "count": 11,
+    "sample": {
+      "slot": 13480,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "27014": {
+    "firstSeen": 1767674973522,
+    "count": 75,
+    "sample": {
+      "slot": 326,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "27015": {
+    "firstSeen": 1767665628958,
+    "count": 10,
+    "sample": {
+      "slot": 1001,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "27016": {
+    "firstSeen": 1767665611588,
+    "count": 33,
+    "sample": {
+      "slot": 161,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "30000": {
+    "firstSeen": 1766477047508,
+    "count": 2,
+    "sample": {
+      "slot": 131,
+      "durMs": null,
+      "stack": 1245491704
+    }
+  },
+  "30001": {
+    "firstSeen": 1765927608811,
+    "count": 1630,
+    "sample": {
+      "slot": 235,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "30003": {
+    "firstSeen": 1767275961099,
+    "count": 13,
+    "sample": {
+      "slot": 93,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "31201": {
+    "firstSeen": 1765927513368,
+    "count": 124,
+    "sample": {
+      "slot": 223,
+      "durMs": 17800,
+      "stack": 30
+    }
+  },
+  "31601": {
+    "firstSeen": 1765928019555,
+    "count": 64,
+    "sample": {
+      "slot": 747,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "31602": {
+    "firstSeen": 1765928019556,
+    "count": 67,
+    "sample": {
+      "slot": 748,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "31901": {
+    "firstSeen": 1766140206191,
+    "count": 18,
+    "sample": {
+      "slot": 1132,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "32101": {
+    "firstSeen": 1765928019556,
+    "count": 64,
+    "sample": {
+      "slot": 749,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "32301": {
+    "firstSeen": 1765927612263,
+    "count": 117,
+    "sample": {
+      "slot": 246,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "40001": {
+    "firstSeen": 1767089168188,
+    "count": 497,
+    "sample": {
+      "slot": 3053,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "40901": {
+    "firstSeen": 1767380820395,
+    "count": 10,
+    "sample": {
+      "slot": 4656,
+      "durMs": 8000,
+      "stack": 30
+    }
+  },
+  "41701": {
+    "firstSeen": 1767306222506,
+    "count": 128,
+    "sample": {
+      "slot": 485495,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "42001": {
+    "firstSeen": 1767306222506,
+    "count": 38,
+    "sample": {
+      "slot": 485494,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "42002": {
+    "firstSeen": 1767380747736,
+    "count": 1127,
+    "sample": {
+      "slot": 4651,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "42401": {
+    "firstSeen": 1767663202099,
+    "count": 2,
+    "sample": {
+      "slot": 4,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "42801": {
+    "firstSeen": 1767380820395,
+    "count": 812,
+    "sample": {
+      "slot": 4657,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "43101": {
+    "firstSeen": 1766132967099,
+    "count": 42,
+    "sample": {
+      "slot": 80,
+      "durMs": 12000,
+      "stack": 30
+    }
+  },
+  "43201": {
+    "firstSeen": 1766134523546,
+    "count": 48,
+    "sample": {
+      "slot": 84,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "43701": {
+    "firstSeen": 1767089176051,
+    "count": 134,
+    "sample": {
+      "slot": 3179,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "44501": {
+    "firstSeen": 1767663202878,
+    "count": 4,
+    "sample": {
+      "slot": 121,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "44701": {
+    "firstSeen": 1767663202959,
+    "count": 62,
+    "sample": {
+      "slot": 5,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "44801": {
+    "firstSeen": 1767306222506,
+    "count": 51,
+    "sample": {
+      "slot": 485498,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "44901": {
+    "firstSeen": 1767306222506,
+    "count": 62,
+    "sample": {
+      "slot": 485499,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "50044": {
+    "firstSeen": 1767675167663,
+    "count": 2,
+    "sample": {
+      "slot": 394,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "55220": {
+    "firstSeen": 1767675093655,
+    "count": 5,
+    "sample": {
+      "slot": 294,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "55229": {
+    "firstSeen": 1767675093655,
+    "count": 5,
+    "sample": {
+      "slot": 295,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "55237": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 282,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "55301": {
+    "firstSeen": 1767273948646,
+    "count": 870,
+    "sample": {
+      "slot": 898,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "55302": {
+    "firstSeen": 1767396385840,
+    "count": 1,
+    "sample": {
+      "slot": 461,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "55304": {
+    "firstSeen": 1767089696353,
+    "count": 9,
+    "sample": {
+      "slot": 3697,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "55311": {
+    "firstSeen": 1765988769961,
+    "count": 50,
+    "sample": {
+      "slot": 151,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "55312": {
+    "firstSeen": 1765988769961,
+    "count": 13,
+    "sample": {
+      "slot": 148,
+      "durMs": 3475,
+      "stack": 1
+    }
+  },
+  "55313": {
+    "firstSeen": 1767273950342,
+    "count": 87,
+    "sample": {
+      "slot": 980,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55326": {
+    "firstSeen": 1767273948483,
+    "count": 3,
+    "sample": {
+      "slot": 894,
+      "durMs": 1100,
+      "stack": 30
+    }
+  },
+  "55327": {
+    "firstSeen": 1767273949303,
+    "count": 89,
+    "sample": {
+      "slot": 935,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55328": {
+    "firstSeen": 1767273949303,
+    "count": 7,
+    "sample": {
+      "slot": 937,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55329": {
+    "firstSeen": 1767273949469,
+    "count": 4,
+    "sample": {
+      "slot": 947,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "55330": {
+    "firstSeen": 1767273953388,
+    "count": 7,
+    "sample": {
+      "slot": 1146,
+      "durMs": 15000,
+      "stack": 1
+    }
+  },
+  "55331": {
+    "firstSeen": 1767273949858,
+    "count": 68,
+    "sample": {
+      "slot": 956,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "55333": {
+    "firstSeen": 1765988769963,
+    "count": 29,
+    "sample": {
+      "slot": 175,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55334": {
+    "firstSeen": 1767273949303,
+    "count": 7,
+    "sample": {
+      "slot": 939,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55335": {
+    "firstSeen": 1767273949303,
+    "count": 7,
+    "sample": {
+      "slot": 940,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55336": {
+    "firstSeen": 1767273949303,
+    "count": 7,
+    "sample": {
+      "slot": 934,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55337": {
+    "firstSeen": 1767273949303,
+    "count": 7,
+    "sample": {
+      "slot": 938,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55339": {
+    "firstSeen": 1767089691390,
+    "count": 6,
+    "sample": {
+      "slot": 3679,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "55340": {
+    "firstSeen": 1767273947908,
+    "count": 272,
+    "sample": {
+      "slot": 888,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "55341": {
+    "firstSeen": 1767273949858,
+    "count": 867,
+    "sample": {
+      "slot": 961,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "55342": {
+    "firstSeen": 1767089352140,
+    "count": 27,
+    "sample": {
+      "slot": 3271,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "55348": {
+    "firstSeen": 1767273949303,
+    "count": 7,
+    "sample": {
+      "slot": 941,
+      "durMs": 15000,
+      "stack": 30
+    }
+  },
+  "55349": {
+    "firstSeen": 1767273959907,
+    "count": 45,
+    "sample": {
+      "slot": 1641,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "55351": {
+    "firstSeen": 1767273949858,
+    "count": 68,
+    "sample": {
+      "slot": 959,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "55354": {
+    "firstSeen": 1767273947738,
+    "count": 5,
+    "sample": {
+      "slot": 885,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "55355": {
+    "firstSeen": 1767273702762,
+    "count": 315,
+    "sample": {
+      "slot": 322,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "55356": {
+    "firstSeen": 1767273707089,
+    "count": 81,
+    "sample": {
+      "slot": 332,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "55357": {
+    "firstSeen": 1767273707503,
+    "count": 63,
+    "sample": {
+      "slot": 335,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "55395": {
+    "firstSeen": 1767273949858,
+    "count": 68,
+    "sample": {
+      "slot": 960,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "55401": {
+    "firstSeen": 1767279399396,
+    "count": 5,
+    "sample": {
+      "slot": 153,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "500105": {
+    "firstSeen": 1767187635376,
+    "count": 25,
+    "sample": {
+      "slot": 82,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "500111": {
+    "firstSeen": 1767185061763,
+    "count": 2,
+    "sample": {
+      "slot": 2167,
+      "durMs": 3000,
+      "stack": 1
+    }
+  },
+  "500112": {
+    "firstSeen": 1767185064602,
+    "count": 3,
+    "sample": {
+      "slot": 2178,
+      "durMs": 3000,
+      "stack": 1
+    }
+  },
+  "500113": {
+    "firstSeen": 1767185064602,
+    "count": 3,
+    "sample": {
+      "slot": 2179,
+      "durMs": 3000,
+      "stack": 1
+    }
+  },
+  "501401": {
+    "firstSeen": 1765988769964,
+    "count": 158,
+    "sample": {
+      "slot": 184,
+      "durMs": 500,
+      "stack": 1
+    }
+  },
+  "501705": {
+    "firstSeen": 1767665914139,
+    "count": 1,
+    "sample": {
+      "slot": 1366,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "510110": {
+    "firstSeen": 1767389025278,
+    "count": 1,
+    "sample": {
+      "slot": 96,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "510501": {
+    "firstSeen": 1767666456379,
+    "count": 6,
+    "sample": {
+      "slot": 1943,
+      "durMs": 3000,
+      "stack": 30
+    }
+  },
+  "510542": {
+    "firstSeen": 1767666276593,
+    "count": 75,
+    "sample": {
+      "slot": 1868,
+      "durMs": 5000,
+      "stack": 30
+    }
+  },
+  "510701": {
+    "firstSeen": 1767187619316,
+    "count": 91,
+    "sample": {
+      "slot": 9,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "510801": {
+    "firstSeen": 1767187619316,
+    "count": 91,
+    "sample": {
+      "slot": 7,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "521001": {
+    "firstSeen": 1766821081787,
+    "count": 128,
+    "sample": {
+      "slot": 786,
+      "durMs": 4000,
+      "stack": 1
+    }
+  },
+  "522601": {
+    "firstSeen": 1767389627397,
+    "count": 3,
+    "sample": {
+      "slot": 379,
+      "durMs": 1500,
+      "stack": 1
+    }
+  },
+  "600001": {
+    "firstSeen": 1767273993261,
+    "count": 34,
+    "sample": {
+      "slot": 44,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "620301": {
+    "firstSeen": 1766871384735,
+    "count": 10,
+    "sample": {
+      "slot": 88,
+      "durMs": 3000,
+      "stack": 1
+    }
+  },
+  "620303": {
+    "firstSeen": 1767187619322,
+    "count": 8,
+    "sample": {
+      "slot": 84,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "620501": {
+    "firstSeen": 1765929302163,
+    "count": 5,
+    "sample": {
+      "slot": 888,
+      "durMs": 3000,
+      "stack": 1
+    }
+  },
+  "680101": {
+    "firstSeen": 1767187619316,
+    "count": 90,
+    "sample": {
+      "slot": 6,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "680201": {
+    "firstSeen": 1767187619316,
+    "count": 90,
+    "sample": {
+      "slot": 10,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "680501": {
+    "firstSeen": 1767187619316,
+    "count": 90,
+    "sample": {
+      "slot": 8,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "680701": {
+    "firstSeen": 1767187619310,
+    "count": 90,
+    "sample": {
+      "slot": 5,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "680702": {
+    "firstSeen": 1767382321312,
+    "count": 48,
+    "sample": {
+      "slot": 98,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "681701": {
+    "firstSeen": 1767187619322,
+    "count": 9,
+    "sample": {
+      "slot": 82,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "682201": {
+    "firstSeen": 1766035052104,
+    "count": 193,
+    "sample": {
+      "slot": 44,
+      "durMs": 2000,
+      "stack": 1
+    }
+  },
+  "682501": {
+    "firstSeen": 1767187619229,
+    "count": 90,
+    "sample": {
+      "slot": 2,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "682503": {
+    "firstSeen": 1767187619262,
+    "count": 90,
+    "sample": {
+      "slot": 3,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "682505": {
+    "firstSeen": 1767187619281,
+    "count": 90,
+    "sample": {
+      "slot": 4,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "682601": {
+    "firstSeen": 1767382321312,
+    "count": 48,
+    "sample": {
+      "slot": 95,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "682602": {
+    "firstSeen": 1767382321312,
+    "count": 48,
+    "sample": {
+      "slot": 97,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "683104": {
+    "firstSeen": 1767187619322,
+    "count": 8,
+    "sample": {
+      "slot": 83,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "683114": {
+    "firstSeen": 1767273993264,
+    "count": 17,
+    "sample": {
+      "slot": 95,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "683115": {
+    "firstSeen": 1767273983620,
+    "count": 57,
+    "sample": {
+      "slot": 2955,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683116": {
+    "firstSeen": 1765988769964,
+    "count": 158,
+    "sample": {
+      "slot": 183,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "683133": {
+    "firstSeen": 1767382339929,
+    "count": 10,
+    "sample": {
+      "slot": 96,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683134": {
+    "firstSeen": 1767675382237,
+    "count": 8,
+    "sample": {
+      "slot": 236,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "683135": {
+    "firstSeen": 1767675281333,
+    "count": 2,
+    "sample": {
+      "slot": 168,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683148": {
+    "firstSeen": 1767675283176,
+    "count": 2,
+    "sample": {
+      "slot": 178,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683152": {
+    "firstSeen": 1767382339929,
+    "count": 10,
+    "sample": {
+      "slot": 97,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683153": {
+    "firstSeen": 1767382321312,
+    "count": 28,
+    "sample": {
+      "slot": 96,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "683155": {
+    "firstSeen": 1767676083239,
+    "count": 1,
+    "sample": {
+      "slot": 529,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "683163": {
+    "firstSeen": 1767382339929,
+    "count": 10,
+    "sample": {
+      "slot": 98,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683803": {
+    "firstSeen": 1767677242527,
+    "count": 2,
+    "sample": {
+      "slot": 103,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683804": {
+    "firstSeen": 1767677242527,
+    "count": 2,
+    "sample": {
+      "slot": 102,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "683809": {
+    "firstSeen": 1767675333708,
+    "count": 1,
+    "sample": {
+      "slot": 100,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683811": {
+    "firstSeen": 1767675430083,
+    "count": 1,
+    "sample": {
+      "slot": 100,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "683812": {
+    "firstSeen": 1767675196357,
+    "count": 1,
+    "sample": {
+      "slot": 125,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "683825": {
+    "firstSeen": 1767676917333,
+    "count": 1,
+    "sample": {
+      "slot": 8,
+      "durMs": 500,
+      "stack": 1
+    }
+  },
+  "683827": {
+    "firstSeen": 1767676894176,
+    "count": 1,
+    "sample": {
+      "slot": 6,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "683828": {
+    "firstSeen": 1767676917331,
+    "count": 1,
+    "sample": {
+      "slot": 187,
+      "durMs": 700,
+      "stack": 1
+    }
+  },
+  "683831": {
+    "firstSeen": 1767676894653,
+    "count": 1,
+    "sample": {
+      "slot": 185,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "683832": {
+    "firstSeen": 1767676915975,
+    "count": 1,
+    "sample": {
+      "slot": 7,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "701008": {
+    "firstSeen": 1767388858357,
+    "count": 711,
+    "sample": {
+      "slot": 90,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "701017": {
+    "firstSeen": 1767389037765,
+    "count": 1,
+    "sample": {
+      "slot": 315,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "823224": {
+    "firstSeen": 1767273947819,
+    "count": 29,
+    "sample": {
+      "slot": 887,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "823225": {
+    "firstSeen": 1767273948483,
+    "count": 463,
+    "sample": {
+      "slot": 892,
+      "durMs": 1500,
+      "stack": 1
+    }
+  },
+  "823230": {
+    "firstSeen": 1767273947818,
+    "count": 1498,
+    "sample": {
+      "slot": 886,
+      "durMs": 300,
+      "stack": 1
+    }
+  },
+  "823238": {
+    "firstSeen": 1767273993264,
+    "count": 16,
+    "sample": {
+      "slot": 97,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "880628": {
+    "firstSeen": 1767389025278,
+    "count": 7,
+    "sample": {
+      "slot": 99,
+      "durMs": null,
+      "stack": 3
+    }
+  },
+  "880629": {
+    "firstSeen": 1767389025279,
+    "count": 7,
+    "sample": {
+      "slot": 101,
+      "durMs": 1500,
+      "stack": 3
+    }
+  },
+  "880630": {
+    "firstSeen": 1767389043047,
+    "count": 3,
+    "sample": {
+      "slot": 363,
+      "durMs": 999000,
+      "stack": 3
+    }
+  },
+  "880633": {
+    "firstSeen": 1767389044160,
+    "count": 4,
+    "sample": {
+      "slot": 374,
+      "durMs": 15000,
+      "stack": 1
+    }
+  },
+  "880649": {
+    "firstSeen": 1767389123861,
+    "count": 2,
+    "sample": {
+      "slot": 1803,
+      "durMs": 500,
+      "stack": 3
+    }
+  },
+  "880672": {
+    "firstSeen": 1767389025278,
+    "count": 7,
+    "sample": {
+      "slot": 100,
+      "durMs": null,
+      "stack": 3
+    }
+  },
+  "883028": {
+    "firstSeen": 1767389110748,
+    "count": 1,
+    "sample": {
+      "slot": 1571,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "900122": {
+    "firstSeen": 1767273946530,
+    "count": 15,
+    "sample": {
+      "slot": 883,
+      "durMs": 500,
+      "stack": 1
+    }
+  },
+  "902901": {
+    "firstSeen": 1767273983065,
+    "count": 21,
+    "sample": {
+      "slot": 2949,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "974005": {
+    "firstSeen": 1767107734048,
+    "count": 56,
+    "sample": {
+      "slot": 91,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2010001": {
+    "firstSeen": 1767665914139,
+    "count": 1,
+    "sample": {
+      "slot": 1367,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2010012": {
+    "firstSeen": 1767273993259,
+    "count": 88,
+    "sample": {
+      "slot": 7,
+      "durMs": 70879000,
+      "stack": 1
+    }
+  },
+  "2010060": {
+    "firstSeen": 1767667518139,
+    "count": 7,
+    "sample": {
+      "slot": 92,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031001": {
+    "firstSeen": 1767306222506,
+    "count": 38,
+    "sample": {
+      "slot": 485492,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031002": {
+    "firstSeen": 1767666021846,
+    "count": 9,
+    "sample": {
+      "slot": 9464,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031004": {
+    "firstSeen": 1767185064601,
+    "count": 41,
+    "sample": {
+      "slot": 2168,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031005": {
+    "firstSeen": 1767389029691,
+    "count": 35,
+    "sample": {
+      "slot": 173,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031007": {
+    "firstSeen": 1767675167663,
+    "count": 2,
+    "sample": {
+      "slot": 392,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031009": {
+    "firstSeen": 1767675093655,
+    "count": 5,
+    "sample": {
+      "slot": 292,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031010": {
+    "firstSeen": 1767279399396,
+    "count": 5,
+    "sample": {
+      "slot": 149,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031011": {
+    "firstSeen": 1765988769964,
+    "count": 23,
+    "sample": {
+      "slot": 179,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031101": {
+    "firstSeen": 1767306222506,
+    "count": 38,
+    "sample": {
+      "slot": 485493,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031102": {
+    "firstSeen": 1767666021846,
+    "count": 9,
+    "sample": {
+      "slot": 9465,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031104": {
+    "firstSeen": 1767185064601,
+    "count": 41,
+    "sample": {
+      "slot": 2169,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031105": {
+    "firstSeen": 1767389029691,
+    "count": 35,
+    "sample": {
+      "slot": 174,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031107": {
+    "firstSeen": 1767675167663,
+    "count": 2,
+    "sample": {
+      "slot": 393,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031109": {
+    "firstSeen": 1767675093655,
+    "count": 5,
+    "sample": {
+      "slot": 293,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031110": {
+    "firstSeen": 1767279399396,
+    "count": 5,
+    "sample": {
+      "slot": 150,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2031111": {
+    "firstSeen": 1765988769964,
+    "count": 23,
+    "sample": {
+      "slot": 180,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2032001": {
+    "firstSeen": 1767093993004,
+    "count": 9,
+    "sample": {
+      "slot": 1583,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2032002": {
+    "firstSeen": 1767093993004,
+    "count": 7,
+    "sample": {
+      "slot": 1584,
+      "durMs": 600000,
+      "stack": 1
+    }
+  },
+  "2032050": {
+    "firstSeen": 1767185211692,
+    "count": 1,
+    "sample": {
+      "slot": 2244,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2032051": {
+    "firstSeen": 1767185211692,
+    "count": 1,
+    "sample": {
+      "slot": 2246,
+      "durMs": 1800000,
+      "stack": 1
+    }
+  },
+  "2032053": {
+    "firstSeen": 1767384824708,
+    "count": 2,
+    "sample": {
+      "slot": 5,
+      "durMs": 1800000,
+      "stack": 1
+    }
+  },
+  "2032060": {
+    "firstSeen": 1767186140211,
+    "count": 1,
+    "sample": {
+      "slot": 2906,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2032065": {
+    "firstSeen": 1767186140211,
+    "count": 3,
+    "sample": {
+      "slot": 2908,
+      "durMs": 1800000,
+      "stack": 1
+    }
+  },
+  "2033000": {
+    "firstSeen": 1767093993003,
+    "count": 7,
+    "sample": {
+      "slot": 1582,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2100301": {
+    "firstSeen": 1767675550834,
+    "count": 27,
+    "sample": {
+      "slot": 283,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2100402": {
+    "firstSeen": 1767277738812,
+    "count": 2,
+    "sample": {
+      "slot": 1539,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2110034": {
+    "firstSeen": 1767086577238,
+    "count": 27,
+    "sample": {
+      "slot": 2911,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2110050": {
+    "firstSeen": 1767089730553,
+    "count": 2,
+    "sample": {
+      "slot": 3819,
+      "durMs": 60000,
+      "stack": 1
+    }
+  },
+  "2110056": {
+    "firstSeen": 1767086577238,
+    "count": 27,
+    "sample": {
+      "slot": 2912,
+      "durMs": 60000,
+      "stack": 1
+    }
+  },
+  "2110062": {
+    "firstSeen": 1767273951816,
+    "count": 5,
+    "sample": {
+      "slot": 1037,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2110075": {
+    "firstSeen": 1767381201621,
+    "count": 25,
+    "sample": {
+      "slot": 4683,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2110093": {
+    "firstSeen": 1765928527347,
+    "count": 167,
+    "sample": {
+      "slot": 767,
+      "durMs": 500,
+      "stack": 1
+    }
+  },
+  "2110095": {
+    "firstSeen": 1765928523433,
+    "count": 41,
+    "sample": {
+      "slot": 764,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2110102": {
+    "firstSeen": 1767273950926,
+    "count": 10,
+    "sample": {
+      "slot": 1018,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2110103": {
+    "firstSeen": 1765928664322,
+    "count": 30,
+    "sample": {
+      "slot": 770,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2110108": {
+    "firstSeen": 1767273951815,
+    "count": 2,
+    "sample": {
+      "slot": 1036,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2110109": {
+    "firstSeen": 1767274361610,
+    "count": 3,
+    "sample": {
+      "slot": 691,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2110117": {
+    "firstSeen": 1767389936917,
+    "count": 2,
+    "sample": {
+      "slot": 424,
+      "durMs": 1500,
+      "stack": 1
+    }
+  },
+  "2110125": {
+    "firstSeen": 1767089730553,
+    "count": 2,
+    "sample": {
+      "slot": 3818,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2110129": {
+    "firstSeen": 1765928733155,
+    "count": 31,
+    "sample": {
+      "slot": 778,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2200020": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485460,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200040": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485465,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200050": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485462,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200051": {
+    "firstSeen": 1767088372769,
+    "count": 39,
+    "sample": {
+      "slot": 2967,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200060": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485466,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200070": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 148,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200080": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 152,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200090": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 147,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200100": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485464,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200110": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 160,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200120": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 161,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200140": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 149,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200160": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485473,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200170": {
+    "firstSeen": 1767306222505,
+    "count": 22,
+    "sample": {
+      "slot": 485487,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200180": {
+    "firstSeen": 1767306222506,
+    "count": 24,
+    "sample": {
+      "slot": 485490,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200182": {
+    "firstSeen": 1767089169817,
+    "count": 40,
+    "sample": {
+      "slot": 3075,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200184": {
+    "firstSeen": 1767089166951,
+    "count": 47,
+    "sample": {
+      "slot": 3045,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200200": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485482,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200210": {
+    "firstSeen": 1767306222506,
+    "count": 23,
+    "sample": {
+      "slot": 485489,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200211": {
+    "firstSeen": 1767663202100,
+    "count": 70,
+    "sample": {
+      "slot": 118,
+      "durMs": 100,
+      "stack": 30
+    }
+  },
+  "2200220": {
+    "firstSeen": 1767388489059,
+    "count": 7,
+    "sample": {
+      "slot": 97,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200221": {
+    "firstSeen": 1767388508052,
+    "count": 3,
+    "sample": {
+      "slot": 106,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2200230": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485475,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200231": {
+    "firstSeen": 1767089169085,
+    "count": 295,
+    "sample": {
+      "slot": 3069,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200240": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485485,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200241": {
+    "firstSeen": 1766134523546,
+    "count": 50,
+    "sample": {
+      "slot": 85,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200250": {
+    "firstSeen": 1767306222506,
+    "count": 23,
+    "sample": {
+      "slot": 485491,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200251": {
+    "firstSeen": 1767663122272,
+    "count": 9,
+    "sample": {
+      "slot": 3,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2200260": {
+    "firstSeen": 1767674941745,
+    "count": 1,
+    "sample": {
+      "slot": 143,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200310": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485459,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200311": {
+    "firstSeen": 1767380747736,
+    "count": 1144,
+    "sample": {
+      "slot": 4650,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200320": {
+    "firstSeen": 1767675010941,
+    "count": 3,
+    "sample": {
+      "slot": 143,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200330": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485474,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200340": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 158,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200360": {
+    "firstSeen": 1767675010943,
+    "count": 3,
+    "sample": {
+      "slot": 164,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200380": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485463,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200390": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485467,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200400": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485468,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200401": {
+    "firstSeen": 1767089168188,
+    "count": 1477,
+    "sample": {
+      "slot": 3052,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2200410": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 157,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200420": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 159,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200450": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 153,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200460": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 155,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200470": {
+    "firstSeen": 1767675010943,
+    "count": 3,
+    "sample": {
+      "slot": 163,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200480": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 146,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200500": {
+    "firstSeen": 1767306222504,
+    "count": 26,
+    "sample": {
+      "slot": 485461,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200510": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 154,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200520": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 151,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200540": {
+    "firstSeen": 1767675010943,
+    "count": 3,
+    "sample": {
+      "slot": 165,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200550": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 150,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200570": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485477,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200580": {
+    "firstSeen": 1767382313644,
+    "count": 5,
+    "sample": {
+      "slot": 82,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200590": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485469,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200600": {
+    "firstSeen": 1767306222506,
+    "count": 23,
+    "sample": {
+      "slot": 485488,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200601": {
+    "firstSeen": 1767089168108,
+    "count": 135,
+    "sample": {
+      "slot": 3051,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200602": {
+    "firstSeen": 1767089168590,
+    "count": 143,
+    "sample": {
+      "slot": 3057,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200610": {
+    "firstSeen": 1767306222505,
+    "count": 17,
+    "sample": {
+      "slot": 485480,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200620": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485483,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200630": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485479,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200640": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485476,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200641": {
+    "firstSeen": 1766134523208,
+    "count": 48,
+    "sample": {
+      "slot": 83,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2200670": {
+    "firstSeen": 1767674941744,
+    "count": 1,
+    "sample": {
+      "slot": 137,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200690": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485486,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200700": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485472,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200710": {
+    "firstSeen": 1767306222505,
+    "count": 23,
+    "sample": {
+      "slot": 485484,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200720": {
+    "firstSeen": 1767306222505,
+    "count": 22,
+    "sample": {
+      "slot": 485481,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200730": {
+    "firstSeen": 1767306222505,
+    "count": 22,
+    "sample": {
+      "slot": 485478,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2200740": {
+    "firstSeen": 1767675010942,
+    "count": 3,
+    "sample": {
+      "slot": 162,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201020": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 363,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201040": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 364,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201050": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 361,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201060": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 365,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201080": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 379,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201090": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 378,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201150": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 380,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201250": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 377,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201270": {
+    "firstSeen": 1767675167662,
+    "count": 2,
+    "sample": {
+      "slot": 390,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201280": {
+    "firstSeen": 1767675167662,
+    "count": 2,
+    "sample": {
+      "slot": 382,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201290": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 367,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201300": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 387,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201310": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 360,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201320": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 370,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201344": {
+    "firstSeen": 1767389061069,
+    "count": 11,
+    "sample": {
+      "slot": 696,
+      "durMs": 5000,
+      "stack": 30
+    }
+  },
+  "2201350": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 389,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201370": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 384,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201380": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 369,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201390": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 366,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201400": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 368,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201410": {
+    "firstSeen": 1767675167661,
+    "count": 4,
+    "sample": {
+      "slot": 362,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201452": {
+    "firstSeen": 1767389947797,
+    "count": 36,
+    "sample": {
+      "slot": 709,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
+  "2201580": {
+    "firstSeen": 1767676693161,
+    "count": 2,
+    "sample": {
+      "slot": 155,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201590": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 385,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201600": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 375,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201610": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 373,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201620": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 374,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201630": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 381,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201660": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 372,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201670": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 388,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201680": {
+    "firstSeen": 1767676693162,
+    "count": 2,
+    "sample": {
+      "slot": 171,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201690": {
+    "firstSeen": 1767675167663,
+    "count": 4,
+    "sample": {
+      "slot": 391,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201710": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 383,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201720": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 386,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2201730": {
+    "firstSeen": 1767675167662,
+    "count": 4,
+    "sample": {
+      "slot": 376,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202020": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 148,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202040": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 140,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202041": {
+    "firstSeen": 1767186193563,
+    "count": 44,
+    "sample": {
+      "slot": 2918,
+      "durMs": 1500,
+      "stack": 5
+    }
+  },
+  "2202042": {
+    "firstSeen": 1767389203268,
+    "count": 9,
+    "sample": {
+      "slot": 80,
+      "durMs": 8000,
+      "stack": 2
+    }
+  },
+  "2202050": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 139,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202052": {
+    "firstSeen": 1767389055817,
+    "count": 47,
+    "sample": {
+      "slot": 563,
+      "durMs": 60000,
+      "stack": 1
+    }
+  },
+  "2202060": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 141,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202080": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 163,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202081": {
+    "firstSeen": 1767389056960,
+    "count": 114,
+    "sample": {
+      "slot": 590,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2202090": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 150,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202091": {
+    "firstSeen": 1766479021603,
+    "count": 237,
+    "sample": {
+      "slot": 286,
+      "durMs": 400,
+      "stack": 1
+    }
+  },
+  "2202100": {
+    "firstSeen": 1767666354193,
+    "count": 5,
+    "sample": {
+      "slot": 10542,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202110": {
+    "firstSeen": 1767389029689,
+    "count": 20,
+    "sample": {
+      "slot": 151,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202111": {
+    "firstSeen": 1767389078635,
+    "count": 9,
+    "sample": {
+      "slot": 903,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "2202112": {
+    "firstSeen": 1767306381573,
+    "count": 22,
+    "sample": {
+      "slot": 485508,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "2202113": {
+    "firstSeen": 1767306381573,
+    "count": 22,
+    "sample": {
+      "slot": 485509,
+      "durMs": 30000,
+      "stack": 30
+    }
+  },
+  "2202120": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 154,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202121": {
+    "firstSeen": 1767389059391,
+    "count": 35,
+    "sample": {
+      "slot": 671,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "2202130": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 167,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202131": {
+    "firstSeen": 1767389081236,
+    "count": 8,
+    "sample": {
+      "slot": 976,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202140": {
+    "firstSeen": 1767666368311,
+    "count": 4,
+    "sample": {
+      "slot": 10574,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202160": {
+    "firstSeen": 1767666038987,
+    "count": 31,
+    "sample": {
+      "slot": 9532,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202162": {
+    "firstSeen": 1767665349821,
+    "count": 4,
+    "sample": {
+      "slot": 309,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202163": {
+    "firstSeen": 1767665349821,
+    "count": 14,
+    "sample": {
+      "slot": 310,
+      "durMs": 2000,
+      "stack": 1
+    }
+  },
+  "2202164": {
+    "firstSeen": 1767665350305,
+    "count": 4,
+    "sample": {
+      "slot": 318,
+      "durMs": 500,
+      "stack": 1
+    }
+  },
+  "2202165": {
+    "firstSeen": 1767665347960,
+    "count": 13,
+    "sample": {
+      "slot": 283,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202166": {
+    "firstSeen": 1767665347869,
+    "count": 2,
+    "sample": {
+      "slot": 280,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202170": {
+    "firstSeen": 1767666038987,
+    "count": 31,
+    "sample": {
+      "slot": 9518,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202180": {
+    "firstSeen": 1767666038987,
+    "count": 29,
+    "sample": {
+      "slot": 9516,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202200": {
+    "firstSeen": 1767666038987,
+    "count": 28,
+    "sample": {
+      "slot": 9534,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202210": {
+    "firstSeen": 1767675050186,
+    "count": 7,
+    "sample": {
+      "slot": 156,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202220": {
+    "firstSeen": 1767666038987,
+    "count": 31,
+    "sample": {
+      "slot": 9515,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202230": {
+    "firstSeen": 1767666038987,
+    "count": 24,
+    "sample": {
+      "slot": 9527,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202240": {
+    "firstSeen": 1767666038987,
+    "count": 20,
+    "sample": {
+      "slot": 9526,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202250": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 165,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202251": {
+    "firstSeen": 1767389052918,
+    "count": 12,
+    "sample": {
+      "slot": 452,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202252": {
+    "firstSeen": 1767389063538,
+    "count": 8,
+    "sample": {
+      "slot": 749,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202260": {
+    "firstSeen": 1767666038987,
+    "count": 31,
+    "sample": {
+      "slot": 9535,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202261": {
+    "firstSeen": 1766478568077,
+    "count": 360,
+    "sample": {
+      "slot": 263,
+      "durMs": 1200,
+      "stack": 1
+    }
+  },
+  "2202262": {
+    "firstSeen": 1767665351042,
+    "count": 2,
+    "sample": {
+      "slot": 330,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2202263": {
+    "firstSeen": 1767665351042,
+    "count": 2,
+    "sample": {
+      "slot": 329,
+      "durMs": 45000,
+      "stack": 1
+    }
+  },
+  "2202270": {
+    "firstSeen": 1767666646391,
+    "count": 7,
+    "sample": {
+      "slot": 13390,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202280": {
+    "firstSeen": 1767389029690,
+    "count": 28,
+    "sample": {
+      "slot": 164,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202290": {
+    "firstSeen": 1767675262935,
+    "count": 6,
+    "sample": {
+      "slot": 167,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202300": {
+    "firstSeen": 1767389029690,
+    "count": 15,
+    "sample": {
+      "slot": 158,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202310": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 144,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202311": {
+    "firstSeen": 1767389078875,
+    "count": 21,
+    "sample": {
+      "slot": 910,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2202320": {
+    "firstSeen": 1767666398488,
+    "count": 4,
+    "sample": {
+      "slot": 10643,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202330": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 146,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202331": {
+    "firstSeen": 1767389053403,
+    "count": 114,
+    "sample": {
+      "slot": 466,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "2202340": {
+    "firstSeen": 1767666038986,
+    "count": 31,
+    "sample": {
+      "slot": 9512,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202360": {
+    "firstSeen": 1767666349226,
+    "count": 5,
+    "sample": {
+      "slot": 10529,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202380": {
+    "firstSeen": 1767389029690,
+    "count": 16,
+    "sample": {
+      "slot": 166,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202400": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 145,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202401": {
+    "firstSeen": 1767389053497,
+    "count": 37,
+    "sample": {
+      "slot": 468,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202402": {
+    "firstSeen": 1767389078875,
+    "count": 5,
+    "sample": {
+      "slot": 912,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202410": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 143,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202420": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 142,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202430": {
+    "firstSeen": 1767389029689,
+    "count": 51,
+    "sample": {
+      "slot": 147,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202440": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 156,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202441": {
+    "firstSeen": 1767389055817,
+    "count": 12,
+    "sample": {
+      "slot": 562,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2202450": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 169,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202460": {
+    "firstSeen": 1767389029690,
+    "count": 16,
+    "sample": {
+      "slot": 159,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202470": {
+    "firstSeen": 1767666402014,
+    "count": 4,
+    "sample": {
+      "slot": 10651,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202480": {
+    "firstSeen": 1767676011977,
+    "count": 3,
+    "sample": {
+      "slot": 258,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202490": {
+    "firstSeen": 1767676371344,
+    "count": 3,
+    "sample": {
+      "slot": 817,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202500": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 155,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202501": {
+    "firstSeen": 1767666273231,
+    "count": 8,
+    "sample": {
+      "slot": 10128,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "2202510": {
+    "firstSeen": 1767389029690,
+    "count": 18,
+    "sample": {
+      "slot": 172,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202520": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 160,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202530": {
+    "firstSeen": 1767666397131,
+    "count": 4,
+    "sample": {
+      "slot": 10639,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202540": {
+    "firstSeen": 1767389029690,
+    "count": 19,
+    "sample": {
+      "slot": 161,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202550": {
+    "firstSeen": 1767389029690,
+    "count": 15,
+    "sample": {
+      "slot": 171,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202560": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 162,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202561": {
+    "firstSeen": 1767389052919,
+    "count": 10,
+    "sample": {
+      "slot": 453,
+      "durMs": 12000,
+      "stack": 1
+    }
+  },
+  "2202570": {
+    "firstSeen": 1767389029690,
+    "count": 20,
+    "sample": {
+      "slot": 157,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202580": {
+    "firstSeen": 1767389029690,
+    "count": 17,
+    "sample": {
+      "slot": 168,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202581": {
+    "firstSeen": 1767396392343,
+    "count": 5,
+    "sample": {
+      "slot": 615,
+      "durMs": 1150,
+      "stack": 1
+    }
+  },
+  "2202582": {
+    "firstSeen": 1767666456232,
+    "count": 3,
+    "sample": {
+      "slot": 1942,
+      "durMs": 1150,
+      "stack": 30
+    }
+  },
+  "2202590": {
+    "firstSeen": 1767389029690,
+    "count": 19,
+    "sample": {
+      "slot": 170,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202600": {
+    "firstSeen": 1767666038987,
+    "count": 29,
+    "sample": {
+      "slot": 9524,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202610": {
+    "firstSeen": 1767666038987,
+    "count": 27,
+    "sample": {
+      "slot": 9531,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202620": {
+    "firstSeen": 1767666038987,
+    "count": 29,
+    "sample": {
+      "slot": 9517,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202630": {
+    "firstSeen": 1767666038987,
+    "count": 24,
+    "sample": {
+      "slot": 9525,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202640": {
+    "firstSeen": 1767666646391,
+    "count": 7,
+    "sample": {
+      "slot": 13389,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202650": {
+    "firstSeen": 1767666646390,
+    "count": 7,
+    "sample": {
+      "slot": 13379,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202651": {
+    "firstSeen": 1767666665448,
+    "count": 1,
+    "sample": {
+      "slot": 13430,
+      "durMs": 4000,
+      "stack": 1
+    }
+  },
+  "2202660": {
+    "firstSeen": 1767666646390,
+    "count": 12,
+    "sample": {
+      "slot": 13378,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202670": {
+    "firstSeen": 1767666038987,
+    "count": 31,
+    "sample": {
+      "slot": 9523,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202680": {
+    "firstSeen": 1767666038987,
+    "count": 26,
+    "sample": {
+      "slot": 9536,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202690": {
+    "firstSeen": 1767666646390,
+    "count": 21,
+    "sample": {
+      "slot": 13386,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202700": {
+    "firstSeen": 1767666038987,
+    "count": 31,
+    "sample": {
+      "slot": 9519,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202701": {
+    "firstSeen": 1767666038987,
+    "count": 31,
+    "sample": {
+      "slot": 9520,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202702": {
+    "firstSeen": 1767666038988,
+    "count": 29,
+    "sample": {
+      "slot": 9544,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202703": {
+    "firstSeen": 1767665298989,
+    "count": 2,
+    "sample": {
+      "slot": 179,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202705": {
+    "firstSeen": 1767093034798,
+    "count": 9,
+    "sample": {
+      "slot": 342,
+      "durMs": 8000,
+      "stack": 30
+    }
+  },
+  "2202706": {
+    "firstSeen": 1767665298904,
+    "count": 32,
+    "sample": {
+      "slot": 175,
+      "durMs": 45000,
+      "stack": 1
+    }
+  },
+  "2202707": {
+    "firstSeen": 1767666038987,
+    "count": 31,
+    "sample": {
+      "slot": 9522,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2202710": {
+    "firstSeen": 1767666038987,
+    "count": 26,
+    "sample": {
+      "slot": 9533,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202711": {
+    "firstSeen": 1767665298989,
+    "count": 26,
+    "sample": {
+      "slot": 180,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2202720": {
+    "firstSeen": 1767666038987,
+    "count": 20,
+    "sample": {
+      "slot": 9529,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202730": {
+    "firstSeen": 1767666038987,
+    "count": 24,
+    "sample": {
+      "slot": 9528,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202740": {
+    "firstSeen": 1767666038988,
+    "count": 31,
+    "sample": {
+      "slot": 9537,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202750": {
+    "firstSeen": 1767666038987,
+    "count": 14,
+    "sample": {
+      "slot": 9530,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203010": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 262,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203011": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 263,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2203012": {
+    "firstSeen": 1767676022935,
+    "count": 3,
+    "sample": {
+      "slot": 180,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2203030": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 255,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203040": {
+    "firstSeen": 1767675093653,
+    "count": 21,
+    "sample": {
+      "slot": 254,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203050": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 256,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203060": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 275,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203070": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 288,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203080": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 261,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203090": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 269,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203100": {
+    "firstSeen": 1767675093654,
+    "count": 8,
+    "sample": {
+      "slot": 268,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203110": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 285,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203120": {
+    "firstSeen": 1767675093655,
+    "count": 9,
+    "sample": {
+      "slot": 290,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203140": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 278,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203150": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 188,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203160": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 202,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203170": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 197,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203180": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 183,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203200": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 189,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203210": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 190,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203220": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 201,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203230": {
+    "firstSeen": 1767675093655,
+    "count": 8,
+    "sample": {
+      "slot": 291,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203240": {
+    "firstSeen": 1767675093654,
+    "count": 10,
+    "sample": {
+      "slot": 289,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203250": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 257,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203260": {
+    "firstSeen": 1767675093653,
+    "count": 9,
+    "sample": {
+      "slot": 265,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203290": {
+    "firstSeen": 1767676022935,
+    "count": 3,
+    "sample": {
+      "slot": 179,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203291": {
+    "firstSeen": 1767666010695,
+    "count": 4234,
+    "sample": {
+      "slot": 2,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "2203292": {
+    "firstSeen": 1767676022941,
+    "count": 3,
+    "sample": {
+      "slot": 234,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2203300": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 286,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203310": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 258,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203320": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 259,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203330": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 260,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203340": {
+    "firstSeen": 1767675093653,
+    "count": 12,
+    "sample": {
+      "slot": 264,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203360": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 283,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203370": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 276,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203380": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 284,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203390": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 277,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203400": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 279,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203410": {
+    "firstSeen": 1767675178116,
+    "count": 7,
+    "sample": {
+      "slot": 192,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203420": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 272,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203430": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 274,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203440": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 281,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203450": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 280,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203460": {
+    "firstSeen": 1767677469563,
+    "count": 2,
+    "sample": {
+      "slot": 997,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203470": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 270,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203500": {
+    "firstSeen": 1767675093654,
+    "count": 7,
+    "sample": {
+      "slot": 287,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203510": {
+    "firstSeen": 1767675093654,
+    "count": 9,
+    "sample": {
+      "slot": 271,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203520": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 193,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203530": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 199,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203540": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 198,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203550": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 195,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203570": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 187,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203580": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 196,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203590": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 185,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203600": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 186,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203620": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 194,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203630": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 191,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203640": {
+    "firstSeen": 1767676022936,
+    "count": 3,
+    "sample": {
+      "slot": 192,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2203650": {
+    "firstSeen": 1767676022937,
+    "count": 3,
+    "sample": {
+      "slot": 203,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204010": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13488,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204030": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13483,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204040": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13479,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204050": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13485,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204060": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13495,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204061": {
+    "firstSeen": 1767665610299,
+    "count": 16,
+    "sample": {
+      "slot": 140,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2204070": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13498,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204080": {
+    "firstSeen": 1767666678526,
+    "count": 16,
+    "sample": {
+      "slot": 13491,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204081": {
+    "firstSeen": 1767665612343,
+    "count": 1712,
+    "sample": {
+      "slot": 13,
+      "durMs": 100,
+      "stack": 1
+    }
+  },
+  "2204090": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13507,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204100": {
+    "firstSeen": 1767666678526,
+    "count": 4,
+    "sample": {
+      "slot": 13511,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204110": {
+    "firstSeen": 1767666678526,
+    "count": 4,
+    "sample": {
+      "slot": 13497,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204111": {
+    "firstSeen": 1767665631122,
+    "count": 9,
+    "sample": {
+      "slot": 1018,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "2204112": {
+    "firstSeen": 1767665630489,
+    "count": 10,
+    "sample": {
+      "slot": 198,
+      "durMs": 600,
+      "stack": 1
+    }
+  },
+  "2204120": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13492,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204130": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 307,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204131": {
+    "firstSeen": 1767665609253,
+    "count": 6,
+    "sample": {
+      "slot": 12,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "2204140": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 311,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204150": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 310,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204160": {
+    "firstSeen": 1767675288081,
+    "count": 6,
+    "sample": {
+      "slot": 320,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204180": {
+    "firstSeen": 1767674973520,
+    "count": 10,
+    "sample": {
+      "slot": 301,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204190": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 319,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204200": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 315,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204210": {
+    "firstSeen": 1767666678526,
+    "count": 15,
+    "sample": {
+      "slot": 13500,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204220": {
+    "firstSeen": 1767666678526,
+    "count": 14,
+    "sample": {
+      "slot": 13510,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204221": {
+    "firstSeen": 1767665598925,
+    "count": 4,
+    "sample": {
+      "slot": 104,
+      "durMs": 6000,
+      "stack": 1
+    }
+  },
+  "2204230": {
+    "firstSeen": 1767676030223,
+    "count": 3,
+    "sample": {
+      "slot": 293,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204250": {
+    "firstSeen": 1767675288085,
+    "count": 1,
+    "sample": {
+      "slot": 367,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204270": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13481,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204280": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13486,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204290": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13501,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204300": {
+    "firstSeen": 1767674973520,
+    "count": 10,
+    "sample": {
+      "slot": 298,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204310": {
+    "firstSeen": 1767666678526,
+    "count": 16,
+    "sample": {
+      "slot": 13502,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204320": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13513,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204330": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13484,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204340": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13482,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204350": {
+    "firstSeen": 1767666678526,
+    "count": 16,
+    "sample": {
+      "slot": 13490,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204360": {
+    "firstSeen": 1767666678525,
+    "count": 16,
+    "sample": {
+      "slot": 13489,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204370": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 305,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204380": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 312,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204390": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 314,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204400": {
+    "firstSeen": 1767674973520,
+    "count": 10,
+    "sample": {
+      "slot": 302,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204410": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 304,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204420": {
+    "firstSeen": 1767674973520,
+    "count": 10,
+    "sample": {
+      "slot": 303,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204430": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 316,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204440": {
+    "firstSeen": 1767674973521,
+    "count": 8,
+    "sample": {
+      "slot": 317,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204450": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 313,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204470": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 320,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204471": {
+    "firstSeen": 1765988271700,
+    "count": 30,
+    "sample": {
+      "slot": 104,
+      "durMs": 1500,
+      "stack": 1
+    }
+  },
+  "2204501": {
+    "firstSeen": 1767676526112,
+    "count": 1,
+    "sample": {
+      "slot": 101,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "2204510": {
+    "firstSeen": 1767676669957,
+    "count": 4,
+    "sample": {
+      "slot": 492,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204520": {
+    "firstSeen": 1767674973521,
+    "count": 10,
+    "sample": {
+      "slot": 308,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204530": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13496,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204540": {
+    "firstSeen": 1767675288085,
+    "count": 1,
+    "sample": {
+      "slot": 366,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204550": {
+    "firstSeen": 1767666678526,
+    "count": 4,
+    "sample": {
+      "slot": 13508,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204551": {
+    "firstSeen": 1767665615584,
+    "count": 32,
+    "sample": {
+      "slot": 381,
+      "durMs": 30000,
+      "stack": 1
+    }
+  },
+  "2204552": {
+    "firstSeen": 1767665630881,
+    "count": 10,
+    "sample": {
+      "slot": 1013,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2204560": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13512,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204580": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13505,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204590": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13506,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204600": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13499,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204601": {
+    "firstSeen": 1767665611929,
+    "count": 212,
+    "sample": {
+      "slot": 170,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2204620": {
+    "firstSeen": 1767675288085,
+    "count": 2,
+    "sample": {
+      "slot": 369,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204630": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13504,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204640": {
+    "firstSeen": 1767666678526,
+    "count": 5,
+    "sample": {
+      "slot": 13515,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204650": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13509,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204660": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13503,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2204661": {
+    "firstSeen": 1767665613256,
+    "count": 117,
+    "sample": {
+      "slot": 239,
+      "durMs": 3000,
+      "stack": 1
+    }
+  },
+  "2204680": {
+    "firstSeen": 1767666678526,
+    "count": 6,
+    "sample": {
+      "slot": 13514,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205010": {
+    "firstSeen": 1766661859476,
+    "count": 33,
+    "sample": {
+      "slot": 158,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205030": {
+    "firstSeen": 1766661859477,
+    "count": 33,
+    "sample": {
+      "slot": 161,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205040": {
+    "firstSeen": 1766661859476,
+    "count": 33,
+    "sample": {
+      "slot": 157,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205050": {
+    "firstSeen": 1766661859477,
+    "count": 33,
+    "sample": {
+      "slot": 163,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205060": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2071,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205070": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2067,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205080": {
+    "firstSeen": 1767184830227,
+    "count": 23,
+    "sample": {
+      "slot": 2057,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205090": {
+    "firstSeen": 1767184830227,
+    "count": 23,
+    "sample": {
+      "slot": 2061,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205100": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2069,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205120": {
+    "firstSeen": 1767184830227,
+    "count": 23,
+    "sample": {
+      "slot": 2063,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205121": {
+    "firstSeen": 1766140207724,
+    "count": 17,
+    "sample": {
+      "slot": 1157,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2205130": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2075,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205131": {
+    "firstSeen": 1765927610333,
+    "count": 545,
+    "sample": {
+      "slot": 242,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "2205132": {
+    "firstSeen": 1766818955427,
+    "count": 1120,
+    "sample": {
+      "slot": 401,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "2205133": {
+    "firstSeen": 1765927590856,
+    "count": 202,
+    "sample": {
+      "slot": 225,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2205134": {
+    "firstSeen": 1765927699644,
+    "count": 188,
+    "sample": {
+      "slot": 301,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2205140": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8285,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205150": {
+    "firstSeen": 1767306856599,
+    "count": 6,
+    "sample": {
+      "slot": 8276,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205160": {
+    "firstSeen": 1767306856599,
+    "count": 10,
+    "sample": {
+      "slot": 8272,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205170": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8281,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205180": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8284,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205190": {
+    "firstSeen": 1767306856599,
+    "count": 10,
+    "sample": {
+      "slot": 8275,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205200": {
+    "firstSeen": 1767306856599,
+    "count": 10,
+    "sample": {
+      "slot": 8274,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205210": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8277,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205220": {
+    "firstSeen": 1767184830228,
+    "count": 19,
+    "sample": {
+      "slot": 2076,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205221": {
+    "firstSeen": 1765927513368,
+    "count": 70,
+    "sample": {
+      "slot": 222,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2205230": {
+    "firstSeen": 1767306856600,
+    "count": 13,
+    "sample": {
+      "slot": 8288,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205260": {
+    "firstSeen": 1766661859477,
+    "count": 33,
+    "sample": {
+      "slot": 166,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205261": {
+    "firstSeen": 1765927531218,
+    "count": 112,
+    "sample": {
+      "slot": 224,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "2205270": {
+    "firstSeen": 1766661859477,
+    "count": 33,
+    "sample": {
+      "slot": 165,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205271": {
+    "firstSeen": 1765927608731,
+    "count": 67,
+    "sample": {
+      "slot": 232,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2205280": {
+    "firstSeen": 1766661859476,
+    "count": 33,
+    "sample": {
+      "slot": 160,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205290": {
+    "firstSeen": 1767306856599,
+    "count": 11,
+    "sample": {
+      "slot": 8269,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205300": {
+    "firstSeen": 1766661864241,
+    "count": 24,
+    "sample": {
+      "slot": 167,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205301": {
+    "firstSeen": 1766136031702,
+    "count": 327,
+    "sample": {
+      "slot": 160,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2205310": {
+    "firstSeen": 1767184830227,
+    "count": 23,
+    "sample": {
+      "slot": 2060,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205311": {
+    "firstSeen": 1765928018669,
+    "count": 63,
+    "sample": {
+      "slot": 744,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2205312": {
+    "firstSeen": 1765928018669,
+    "count": 63,
+    "sample": {
+      "slot": 746,
+      "durMs": 16000,
+      "stack": 1
+    }
+  },
+  "2205320": {
+    "firstSeen": 1767677031251,
+    "count": 1,
+    "sample": {
+      "slot": 525,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205340": {
+    "firstSeen": 1766661859476,
+    "count": 33,
+    "sample": {
+      "slot": 159,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205350": {
+    "firstSeen": 1766661859477,
+    "count": 33,
+    "sample": {
+      "slot": 162,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205360": {
+    "firstSeen": 1766661859477,
+    "count": 33,
+    "sample": {
+      "slot": 164,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205370": {
+    "firstSeen": 1767675168443,
+    "count": 2,
+    "sample": {
+      "slot": 112,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205380": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2073,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205390": {
+    "firstSeen": 1767184830227,
+    "count": 23,
+    "sample": {
+      "slot": 2062,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205391": {
+    "firstSeen": 1765927613320,
+    "count": 77,
+    "sample": {
+      "slot": 251,
+      "durMs": 12000,
+      "stack": 1
+    }
+  },
+  "2205392": {
+    "firstSeen": 1765927613320,
+    "count": 77,
+    "sample": {
+      "slot": 252,
+      "durMs": 30000,
+      "stack": 1
+    }
+  },
+  "2205400": {
+    "firstSeen": 1767184830227,
+    "count": 23,
+    "sample": {
+      "slot": 2059,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205401": {
+    "firstSeen": 1765927612263,
+    "count": 228,
+    "sample": {
+      "slot": 247,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2205420": {
+    "firstSeen": 1767184830227,
+    "count": 23,
+    "sample": {
+      "slot": 2064,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205421": {
+    "firstSeen": 1766139469681,
+    "count": 131,
+    "sample": {
+      "slot": 935,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2205440": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2068,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205450": {
+    "firstSeen": 1767676940030,
+    "count": 1,
+    "sample": {
+      "slot": 487,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205451": {
+    "firstSeen": 1766140206907,
+    "count": 1,
+    "sample": {
+      "slot": 1141,
+      "durMs": 1500,
+      "stack": 1
+    }
+  },
+  "2205460": {
+    "firstSeen": 1767184830227,
+    "count": 21,
+    "sample": {
+      "slot": 2065,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205470": {
+    "firstSeen": 1767275749266,
+    "count": 16,
+    "sample": {
+      "slot": 80,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205480": {
+    "firstSeen": 1767184830228,
+    "count": 7,
+    "sample": {
+      "slot": 2077,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205481": {
+    "firstSeen": 1766140206663,
+    "count": 5,
+    "sample": {
+      "slot": 1133,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2205490": {
+    "firstSeen": 1767184830227,
+    "count": 23,
+    "sample": {
+      "slot": 2058,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205491": {
+    "firstSeen": 1765928018669,
+    "count": 63,
+    "sample": {
+      "slot": 745,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2205500": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2074,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205501": {
+    "firstSeen": 1765927675759,
+    "count": 200,
+    "sample": {
+      "slot": 272,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2205510": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2070,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205520": {
+    "firstSeen": 1767184830228,
+    "count": 23,
+    "sample": {
+      "slot": 2072,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205521": {
+    "firstSeen": 1766821749424,
+    "count": 154,
+    "sample": {
+      "slot": 307,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2205530": {
+    "firstSeen": 1767675184518,
+    "count": 4,
+    "sample": {
+      "slot": 350,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205540": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8283,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205560": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8279,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205570": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8278,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205590": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8289,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205600": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8282,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205610": {
+    "firstSeen": 1767306856600,
+    "count": 6,
+    "sample": {
+      "slot": 8290,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205620": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8280,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205640": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8287,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205650": {
+    "firstSeen": 1767306856600,
+    "count": 10,
+    "sample": {
+      "slot": 8286,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205660": {
+    "firstSeen": 1767675184518,
+    "count": 3,
+    "sample": {
+      "slot": 347,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205670": {
+    "firstSeen": 1767306856600,
+    "count": 5,
+    "sample": {
+      "slot": 8291,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2205680": {
+    "firstSeen": 1767306856599,
+    "count": 10,
+    "sample": {
+      "slot": 8273,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206010": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 116,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206020": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 115,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206030": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 124,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206040": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 121,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206050": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 120,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206060": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 119,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206080": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 122,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206090": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 179,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206100": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 184,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206110": {
+    "firstSeen": 1767676751278,
+    "count": 8,
+    "sample": {
+      "slot": 198,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206120": {
+    "firstSeen": 1767676939949,
+    "count": 4,
+    "sample": {
+      "slot": 114,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206130": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 182,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206140": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 193,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206150": {
+    "firstSeen": 1767676751277,
+    "count": 6,
+    "sample": {
+      "slot": 197,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206160": {
+    "firstSeen": 1767676751278,
+    "count": 8,
+    "sample": {
+      "slot": 199,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206170": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 194,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206180": {
+    "firstSeen": 1767279399395,
+    "count": 11,
+    "sample": {
+      "slot": 135,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206190": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 126,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206200": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 139,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206210": {
+    "firstSeen": 1767676307421,
+    "count": 1,
+    "sample": {
+      "slot": 275,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206220": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 131,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206230": {
+    "firstSeen": 1767279399396,
+    "count": 2,
+    "sample": {
+      "slot": 148,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206240": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 133,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206250": {
+    "firstSeen": 1767676307421,
+    "count": 1,
+    "sample": {
+      "slot": 276,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206270": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 142,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206300": {
+    "firstSeen": 1767677583316,
+    "count": 2,
+    "sample": {
+      "slot": 1321,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206310": {
+    "firstSeen": 1767676317232,
+    "count": 3,
+    "sample": {
+      "slot": 280,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206320": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 117,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206330": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 125,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206340": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 123,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206350": {
+    "firstSeen": 1767279399394,
+    "count": 11,
+    "sample": {
+      "slot": 118,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206360": {
+    "firstSeen": 1767677522701,
+    "count": 2,
+    "sample": {
+      "slot": 613,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206380": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 190,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206390": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 185,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206400": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 191,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206410": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 195,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206420": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 187,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206450": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 192,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206460": {
+    "firstSeen": 1767676939949,
+    "count": 2,
+    "sample": {
+      "slot": 129,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206470": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 183,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206480": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 196,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206500": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 140,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206520": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 134,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206530": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 141,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206540": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 129,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206550": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 137,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206560": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 130,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206570": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 143,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206580": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 138,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206590": {
+    "firstSeen": 1767279399396,
+    "count": 3,
+    "sample": {
+      "slot": 146,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206600": {
+    "firstSeen": 1767279399396,
+    "count": 3,
+    "sample": {
+      "slot": 147,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206620": {
+    "firstSeen": 1767279399396,
+    "count": 3,
+    "sample": {
+      "slot": 145,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206630": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 136,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206650": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 144,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206660": {
+    "firstSeen": 1767279399395,
+    "count": 3,
+    "sample": {
+      "slot": 132,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2206670": {
+    "firstSeen": 1767676751277,
+    "count": 8,
+    "sample": {
+      "slot": 189,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207010": {
+    "firstSeen": 1765988769960,
+    "count": 17,
+    "sample": {
+      "slot": 143,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207011": {
+    "firstSeen": 1767273952154,
+    "count": 83,
+    "sample": {
+      "slot": 1055,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2207012": {
+    "firstSeen": 1767273949303,
+    "count": 7,
+    "sample": {
+      "slot": 936,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "2207020": {
+    "firstSeen": 1765988769960,
+    "count": 17,
+    "sample": {
+      "slot": 147,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207030": {
+    "firstSeen": 1765988769961,
+    "count": 17,
+    "sample": {
+      "slot": 149,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207050": {
+    "firstSeen": 1765988769960,
+    "count": 17,
+    "sample": {
+      "slot": 144,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207060": {
+    "firstSeen": 1765988769961,
+    "count": 17,
+    "sample": {
+      "slot": 152,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207070": {
+    "firstSeen": 1765988769960,
+    "count": 17,
+    "sample": {
+      "slot": 146,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207071": {
+    "firstSeen": 1767273958495,
+    "count": 4,
+    "sample": {
+      "slot": 1575,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2207080": {
+    "firstSeen": 1765988769961,
+    "count": 17,
+    "sample": {
+      "slot": 153,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207090": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 62,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207100": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 70,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207110": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 69,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207120": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 66,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207121": {
+    "firstSeen": 1767273993263,
+    "count": 65,
+    "sample": {
+      "slot": 86,
+      "durMs": 2000,
+      "stack": 1
+    }
+  },
+  "2207122": {
+    "firstSeen": 1767273950101,
+    "count": 656,
+    "sample": {
+      "slot": 972,
+      "durMs": 2000,
+      "stack": 1
+    }
+  },
+  "2207130": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 67,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207131": {
+    "firstSeen": 1767273948647,
+    "count": 173,
+    "sample": {
+      "slot": 899,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2207132": {
+    "firstSeen": 1767273948647,
+    "count": 170,
+    "sample": {
+      "slot": 905,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2207140": {
+    "firstSeen": 1767674943799,
+    "count": 5,
+    "sample": {
+      "slot": 132,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207141": {
+    "firstSeen": 1767273948970,
+    "count": 8871,
+    "sample": {
+      "slot": 917,
+      "durMs": 10100,
+      "stack": 30
+    }
+  },
+  "2207150": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 75,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207151": {
+    "firstSeen": 1767273949858,
+    "count": 68,
+    "sample": {
+      "slot": 958,
+      "durMs": 99000,
+      "stack": 1
+    }
+  },
+  "2207160": {
+    "firstSeen": 1767273993263,
+    "count": 9,
+    "sample": {
+      "slot": 82,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207161": {
+    "firstSeen": 1767273948483,
+    "count": 3,
+    "sample": {
+      "slot": 895,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2207170": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 68,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207171": {
+    "firstSeen": 1767273953052,
+    "count": 369,
+    "sample": {
+      "slot": 1100,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2207180": {
+    "firstSeen": 1765988769961,
+    "count": 5,
+    "sample": {
+      "slot": 156,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207190": {
+    "firstSeen": 1765988769962,
+    "count": 5,
+    "sample": {
+      "slot": 160,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207200": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 171,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207210": {
+    "firstSeen": 1765988769963,
+    "count": 4,
+    "sample": {
+      "slot": 172,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207220": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 166,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207230": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 177,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207240": {
+    "firstSeen": 1765988769962,
+    "count": 5,
+    "sample": {
+      "slot": 162,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207250": {
+    "firstSeen": 1765988769962,
+    "count": 5,
+    "sample": {
+      "slot": 159,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207252": {
+    "firstSeen": 1767089352140,
+    "count": 35,
+    "sample": {
+      "slot": 3270,
+      "durMs": 1500,
+      "stack": 1
+    }
+  },
+  "2207260": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 173,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207270": {
+    "firstSeen": 1767273993262,
+    "count": 10,
+    "sample": {
+      "slot": 73,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207320": {
+    "firstSeen": 1765988769963,
+    "count": 16,
+    "sample": {
+      "slot": 176,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207330": {
+    "firstSeen": 1765988769961,
+    "count": 17,
+    "sample": {
+      "slot": 155,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207331": {
+    "firstSeen": 1765988769972,
+    "count": 17,
+    "sample": {
+      "slot": 242,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2207340": {
+    "firstSeen": 1765988769961,
+    "count": 17,
+    "sample": {
+      "slot": 154,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207350": {
+    "firstSeen": 1765988769960,
+    "count": 17,
+    "sample": {
+      "slot": 145,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207360": {
+    "firstSeen": 1765988769961,
+    "count": 17,
+    "sample": {
+      "slot": 150,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207370": {
+    "firstSeen": 1767273993263,
+    "count": 11,
+    "sample": {
+      "slot": 83,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207371": {
+    "firstSeen": 1767273949858,
+    "count": 68,
+    "sample": {
+      "slot": 957,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2207380": {
+    "firstSeen": 1767674943799,
+    "count": 2,
+    "sample": {
+      "slot": 135,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207390": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 74,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207400": {
+    "firstSeen": 1767676626184,
+    "count": 3,
+    "sample": {
+      "slot": 125,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207420": {
+    "firstSeen": 1767676626185,
+    "count": 3,
+    "sample": {
+      "slot": 129,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207430": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 79,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207431": {
+    "firstSeen": 1767273948483,
+    "count": 3,
+    "sample": {
+      "slot": 896,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2207440": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 77,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207450": {
+    "firstSeen": 1767676626184,
+    "count": 3,
+    "sample": {
+      "slot": 127,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207460": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 71,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207461": {
+    "firstSeen": 1767273953895,
+    "count": 73,
+    "sample": {
+      "slot": 1212,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "2207462": {
+    "firstSeen": 1767273953895,
+    "count": 73,
+    "sample": {
+      "slot": 1213,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "2207470": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 81,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207480": {
+    "firstSeen": 1767273993262,
+    "count": 11,
+    "sample": {
+      "slot": 78,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207490": {
+    "firstSeen": 1767677338244,
+    "count": 1,
+    "sample": {
+      "slot": 242,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207500": {
+    "firstSeen": 1767273993263,
+    "count": 8,
+    "sample": {
+      "slot": 84,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207510": {
+    "firstSeen": 1767273993263,
+    "count": 6,
+    "sample": {
+      "slot": 85,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207520": {
+    "firstSeen": 1767273993262,
+    "count": 8,
+    "sample": {
+      "slot": 76,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207521": {
+    "firstSeen": 1767273949303,
+    "count": 7,
+    "sample": {
+      "slot": 943,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2207530": {
+    "firstSeen": 1765988769962,
+    "count": 5,
+    "sample": {
+      "slot": 161,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207560": {
+    "firstSeen": 1765988769962,
+    "count": 4,
+    "sample": {
+      "slot": 163,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207570": {
+    "firstSeen": 1765988769962,
+    "count": 5,
+    "sample": {
+      "slot": 164,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207580": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 168,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207590": {
+    "firstSeen": 1767677080538,
+    "count": 2,
+    "sample": {
+      "slot": 269,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207600": {
+    "firstSeen": 1765988769962,
+    "count": 5,
+    "sample": {
+      "slot": 165,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207610": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 169,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207620": {
+    "firstSeen": 1765988769963,
+    "count": 4,
+    "sample": {
+      "slot": 167,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207630": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 178,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207631": {
+    "firstSeen": 1767396369547,
+    "count": 1,
+    "sample": {
+      "slot": 343,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
+  "2207640": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 174,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207650": {
+    "firstSeen": 1765988769963,
+    "count": 5,
+    "sample": {
+      "slot": 170,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2207660": {
+    "firstSeen": 1767677338253,
+    "count": 1,
+    "sample": {
+      "slot": 300,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300020": {
+    "firstSeen": 1765988769971,
+    "count": 69,
+    "sample": {
+      "slot": 238,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300080": {
+    "firstSeen": 1767676784448,
+    "count": 2,
+    "sample": {
+      "slot": 177,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300120": {
+    "firstSeen": 1767674943809,
+    "count": 35,
+    "sample": {
+      "slot": 227,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300220": {
+    "firstSeen": 1767382313641,
+    "count": 57,
+    "sample": {
+      "slot": 20,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300310": {
+    "firstSeen": 1767674943810,
+    "count": 20,
+    "sample": {
+      "slot": 231,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300410": {
+    "firstSeen": 1767675050192,
+    "count": 9,
+    "sample": {
+      "slot": 227,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300420": {
+    "firstSeen": 1767675050192,
+    "count": 17,
+    "sample": {
+      "slot": 228,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300620": {
+    "firstSeen": 1767382313641,
+    "count": 29,
+    "sample": {
+      "slot": 21,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2300621": {
+    "firstSeen": 1767663147076,
+    "count": 22,
+    "sample": {
+      "slot": 6,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "2302020": {
+    "firstSeen": 1767185602167,
+    "count": 10,
+    "sample": {
+      "slot": 2688,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2302021": {
+    "firstSeen": 1767185662221,
+    "count": 11,
+    "sample": {
+      "slot": 2729,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2302022": {
+    "firstSeen": 1767185683601,
+    "count": 5,
+    "sample": {
+      "slot": 2739,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2302120": {
+    "firstSeen": 1767666038994,
+    "count": 25,
+    "sample": {
+      "slot": 9604,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2302121": {
+    "firstSeen": 1767388858356,
+    "count": 4865,
+    "sample": {
+      "slot": 84,
+      "durMs": 1100,
+      "stack": 1
+    }
+  },
+  "2302420": {
+    "firstSeen": 1767184850307,
+    "count": 39,
+    "sample": {
+      "slot": 2110,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2302421": {
+    "firstSeen": 1767184850307,
+    "count": 2316,
+    "sample": {
+      "slot": 2111,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2401130": {
+    "firstSeen": 1767306222504,
+    "count": 66,
+    "sample": {
+      "slot": 485458,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2401140": {
+    "firstSeen": 1767306222504,
+    "count": 54,
+    "sample": {
+      "slot": 485457,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2401260": {
+    "firstSeen": 1767306222499,
+    "count": 87,
+    "sample": {
+      "slot": 485448,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2401261": {
+    "firstSeen": 1767086753617,
+    "count": 72,
+    "sample": {
+      "slot": 2917,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2401270": {
+    "firstSeen": 1767306222499,
+    "count": 68,
+    "sample": {
+      "slot": 485447,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2401271": {
+    "firstSeen": 1767089176726,
+    "count": 45,
+    "sample": {
+      "slot": 3180,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2402140": {
+    "firstSeen": 1767666678525,
+    "count": 128,
+    "sample": {
+      "slot": 13478,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2402150": {
+    "firstSeen": 1767666678525,
+    "count": 84,
+    "sample": {
+      "slot": 13477,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2402240": {
+    "firstSeen": 1767675288087,
+    "count": 4,
+    "sample": {
+      "slot": 398,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2402250": {
+    "firstSeen": 1767675689492,
+    "count": 1,
+    "sample": {
+      "slot": 100,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2402260": {
+    "firstSeen": 1767666678523,
+    "count": 76,
+    "sample": {
+      "slot": 13470,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2402270": {
+    "firstSeen": 1767666678523,
+    "count": 44,
+    "sample": {
+      "slot": 13469,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2403140": {
+    "firstSeen": 1766661853779,
+    "count": 187,
+    "sample": {
+      "slot": 152,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2403150": {
+    "firstSeen": 1766661853779,
+    "count": 128,
+    "sample": {
+      "slot": 151,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2403240": {
+    "firstSeen": 1766661853779,
+    "count": 77,
+    "sample": {
+      "slot": 150,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2403250": {
+    "firstSeen": 1767675168441,
+    "count": 4,
+    "sample": {
+      "slot": 89,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2403260": {
+    "firstSeen": 1767675184519,
+    "count": 1,
+    "sample": {
+      "slot": 359,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2403270": {
+    "firstSeen": 1767306856599,
+    "count": 68,
+    "sample": {
+      "slot": 8270,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2403280": {
+    "firstSeen": 1767306856599,
+    "count": 128,
+    "sample": {
+      "slot": 8271,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2404150": {
+    "firstSeen": 1767389029687,
+    "count": 196,
+    "sample": {
+      "slot": 131,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2404160": {
+    "firstSeen": 1767389029687,
+    "count": 147,
+    "sample": {
+      "slot": 130,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2404230": {
+    "firstSeen": 1767666045146,
+    "count": 26,
+    "sample": {
+      "slot": 9622,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2404260": {
+    "firstSeen": 1767666038984,
+    "count": 279,
+    "sample": {
+      "slot": 9492,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2404261": {
+    "firstSeen": 1766478907085,
+    "count": 26,
+    "sample": {
+      "slot": 274,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2404270": {
+    "firstSeen": 1767666038984,
+    "count": 151,
+    "sample": {
+      "slot": 9491,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2404271": {
+    "firstSeen": 1766479048350,
+    "count": 12,
+    "sample": {
+      "slot": 305,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2405150": {
+    "firstSeen": 1767675093651,
+    "count": 109,
+    "sample": {
+      "slot": 242,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2405160": {
+    "firstSeen": 1767675093651,
+    "count": 57,
+    "sample": {
+      "slot": 241,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2405240": {
+    "firstSeen": 1767675093665,
+    "count": 13,
+    "sample": {
+      "slot": 361,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2405250": {
+    "firstSeen": 1767676022936,
+    "count": 25,
+    "sample": {
+      "slot": 182,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2405260": {
+    "firstSeen": 1767676022936,
+    "count": 44,
+    "sample": {
+      "slot": 181,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2406150": {
+    "firstSeen": 1767675040908,
+    "count": 7,
+    "sample": {
+      "slot": 166,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2406160": {
+    "firstSeen": 1767675040908,
+    "count": 4,
+    "sample": {
+      "slot": 167,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2406270": {
+    "firstSeen": 1767675167659,
+    "count": 37,
+    "sample": {
+      "slot": 351,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2406280": {
+    "firstSeen": 1767675167667,
+    "count": 17,
+    "sample": {
+      "slot": 436,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2407140": {
+    "firstSeen": 1767279399394,
+    "count": 88,
+    "sample": {
+      "slot": 113,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2407150": {
+    "firstSeen": 1767279399394,
+    "count": 55,
+    "sample": {
+      "slot": 114,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2407280": {
+    "firstSeen": 1767279399392,
+    "count": 18,
+    "sample": {
+      "slot": 106,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2407290": {
+    "firstSeen": 1767279399392,
+    "count": 9,
+    "sample": {
+      "slot": 107,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2408130": {
+    "firstSeen": 1765988769960,
+    "count": 83,
+    "sample": {
+      "slot": 142,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2408140": {
+    "firstSeen": 1765988769960,
+    "count": 68,
+    "sample": {
+      "slot": 141,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2408230": {
+    "firstSeen": 1767273993259,
+    "count": 23,
+    "sample": {
+      "slot": 11,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2408260": {
+    "firstSeen": 1765988769958,
+    "count": 63,
+    "sample": {
+      "slot": 135,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2408270": {
+    "firstSeen": 1765988769957,
+    "count": 32,
+    "sample": {
+      "slot": 134,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002010": {
+    "firstSeen": 1767273993260,
+    "count": 35,
+    "sample": {
+      "slot": 23,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002011": {
+    "firstSeen": 1766866532833,
+    "count": 301,
+    "sample": {
+      "slot": 388,
+      "durMs": 15000,
+      "stack": 1
+    }
+  },
+  "3002020": {
+    "firstSeen": 1767273993260,
+    "count": 33,
+    "sample": {
+      "slot": 22,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002030": {
+    "firstSeen": 1767661759070,
+    "count": 2,
+    "sample": {
+      "slot": 22,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002040": {
+    "firstSeen": 1767273993260,
+    "count": 6,
+    "sample": {
+      "slot": 25,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002050": {
+    "firstSeen": 1767382272883,
+    "count": 29,
+    "sample": {
+      "slot": 16216,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002070": {
+    "firstSeen": 1767273993260,
+    "count": 35,
+    "sample": {
+      "slot": 24,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002080": {
+    "firstSeen": 1767273993260,
+    "count": 7,
+    "sample": {
+      "slot": 27,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002090": {
+    "firstSeen": 1766137637897,
+    "count": 47,
+    "sample": {
+      "slot": 635,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002100": {
+    "firstSeen": 1767273993260,
+    "count": 35,
+    "sample": {
+      "slot": 26,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002102": {
+    "firstSeen": 1766866530116,
+    "count": 1710,
+    "sample": {
+      "slot": 353,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "3002410": {
+    "firstSeen": 1766137637898,
+    "count": 17,
+    "sample": {
+      "slot": 640,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002411": {
+    "firstSeen": 1765927590856,
+    "count": 221,
+    "sample": {
+      "slot": 226,
+      "durMs": 30000,
+      "stack": 1
+    }
+  },
+  "3002412": {
+    "firstSeen": 1765927590856,
+    "count": 221,
+    "sample": {
+      "slot": 227,
+      "durMs": 7000,
+      "stack": 1
+    }
+  },
+  "3002413": {
+    "firstSeen": 1765927590856,
+    "count": 221,
+    "sample": {
+      "slot": 228,
+      "durMs": 61000,
+      "stack": 1
+    }
+  },
+  "3002414": {
+    "firstSeen": 1766477047508,
+    "count": 7,
+    "sample": {
+      "slot": 133,
+      "durMs": 2000,
+      "stack": 1
+    }
+  },
+  "3002430": {
+    "firstSeen": 1766137637898,
+    "count": 17,
+    "sample": {
+      "slot": 637,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002450": {
+    "firstSeen": 1766137637898,
+    "count": 17,
+    "sample": {
+      "slot": 638,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002460": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 586,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002470": {
+    "firstSeen": 1766137637898,
+    "count": 17,
+    "sample": {
+      "slot": 636,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002480": {
+    "firstSeen": 1766137637898,
+    "count": 17,
+    "sample": {
+      "slot": 639,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002610": {
+    "firstSeen": 1765929200085,
+    "count": 3,
+    "sample": {
+      "slot": 847,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002611": {
+    "firstSeen": 1765929206344,
+    "count": 32,
+    "sample": {
+      "slot": 860,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "3002620": {
+    "firstSeen": 1765929200085,
+    "count": 2,
+    "sample": {
+      "slot": 846,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002630": {
+    "firstSeen": 1765929271308,
+    "count": 1,
+    "sample": {
+      "slot": 885,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002640": {
+    "firstSeen": 1766662011648,
+    "count": 1,
+    "sample": {
+      "slot": 217,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002650": {
+    "firstSeen": 1765929200085,
+    "count": 1,
+    "sample": {
+      "slot": 851,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002660": {
+    "firstSeen": 1765929200085,
+    "count": 2,
+    "sample": {
+      "slot": 850,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002670": {
+    "firstSeen": 1765929200085,
+    "count": 2,
+    "sample": {
+      "slot": 849,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002671": {
+    "firstSeen": 1766135761290,
+    "count": 100,
+    "sample": {
+      "slot": 107,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3002680": {
+    "firstSeen": 1765929200085,
+    "count": 2,
+    "sample": {
+      "slot": 848,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002681": {
+    "firstSeen": 1766135761290,
+    "count": 100,
+    "sample": {
+      "slot": 108,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3002810": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 585,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002830": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 584,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002850": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 582,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3002870": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 587,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003010": {
+    "firstSeen": 1767676034075,
+    "count": 3,
+    "sample": {
+      "slot": 118,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003013": {
+    "firstSeen": 1767093905736,
+    "count": 4,
+    "sample": {
+      "slot": 1540,
+      "durMs": 1100,
+      "stack": 1
+    }
+  },
+  "3003030": {
+    "firstSeen": 1767676187801,
+    "count": 3,
+    "sample": {
+      "slot": 130,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003031": {
+    "firstSeen": 1767676187801,
+    "count": 3,
+    "sample": {
+      "slot": 131,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3003040": {
+    "firstSeen": 1767676034075,
+    "count": 3,
+    "sample": {
+      "slot": 119,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003050": {
+    "firstSeen": 1767676524757,
+    "count": 2,
+    "sample": {
+      "slot": 932,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003052": {
+    "firstSeen": 1767094188890,
+    "count": 12,
+    "sample": {
+      "slot": 1589,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "3003060": {
+    "firstSeen": 1767676161782,
+    "count": 1,
+    "sample": {
+      "slot": 128,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003070": {
+    "firstSeen": 1767676034075,
+    "count": 3,
+    "sample": {
+      "slot": 120,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003071": {
+    "firstSeen": 1767088698785,
+    "count": 135,
+    "sample": {
+      "slot": 3014,
+      "durMs": 1100,
+      "stack": 1
+    }
+  },
+  "3003080": {
+    "firstSeen": 1767676189818,
+    "count": 3,
+    "sample": {
+      "slot": 132,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003410": {
+    "firstSeen": 1767666695330,
+    "count": 1,
+    "sample": {
+      "slot": 13733,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003411": {
+    "firstSeen": 1767665347869,
+    "count": 2,
+    "sample": {
+      "slot": 282,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "3003420": {
+    "firstSeen": 1767666695330,
+    "count": 1,
+    "sample": {
+      "slot": 13736,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003450": {
+    "firstSeen": 1767666695330,
+    "count": 1,
+    "sample": {
+      "slot": 13734,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003470": {
+    "firstSeen": 1767666695330,
+    "count": 1,
+    "sample": {
+      "slot": 13735,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003480": {
+    "firstSeen": 1767666695330,
+    "count": 1,
+    "sample": {
+      "slot": 13732,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003660": {
+    "firstSeen": 1767273993260,
+    "count": 35,
+    "sample": {
+      "slot": 32,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003680": {
+    "firstSeen": 1766137637898,
+    "count": 17,
+    "sample": {
+      "slot": 645,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003690": {
+    "firstSeen": 1765929200086,
+    "count": 2,
+    "sample": {
+      "slot": 854,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003700": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 592,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003710": {
+    "firstSeen": 1767676034075,
+    "count": 3,
+    "sample": {
+      "slot": 124,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3003730": {
+    "firstSeen": 1767666695330,
+    "count": 1,
+    "sample": {
+      "slot": 13743,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3050040": {
+    "firstSeen": 1767677503382,
+    "count": 1,
+    "sample": {
+      "slot": 334,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3050060": {
+    "firstSeen": 1767306222500,
+    "count": 5,
+    "sample": {
+      "slot": 485451,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3050070": {
+    "firstSeen": 1767382462183,
+    "count": 17,
+    "sample": {
+      "slot": 129,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3050100": {
+    "firstSeen": 1767306222500,
+    "count": 22,
+    "sample": {
+      "slot": 485452,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3050110": {
+    "firstSeen": 1767677503382,
+    "count": 1,
+    "sample": {
+      "slot": 338,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3050111": {
+    "firstSeen": 1767677503382,
+    "count": 1,
+    "sample": {
+      "slot": 339,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3051030": {
+    "firstSeen": 1766137637898,
+    "count": 18,
+    "sample": {
+      "slot": 644,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3051060": {
+    "firstSeen": 1766137637898,
+    "count": 20,
+    "sample": {
+      "slot": 641,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3051090": {
+    "firstSeen": 1767675184510,
+    "count": 2,
+    "sample": {
+      "slot": 270,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3052010": {
+    "firstSeen": 1767674973517,
+    "count": 3,
+    "sample": {
+      "slot": 276,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3052040": {
+    "firstSeen": 1767676669954,
+    "count": 1,
+    "sample": {
+      "slot": 448,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3052071": {
+    "firstSeen": 1767665610648,
+    "count": 11,
+    "sample": {
+      "slot": 144,
+      "durMs": 30000,
+      "stack": 1
+    }
+  },
+  "3052100": {
+    "firstSeen": 1767674973517,
+    "count": 4,
+    "sample": {
+      "slot": 274,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3053010": {
+    "firstSeen": 1767675093651,
+    "count": 1,
+    "sample": {
+      "slot": 245,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3053020": {
+    "firstSeen": 1767675093651,
+    "count": 3,
+    "sample": {
+      "slot": 246,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3053030": {
+    "firstSeen": 1767675093652,
+    "count": 3,
+    "sample": {
+      "slot": 249,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3053060": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 589,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3053090": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 588,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3053110": {
+    "firstSeen": 1767675093406,
+    "count": 1,
+    "sample": {
+      "slot": 590,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3054050": {
+    "firstSeen": 1767676034075,
+    "count": 2,
+    "sample": {
+      "slot": 121,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3054060": {
+    "firstSeen": 1767676086085,
+    "count": 2,
+    "sample": {
+      "slot": 126,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3054110": {
+    "firstSeen": 1767677522698,
+    "count": 1,
+    "sample": {
+      "slot": 581,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3055050": {
+    "firstSeen": 1767675167659,
+    "count": 1,
+    "sample": {
+      "slot": 354,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3055070": {
+    "firstSeen": 1767675167659,
+    "count": 1,
+    "sample": {
+      "slot": 355,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3056010": {
+    "firstSeen": 1767676495764,
+    "count": 1,
+    "sample": {
+      "slot": 760,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3056030": {
+    "firstSeen": 1767666233728,
+    "count": 4,
+    "sample": {
+      "slot": 10047,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3056040": {
+    "firstSeen": 1767666243355,
+    "count": 2,
+    "sample": {
+      "slot": 10067,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3056050": {
+    "firstSeen": 1767666695330,
+    "count": 2,
+    "sample": {
+      "slot": 13740,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3056061": {
+    "firstSeen": 1767396378397,
+    "count": 1,
+    "sample": {
+      "slot": 437,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "3056080": {
+    "firstSeen": 1767666695330,
+    "count": 3,
+    "sample": {
+      "slot": 13738,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3056090": {
+    "firstSeen": 1767676524757,
+    "count": 1,
+    "sample": {
+      "slot": 937,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3056100": {
+    "firstSeen": 1767676524757,
+    "count": 2,
+    "sample": {
+      "slot": 938,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3056110": {
+    "firstSeen": 1767677405709,
+    "count": 1,
+    "sample": {
+      "slot": 1095,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3057040": {
+    "firstSeen": 1767273993260,
+    "count": 6,
+    "sample": {
+      "slot": 31,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3057061": {
+    "firstSeen": 1767089688887,
+    "count": 1,
+    "sample": {
+      "slot": 3673,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3057100": {
+    "firstSeen": 1767273993260,
+    "count": 6,
+    "sample": {
+      "slot": 28,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3057111": {
+    "firstSeen": 1767089696353,
+    "count": 1,
+    "sample": {
+      "slot": 3698,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "3058050": {
+    "firstSeen": 1767674930188,
+    "count": 23,
+    "sample": {
+      "slot": 3182,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3058060": {
+    "firstSeen": 1767273993260,
+    "count": 53,
+    "sample": {
+      "slot": 29,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3058070": {
+    "firstSeen": 1767666695330,
+    "count": 20,
+    "sample": {
+      "slot": 13739,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3058080": {
+    "firstSeen": 1767306222500,
+    "count": 38,
+    "sample": {
+      "slot": 485453,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3058090": {
+    "firstSeen": 1767666038984,
+    "count": 15,
+    "sample": {
+      "slot": 9496,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3058100": {
+    "firstSeen": 1765988769958,
+    "count": 21,
+    "sample": {
+      "slot": 139,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3058110": {
+    "firstSeen": 1767676445303,
+    "count": 5,
+    "sample": {
+      "slot": 95,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059050": {
+    "firstSeen": 1765988769958,
+    "count": 87,
+    "sample": {
+      "slot": 138,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059060": {
+    "firstSeen": 1765929200085,
+    "count": 13,
+    "sample": {
+      "slot": 852,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059061": {
+    "firstSeen": 1765929200086,
+    "count": 19,
+    "sample": {
+      "slot": 853,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3059062": {
+    "firstSeen": 1765929208074,
+    "count": 18,
+    "sample": {
+      "slot": 862,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "3059070": {
+    "firstSeen": 1767675367085,
+    "count": 4,
+    "sample": {
+      "slot": 100,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059080": {
+    "firstSeen": 1767675052536,
+    "count": 7,
+    "sample": {
+      "slot": 467,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059100": {
+    "firstSeen": 1767677503382,
+    "count": 1,
+    "sample": {
+      "slot": 333,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059130": {
+    "firstSeen": 1767675184510,
+    "count": 2,
+    "sample": {
+      "slot": 273,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059140": {
+    "firstSeen": 1767674973517,
+    "count": 3,
+    "sample": {
+      "slot": 280,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059160": {
+    "firstSeen": 1767675102899,
+    "count": 2,
+    "sample": {
+      "slot": 594,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059180": {
+    "firstSeen": 1767676034075,
+    "count": 2,
+    "sample": {
+      "slot": 123,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059210": {
+    "firstSeen": 1767675167659,
+    "count": 1,
+    "sample": {
+      "slot": 356,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059220": {
+    "firstSeen": 1767666695330,
+    "count": 4,
+    "sample": {
+      "slot": 13742,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3059240": {
+    "firstSeen": 1767675500799,
+    "count": 1,
+    "sample": {
+      "slot": 270,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3200004": {
+    "firstSeen": 1767675550834,
+    "count": 1,
+    "sample": {
+      "slot": 284,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3200005": {
+    "firstSeen": 1767675327914,
+    "count": 4,
+    "sample": {
+      "slot": 227,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3200009": {
+    "firstSeen": 1767273950926,
+    "count": 11,
+    "sample": {
+      "slot": 1020,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "3200024": {
+    "firstSeen": 1767273951816,
+    "count": 3,
+    "sample": {
+      "slot": 1038,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "3200025": {
+    "firstSeen": 1767273950926,
+    "count": 10,
+    "sample": {
+      "slot": 1021,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "3210020": {
+    "firstSeen": 1767273993261,
+    "count": 5,
+    "sample": {
+      "slot": 45,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3210030": {
+    "firstSeen": 1765988769971,
+    "count": 8,
+    "sample": {
+      "slot": 237,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3210040": {
+    "firstSeen": 1765928754253,
+    "count": 20,
+    "sample": {
+      "slot": 786,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3210041": {
+    "firstSeen": 1765928802327,
+    "count": 12,
+    "sample": {
+      "slot": 789,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "3210042": {
+    "firstSeen": 1765928802327,
+    "count": 9,
+    "sample": {
+      "slot": 790,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "3210050": {
+    "firstSeen": 1767273950926,
+    "count": 11,
+    "sample": {
+      "slot": 1022,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "3210080": {
+    "firstSeen": 1767273950926,
+    "count": 13,
+    "sample": {
+      "slot": 1019,
+      "durMs": 20000,
+      "stack": 1
+    }
+  },
+  "3210100": {
+    "firstSeen": 1767675367100,
+    "count": 1,
+    "sample": {
+      "slot": 216,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3210120": {
+    "firstSeen": 1767675093666,
+    "count": 3,
+    "sample": {
+      "slot": 366,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3210141": {
+    "firstSeen": 1767667100183,
+    "count": 65,
+    "sample": {
+      "slot": 98,
+      "durMs": null,
+      "stack": 1
+    }
+  }
+}

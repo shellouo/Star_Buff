@@ -1,0 +1,29 @@
+{
+  "31201":   { "name": "风姿卓绝", "icon": "/icons/31201.png",   "show": true, "hasCd": false, "order": 30 },
+  "2205261": { "name": "风雷破击", "icon": "/icons/2205261.png", "show": true, "hasCd": false, "order": 40 },
+
+  "2205391": {
+    "name": "气劲加持",
+    "icon": "/icons/2205391.png",
+    "show": true,
+    "hasCd": true,
+    "baseCd": 30,
+    "pin": true,"permanent": true,
+    "order": 50
+  },
+  "2205301": { "name": "疾驰锋刃1", "icon": "/icons/2205301.png", "show": true, "hasCd": false, "order": 60 },
+  "2205421": { "name": "疾驰锋刃2", "icon": "/icons/2205421.png", "show": true, "hasCd": false, "order": 60 },
+  "2205521": { "name": "疾驰锋刃3", "icon": "/icons/2205521.png", "show": true, "hasCd": false, "order": 60 },
+  "2205501": { "name": "爆炎螺旋", "icon": "/icons/2205501.png", "show": true, "hasCd": false, "order": 70 },
+  "31602":   { "name": "激励",     "icon": "/icons/31602.png",  "show": true, "hasCd": false, "order": 70 },
+  "2110095": { "name": "姆头主动", "icon": "/icons/2110095.png", "show": true, "hasCd": false, "order": 80 },
+  "2110103": { "name": "飞鱼主动", "icon": "/icons/2110103.png", "show": true, "hasCd": false, "order": 90 },
+  "2110129": { "name": "角羊主动", "icon": "/icons/2110129.png", "show": true, "hasCd": false, "order": 100 },
+  "3210042": { "name": "尖兵主动", "icon": "/icons/3210042.png", "show": true, "hasCd": false, "order": 110 },
+  "3002611": { "name": "迷幻梦境", "icon": "/icons/3002611.png", "show": true, "hasCd": false, "order": 120 },
+  "2204471": { "name": "冰矛灌注暴击增益", "icon": "/icons/2204471.png", "show": true, "hasCd": false, "order": 130 },
+  "2205134": { "name": "神隐螺旋1", "icon": "/icons/2205134.png", "show": true, "hasCd": false, "order": 140 },
+  "2205211": { "name": "神隐螺旋2", "icon": "/icons/2205211.png", "show": true, "hasCd": false, "order": 150 },
+  "2302421": { "name": "生命波动", "icon": "/icons/2302421.png", "show": true, "hasCd": false, "order": 160 },
+  "2302021": { "name": "灵活身法", "icon": "/icons/2302021.png", "show": true, "hasCd": false, "order": 170 }
+}

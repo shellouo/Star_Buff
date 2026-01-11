@@ -1,4 +1,5 @@
 /*eslint-disable block-scoped-var, id-length, no-control-regex, no-magic-numbers, no-prototype-builtins, no-redeclare, no-shadow, no-var, sort-vars*/
+console.log("[BOOT] sr_blueprotobuf LOADED", __filename);
 global.__SR_ON_AOI_FIELD10__ = global.__SR_ON_AOI_FIELD10__ || null;
 const fs = require("fs");
 
@@ -996,16 +997,21 @@ const fs = require("fs");
             if (!(r instanceof $Reader))
                 r = $Reader.create(r);
             var c = l === undefined ? r.len : r.pos + l, m = new $root.AoiSyncDelta();
+            let entityUid = null; // ⭐ 当前这条 delta 属于哪个实体（uid）
             while (r.pos < c) {
                 var t = r.uint32();
                 if (t === e)
                     break;
                 switch (t >>> 3) {
                 case 1: {
-                        m.Uuid = r.int64();
-                        break;
-                    }
-                case 2: {
+                    m.Uuid = r.int64();
+                    // ⭐ 记录当前 delta 的 entityUid（跟你 sr_packet.js 算法一致）
+                    try { entityUid = m.Uuid.shiftRight(16).toNumber(); }
+                    catch (e) { entityUid = null; }
+                    break;
+                }
+
+                    case 2: {
                         m.Attrs = $root.AttrCollection.decode(r, r.uint32());
                         break;
                     }
@@ -1063,19 +1069,19 @@ const fs = require("fs");
                     const len = r.uint32();
                     const start = r.pos;
                     const end = start + len;
-                    // 核心：提取纯field10数据字节（不含外层tag/length）
                     const payloadBytes = r.buf.subarray(start, end);
-                    console.log(`[📥 收到field10] 字节长度：${len} | 16进制前16位：${payloadBytes.toString('hex').substring(0, 16)}`);
 
-                    // 1. 全局回调：只传纯字节给解析函数（你原有逻辑能解析的字节）
-                    const cb = global.__SR_ON_AOI_FIELD10__;
-                    if (typeof cb === "function") {
-                        try { cb(payloadBytes); } catch (e) {
-                            console.error("[❌ field10解析回调错误]", e.message);
-                        }
+                    // ✅ 日志做成开关：不开就不会在人多时刷屏
+                    if (process.env.SR_LOG_FIELD10 === "1") {
+                        console.log(`[📥 收到field10] uid=${entityUid} | len=${len} | hex16=${payloadBytes.toString('hex').substring(0, 16)}`);
                     }
 
-                    // 2. 可选：调试用dump（保留，方便你离线测试）
+                    const cb = global.__SR_ON_AOI_FIELD10__;
+                    if (typeof cb === "function") {
+                        try { cb(payloadBytes, { entityUid }); }
+                        catch (e) { console.error("[❌ field10解析回调错误]", e.message); }
+                    }
+
                     if (process.env.SR_DUMP_FIELD10 === "1" && len >= 20) {
                         try {
                             const dumpName = `dump_field10_${Date.now()}.bin`;
@@ -1084,18 +1090,18 @@ const fs = require("fs");
                         } catch (e) {}
                     }
 
-                    // 3. 强制跳到结尾，删掉所有深层解析/日志（避免干扰）
                     r.pos = end;
                     break;
                 }
 
-                case 11: {
+
+                    case 11: {
                     const len = r.uint32();
                     const start = r.pos;
                     const end = start + len;
                     const bytes = r.buf.subarray(start, end);
 
-                    console.log("[AOI] field=11, len=", len, "pos=", start);
+                    //console.log("[AOI] field=11, len=", len, "pos=", start);
                     // debugDumpMessage(bytes, 11);
 
                     r.skip(len);
@@ -1107,7 +1113,7 @@ const fs = require("fs");
                     const end = start + len;
                     const bytes = r.buf.subarray(start, end);
 
-                    console.log("[AOI] field=12, len=", len, "pos=", start);
+                    //console.log("[AOI] field=12, len=", len, "pos=", start);
                     // 这个一般是 FakeBullets，不是重点：
                     // debugDumpMessage(bytes, 12);
 
@@ -1120,7 +1126,7 @@ const fs = require("fs");
                     const end = start + len;
                     const bytes = r.buf.subarray(start, end);
 
-                    console.log("[AOI] field=13, len=", len, "pos=", start);
+                    //console.log("[AOI] field=13, len=", len, "pos=", start);
                     // 这个一般是 MagneticRideQueueChangeInfoList：
                     // debugDumpMessage(bytes, 13);
 

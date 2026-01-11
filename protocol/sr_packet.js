@@ -28,15 +28,15 @@ const NotifyMethod = {
 class SRPacketParser {
   constructor(opts = {}) {
     this.onAoiDelta = opts.onAoiDelta || null;
+    this.selfUuid = null;   // Long（预留）
+    this.selfUid = null;    // number
   }
 
-  // ✅ 兼容你 CLI：永远有这个方法
   feedPacket(packetBytes) {
     return this.processPacket(packetBytes);
   }
 
   _decompressZstd(buf) {
-    // Node >= 20 有 zstdDecompressSync
     return zlib.zstdDecompressSync(buf);
   }
 
@@ -48,18 +48,59 @@ class SRPacketParser {
     let payload = reader.readBytes(reader.remaining());
     if (isZstd) payload = this._decompressZstd(payload);
 
+    // ====== 1) Near Delta（场景内所有实体）======
     if (methodId === NotifyMethod.SyncNearDeltaInfo) {
+
+      // ✅ self-only：拿到 selfUid 后就不再解 Near（否则会触发别人的 field10 全局回调）
+      if (process.env.SR_SELF_ONLY === "1" && this.selfUid != null) {
+        return;
+      }
+
       const msg = pb.SyncNearDeltaInfo.decode(payload);
+
       for (const delta of msg.DeltaInfos || []) {
-        this.onAoiDelta && this.onAoiDelta(delta);
+        const entityUid = delta?.Uuid ? delta.Uuid.shiftRight(16).toNumber() : null;
+
+        const meta = {
+          entityUid,
+          selfUid: this.selfUid ?? null,
+          isSelf: this.selfUid != null && entityUid != null && entityUid === this.selfUid,
+          ts: Date.now(),
+          source: "near",
+        };
+
+        this.onAoiDelta && this.onAoiDelta(delta, meta);
       }
       return;
     }
 
+    // ====== 2) ToMe Delta（只发给你自己，顺便拿 selfUid）======
     if (methodId === NotifyMethod.SyncToMeDeltaInfo) {
       const msg = pb.SyncToMeDeltaInfo.decode(payload);
-      const base = msg?.DeltaInfo?.BaseDelta;
-      if (base) this.onAoiDelta && this.onAoiDelta(base);
+      const d = msg?.DeltaInfo;
+
+      // ⭐ 用 ToMe 里的 Uuid 识别自己
+      if (d?.Uuid) {
+        const newSelfUid = d.Uuid.shiftRight(16).toNumber();
+        if (this.selfUid == null || this.selfUid !== newSelfUid) {
+          this.selfUid = newSelfUid;
+          console.log("[SELF] selfUid =", this.selfUid);
+          global.__SR_SELF_UID__ = this.selfUid;
+        }
+      }
+
+      const base = d?.BaseDelta;
+      if (base) {
+        const entityUid = base?.Uuid ? base.Uuid.shiftRight(16).toNumber() : null;
+        const meta = {
+          entityUid,
+          selfUid: this.selfUid ?? null,
+          isSelf: true,
+          ts: Date.now(),
+          source: "tome",
+        };
+        this.onAoiDelta && this.onAoiDelta(base, meta);
+      }
       return;
     }
   }
