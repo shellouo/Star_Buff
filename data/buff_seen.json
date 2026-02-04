@@ -559,7 +559,7 @@
   },
   "21402": {
     "firstSeen": 1767389056138,
-    "count": 140,
+    "count": 184,
     "sample": {
       "slot": 574,
       "durMs": 5000,
@@ -568,7 +568,7 @@
   },
   "21404": {
     "firstSeen": 1766478906199,
-    "count": 20,
+    "count": 181,
     "sample": {
       "slot": 273,
       "durMs": 10000,
@@ -577,7 +577,7 @@
   },
   "21408": {
     "firstSeen": 1767389945445,
-    "count": 17,
+    "count": 67,
     "sample": {
       "slot": 653,
       "durMs": 1000,
@@ -595,7 +595,7 @@
   },
   "21411": {
     "firstSeen": 1767389056219,
-    "count": 152,
+    "count": 194,
     "sample": {
       "slot": 577,
       "durMs": 5000,
@@ -604,7 +604,7 @@
   },
   "21413": {
     "firstSeen": 1767186400605,
-    "count": 1,
+    "count": 708,
     "sample": {
       "slot": 3722,
       "durMs": 10000,
@@ -622,7 +622,7 @@
   },
   "21422": {
     "firstSeen": 1767389049624,
-    "count": 49,
+    "count": 181,
     "sample": {
       "slot": 421,
       "durMs": 15000,
@@ -631,7 +631,7 @@
   },
   "21423": {
     "firstSeen": 1767306373569,
-    "count": 64,
+    "count": 151,
     "sample": {
       "slot": 485505,
       "durMs": 10000,
@@ -658,7 +658,7 @@
   },
   "21427": {
     "firstSeen": 1767306198866,
-    "count": 8,
+    "count": 18,
     "sample": {
       "slot": 485415,
       "durMs": 1000,
@@ -667,7 +667,7 @@
   },
   "21428": {
     "firstSeen": 1767306199318,
-    "count": 2,
+    "count": 6,
     "sample": {
       "slot": 485417,
       "durMs": 1000,
@@ -739,7 +739,7 @@
   },
   "27001": {
     "firstSeen": 1767665609723,
-    "count": 337,
+    "count": 342,
     "sample": {
       "slot": 134,
       "durMs": null,
@@ -775,7 +775,7 @@
   },
   "27007": {
     "firstSeen": 1767665609649,
-    "count": 11,
+    "count": 12,
     "sample": {
       "slot": 132,
       "durMs": 10000,
@@ -829,7 +829,7 @@
   },
   "30001": {
     "firstSeen": 1765927608811,
-    "count": 1630,
+    "count": 1774,
     "sample": {
       "slot": 235,
       "durMs": null,
@@ -838,16 +838,34 @@
   },
   "30003": {
     "firstSeen": 1767275961099,
-    "count": 13,
+    "count": 42,
     "sample": {
       "slot": 93,
       "durMs": 10000,
       "stack": 1
     }
   },
+  "30004": {
+    "firstSeen": 1768434922395,
+    "count": 2971,
+    "sample": {
+      "slot": 109,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "30701": {
+    "firstSeen": 1768434948875,
+    "count": 25,
+    "sample": {
+      "slot": 517,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
   "31201": {
     "firstSeen": 1765927513368,
-    "count": 124,
+    "count": 450,
     "sample": {
       "slot": 223,
       "durMs": 17800,
@@ -856,7 +874,7 @@
   },
   "31601": {
     "firstSeen": 1765928019555,
-    "count": 64,
+    "count": 163,
     "sample": {
       "slot": 747,
       "durMs": 1000,
@@ -865,16 +883,34 @@
   },
   "31602": {
     "firstSeen": 1765928019556,
-    "count": 67,
+    "count": 172,
     "sample": {
       "slot": 748,
       "durMs": 10000,
       "stack": 30
     }
   },
+  "31701": {
+    "firstSeen": 1768434956955,
+    "count": 153,
+    "sample": {
+      "slot": 523,
+      "durMs": null,
+      "stack": 30
+    }
+  },
+  "31702": {
+    "firstSeen": 1768434976408,
+    "count": 60,
+    "sample": {
+      "slot": 545,
+      "durMs": null,
+      "stack": 30
+    }
+  },
   "31901": {
     "firstSeen": 1766140206191,
-    "count": 18,
+    "count": 73,
     "sample": {
       "slot": 1132,
       "durMs": null,
@@ -883,7 +919,7 @@
   },
   "32101": {
     "firstSeen": 1765928019556,
-    "count": 64,
+    "count": 163,
     "sample": {
       "slot": 749,
       "durMs": 10000,
@@ -892,7 +928,7 @@
   },
   "32301": {
     "firstSeen": 1765927612263,
-    "count": 117,
+    "count": 363,
     "sample": {
       "slot": 246,
       "durMs": 10000,
@@ -901,7 +937,7 @@
   },
   "40001": {
     "firstSeen": 1767089168188,
-    "count": 497,
+    "count": 2187,
     "sample": {
       "slot": 3053,
       "durMs": 10000,
@@ -910,7 +946,7 @@
   },
   "40901": {
     "firstSeen": 1767380820395,
-    "count": 10,
+    "count": 26,
     "sample": {
       "slot": 4656,
       "durMs": 8000,
@@ -919,7 +955,7 @@
   },
   "41701": {
     "firstSeen": 1767306222506,
-    "count": 128,
+    "count": 220,
     "sample": {
       "slot": 485495,
       "durMs": -1,
@@ -928,7 +964,7 @@
   },
   "42001": {
     "firstSeen": 1767306222506,
-    "count": 38,
+    "count": 130,
     "sample": {
       "slot": 485494,
       "durMs": -1,
@@ -937,7 +973,7 @@
   },
   "42002": {
     "firstSeen": 1767380747736,
-    "count": 1127,
+    "count": 1612,
     "sample": {
       "slot": 4651,
       "durMs": null,
@@ -955,7 +991,7 @@
   },
   "42801": {
     "firstSeen": 1767380820395,
-    "count": 812,
+    "count": 1188,
     "sample": {
       "slot": 4657,
       "durMs": null,
@@ -964,7 +1000,7 @@
   },
   "43101": {
     "firstSeen": 1766132967099,
-    "count": 42,
+    "count": 187,
     "sample": {
       "slot": 80,
       "durMs": 12000,
@@ -973,7 +1009,7 @@
   },
   "43201": {
     "firstSeen": 1766134523546,
-    "count": 48,
+    "count": 241,
     "sample": {
       "slot": 84,
       "durMs": 10000,
@@ -982,7 +1018,7 @@
   },
   "43701": {
     "firstSeen": 1767089176051,
-    "count": 134,
+    "count": 541,
     "sample": {
       "slot": 3179,
       "durMs": null,
@@ -1009,7 +1045,7 @@
   },
   "44801": {
     "firstSeen": 1767306222506,
-    "count": 51,
+    "count": 90,
     "sample": {
       "slot": 485498,
       "durMs": -1,
@@ -1018,7 +1054,7 @@
   },
   "44901": {
     "firstSeen": 1767306222506,
-    "count": 62,
+    "count": 101,
     "sample": {
       "slot": 485499,
       "durMs": -1,
@@ -1063,7 +1099,7 @@
   },
   "55301": {
     "firstSeen": 1767273948646,
-    "count": 870,
+    "count": 1326,
     "sample": {
       "slot": 898,
       "durMs": 1000,
@@ -1072,7 +1108,7 @@
   },
   "55302": {
     "firstSeen": 1767396385840,
-    "count": 1,
+    "count": 168,
     "sample": {
       "slot": 461,
       "durMs": 1000,
@@ -1081,7 +1117,7 @@
   },
   "55304": {
     "firstSeen": 1767089696353,
-    "count": 9,
+    "count": 736,
     "sample": {
       "slot": 3697,
       "durMs": 1000,
@@ -1090,7 +1126,7 @@
   },
   "55311": {
     "firstSeen": 1765988769961,
-    "count": 50,
+    "count": 70,
     "sample": {
       "slot": 151,
       "durMs": null,
@@ -1099,7 +1135,7 @@
   },
   "55312": {
     "firstSeen": 1765988769961,
-    "count": 13,
+    "count": 23,
     "sample": {
       "slot": 148,
       "durMs": 3475,
@@ -1108,16 +1144,29 @@
   },
   "55313": {
     "firstSeen": 1767273950342,
-    "count": 87,
+    "count": 182,
     "sample": {
       "slot": 980,
       "durMs": null,
       "stack": 30
     }
   },
+  "55314": {
+    "firstSeen": 1769935269642,
+    "count": 40
+  },
+  "55315": {
+    "firstSeen": 1768569439025,
+    "count": 2,
+    "sample": {
+      "slot": 5059,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
   "55326": {
     "firstSeen": 1767273948483,
-    "count": 3,
+    "count": 8,
     "sample": {
       "slot": 894,
       "durMs": 1100,
@@ -1126,7 +1175,7 @@
   },
   "55327": {
     "firstSeen": 1767273949303,
-    "count": 89,
+    "count": 192,
     "sample": {
       "slot": 935,
       "durMs": null,
@@ -1135,7 +1184,7 @@
   },
   "55328": {
     "firstSeen": 1767273949303,
-    "count": 7,
+    "count": 18,
     "sample": {
       "slot": 937,
       "durMs": null,
@@ -1144,7 +1193,7 @@
   },
   "55329": {
     "firstSeen": 1767273949469,
-    "count": 4,
+    "count": 9,
     "sample": {
       "slot": 947,
       "durMs": null,
@@ -1153,7 +1202,7 @@
   },
   "55330": {
     "firstSeen": 1767273953388,
-    "count": 7,
+    "count": 14,
     "sample": {
       "slot": 1146,
       "durMs": 15000,
@@ -1162,7 +1211,7 @@
   },
   "55331": {
     "firstSeen": 1767273949858,
-    "count": 68,
+    "count": 122,
     "sample": {
       "slot": 956,
       "durMs": null,
@@ -1171,7 +1220,7 @@
   },
   "55333": {
     "firstSeen": 1765988769963,
-    "count": 29,
+    "count": 102,
     "sample": {
       "slot": 175,
       "durMs": null,
@@ -1180,7 +1229,7 @@
   },
   "55334": {
     "firstSeen": 1767273949303,
-    "count": 7,
+    "count": 18,
     "sample": {
       "slot": 939,
       "durMs": null,
@@ -1189,7 +1238,7 @@
   },
   "55335": {
     "firstSeen": 1767273949303,
-    "count": 7,
+    "count": 18,
     "sample": {
       "slot": 940,
       "durMs": null,
@@ -1198,7 +1247,7 @@
   },
   "55336": {
     "firstSeen": 1767273949303,
-    "count": 7,
+    "count": 18,
     "sample": {
       "slot": 934,
       "durMs": null,
@@ -1207,7 +1256,7 @@
   },
   "55337": {
     "firstSeen": 1767273949303,
-    "count": 7,
+    "count": 18,
     "sample": {
       "slot": 938,
       "durMs": null,
@@ -1216,7 +1265,7 @@
   },
   "55339": {
     "firstSeen": 1767089691390,
-    "count": 6,
+    "count": 28,
     "sample": {
       "slot": 3679,
       "durMs": 1000,
@@ -1225,7 +1274,7 @@
   },
   "55340": {
     "firstSeen": 1767273947908,
-    "count": 272,
+    "count": 527,
     "sample": {
       "slot": 888,
       "durMs": null,
@@ -1234,7 +1283,7 @@
   },
   "55341": {
     "firstSeen": 1767273949858,
-    "count": 867,
+    "count": 1279,
     "sample": {
       "slot": 961,
       "durMs": 1000,
@@ -1243,16 +1292,25 @@
   },
   "55342": {
     "firstSeen": 1767089352140,
-    "count": 27,
+    "count": 2430,
     "sample": {
       "slot": 3271,
       "durMs": 1000,
       "stack": 30
     }
   },
+  "55346": {
+    "firstSeen": 1768569439025,
+    "count": 2,
+    "sample": {
+      "slot": 5060,
+      "durMs": 1000,
+      "stack": 30
+    }
+  },
   "55348": {
     "firstSeen": 1767273949303,
-    "count": 7,
+    "count": 18,
     "sample": {
       "slot": 941,
       "durMs": 15000,
@@ -1261,7 +1319,7 @@
   },
   "55349": {
     "firstSeen": 1767273959907,
-    "count": 45,
+    "count": 96,
     "sample": {
       "slot": 1641,
       "durMs": 1000,
@@ -1270,7 +1328,7 @@
   },
   "55351": {
     "firstSeen": 1767273949858,
-    "count": 68,
+    "count": 122,
     "sample": {
       "slot": 959,
       "durMs": null,
@@ -1279,7 +1337,7 @@
   },
   "55354": {
     "firstSeen": 1767273947738,
-    "count": 5,
+    "count": 10,
     "sample": {
       "slot": 885,
       "durMs": 5000,
@@ -1288,7 +1346,7 @@
   },
   "55355": {
     "firstSeen": 1767273702762,
-    "count": 315,
+    "count": 330,
     "sample": {
       "slot": 322,
       "durMs": 1000,
@@ -1297,7 +1355,7 @@
   },
   "55356": {
     "firstSeen": 1767273707089,
-    "count": 81,
+    "count": 84,
     "sample": {
       "slot": 332,
       "durMs": 1000,
@@ -1306,16 +1364,25 @@
   },
   "55357": {
     "firstSeen": 1767273707503,
-    "count": 63,
+    "count": 66,
     "sample": {
       "slot": 335,
       "durMs": 1000,
       "stack": 30
     }
   },
+  "55358": {
+    "firstSeen": 1769081665273,
+    "count": 26,
+    "sample": {
+      "slot": 2723,
+      "durMs": null,
+      "stack": 1
+    }
+  },
   "55395": {
     "firstSeen": 1767273949858,
-    "count": 68,
+    "count": 122,
     "sample": {
       "slot": 960,
       "durMs": null,
@@ -1331,18 +1398,56 @@
       "stack": 1
     }
   },
+  "55402": {
+    "firstSeen": 1769943881778,
+    "count": 1
+  },
+  "55405": {
+    "firstSeen": 1769943878316,
+    "count": 1
+  },
+  "55407": {
+    "firstSeen": 1768480964085,
+    "count": 266,
+    "sample": {
+      "slot": 313,
+      "durMs": 500,
+      "stack": 1
+    }
+  },
+  "55418": {
+    "firstSeen": 1769943909302,
+    "count": 1
+  },
+  "55419": {
+    "firstSeen": 1769943881778,
+    "count": 4
+  },
+  "55421": {
+    "firstSeen": 1769943880338,
+    "count": 16
+  },
   "500105": {
     "firstSeen": 1767187635376,
-    "count": 25,
+    "count": 63,
     "sample": {
       "slot": 82,
       "durMs": -1,
       "stack": 1
     }
   },
+  "500107": {
+    "firstSeen": 1769021146737,
+    "count": 3,
+    "sample": {
+      "slot": 117,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
   "500111": {
     "firstSeen": 1767185061763,
-    "count": 2,
+    "count": 35,
     "sample": {
       "slot": 2167,
       "durMs": 3000,
@@ -1351,7 +1456,7 @@
   },
   "500112": {
     "firstSeen": 1767185064602,
-    "count": 3,
+    "count": 36,
     "sample": {
       "slot": 2178,
       "durMs": 3000,
@@ -1360,7 +1465,7 @@
   },
   "500113": {
     "firstSeen": 1767185064602,
-    "count": 3,
+    "count": 36,
     "sample": {
       "slot": 2179,
       "durMs": 3000,
@@ -1369,7 +1474,7 @@
   },
   "501401": {
     "firstSeen": 1765988769964,
-    "count": 158,
+    "count": 411,
     "sample": {
       "slot": 184,
       "durMs": 500,
@@ -1385,9 +1490,26 @@
       "stack": 1
     }
   },
+  "510067": {
+    "firstSeen": 1769930915480,
+    "count": 1
+  },
+  "510072": {
+    "firstSeen": 1769021817106,
+    "count": 41,
+    "sample": {
+      "slot": 10028,
+      "durMs": 4000,
+      "stack": 1
+    }
+  },
+  "510099": {
+    "firstSeen": 1769930915477,
+    "count": 1
+  },
   "510110": {
     "firstSeen": 1767389025278,
-    "count": 1,
+    "count": 3,
     "sample": {
       "slot": 96,
       "durMs": -1,
@@ -1414,7 +1536,7 @@
   },
   "510701": {
     "firstSeen": 1767187619316,
-    "count": 91,
+    "count": 270,
     "sample": {
       "slot": 9,
       "durMs": null,
@@ -1423,7 +1545,7 @@
   },
   "510801": {
     "firstSeen": 1767187619316,
-    "count": 91,
+    "count": 270,
     "sample": {
       "slot": 7,
       "durMs": null,
@@ -1432,11 +1554,20 @@
   },
   "521001": {
     "firstSeen": 1766821081787,
-    "count": 128,
+    "count": 186,
     "sample": {
       "slot": 786,
       "durMs": 4000,
       "stack": 1
+    }
+  },
+  "522001": {
+    "firstSeen": 1769029917826,
+    "count": 1,
+    "sample": {
+      "slot": 253,
+      "durMs": 2000,
+      "stack": 30
     }
   },
   "522601": {
@@ -1448,9 +1579,13 @@
       "stack": 1
     }
   },
+  "522602": {
+    "firstSeen": 1769931056981,
+    "count": 1
+  },
   "600001": {
     "firstSeen": 1767273993261,
-    "count": 34,
+    "count": 38,
     "sample": {
       "slot": 44,
       "durMs": null,
@@ -1459,7 +1594,7 @@
   },
   "620301": {
     "firstSeen": 1766871384735,
-    "count": 10,
+    "count": 16,
     "sample": {
       "slot": 88,
       "durMs": 3000,
@@ -1468,7 +1603,7 @@
   },
   "620303": {
     "firstSeen": 1767187619322,
-    "count": 8,
+    "count": 41,
     "sample": {
       "slot": 84,
       "durMs": -1,
@@ -1477,16 +1612,20 @@
   },
   "620501": {
     "firstSeen": 1765929302163,
-    "count": 5,
+    "count": 7,
     "sample": {
       "slot": 888,
       "durMs": 3000,
       "stack": 1
     }
   },
+  "620703": {
+    "firstSeen": 1769951362490,
+    "count": 1
+  },
   "680101": {
     "firstSeen": 1767187619316,
-    "count": 90,
+    "count": 266,
     "sample": {
       "slot": 6,
       "durMs": -1,
@@ -1495,7 +1634,7 @@
   },
   "680201": {
     "firstSeen": 1767187619316,
-    "count": 90,
+    "count": 266,
     "sample": {
       "slot": 10,
       "durMs": -1,
@@ -1504,7 +1643,7 @@
   },
   "680501": {
     "firstSeen": 1767187619316,
-    "count": 90,
+    "count": 266,
     "sample": {
       "slot": 8,
       "durMs": -1,
@@ -1513,7 +1652,7 @@
   },
   "680701": {
     "firstSeen": 1767187619310,
-    "count": 90,
+    "count": 266,
     "sample": {
       "slot": 5,
       "durMs": -1,
@@ -1522,7 +1661,7 @@
   },
   "680702": {
     "firstSeen": 1767382321312,
-    "count": 48,
+    "count": 51,
     "sample": {
       "slot": 98,
       "durMs": -1,
@@ -1531,7 +1670,7 @@
   },
   "681701": {
     "firstSeen": 1767187619322,
-    "count": 9,
+    "count": 45,
     "sample": {
       "slot": 82,
       "durMs": -1,
@@ -1540,7 +1679,7 @@
   },
   "682201": {
     "firstSeen": 1766035052104,
-    "count": 193,
+    "count": 216,
     "sample": {
       "slot": 44,
       "durMs": 2000,
@@ -1549,7 +1688,7 @@
   },
   "682501": {
     "firstSeen": 1767187619229,
-    "count": 90,
+    "count": 266,
     "sample": {
       "slot": 2,
       "durMs": -1,
@@ -1558,7 +1697,7 @@
   },
   "682503": {
     "firstSeen": 1767187619262,
-    "count": 90,
+    "count": 266,
     "sample": {
       "slot": 3,
       "durMs": -1,
@@ -1567,7 +1706,7 @@
   },
   "682505": {
     "firstSeen": 1767187619281,
-    "count": 90,
+    "count": 266,
     "sample": {
       "slot": 4,
       "durMs": -1,
@@ -1576,7 +1715,7 @@
   },
   "682601": {
     "firstSeen": 1767382321312,
-    "count": 48,
+    "count": 52,
     "sample": {
       "slot": 95,
       "durMs": -1,
@@ -1585,7 +1724,7 @@
   },
   "682602": {
     "firstSeen": 1767382321312,
-    "count": 48,
+    "count": 51,
     "sample": {
       "slot": 97,
       "durMs": -1,
@@ -1594,7 +1733,7 @@
   },
   "683104": {
     "firstSeen": 1767187619322,
-    "count": 8,
+    "count": 41,
     "sample": {
       "slot": 83,
       "durMs": -1,
@@ -1603,7 +1742,7 @@
   },
   "683114": {
     "firstSeen": 1767273993264,
-    "count": 17,
+    "count": 21,
     "sample": {
       "slot": 95,
       "durMs": -1,
@@ -1612,7 +1751,7 @@
   },
   "683115": {
     "firstSeen": 1767273983620,
-    "count": 57,
+    "count": 64,
     "sample": {
       "slot": 2955,
       "durMs": null,
@@ -1621,7 +1760,7 @@
   },
   "683116": {
     "firstSeen": 1765988769964,
-    "count": 158,
+    "count": 411,
     "sample": {
       "slot": 183,
       "durMs": 1000,
@@ -1630,7 +1769,7 @@
   },
   "683133": {
     "firstSeen": 1767382339929,
-    "count": 10,
+    "count": 12,
     "sample": {
       "slot": 96,
       "durMs": null,
@@ -1666,7 +1805,7 @@
   },
   "683152": {
     "firstSeen": 1767382339929,
-    "count": 10,
+    "count": 12,
     "sample": {
       "slot": 97,
       "durMs": null,
@@ -1675,7 +1814,7 @@
   },
   "683153": {
     "firstSeen": 1767382321312,
-    "count": 28,
+    "count": 31,
     "sample": {
       "slot": 96,
       "durMs": -1,
@@ -1693,12 +1832,16 @@
   },
   "683163": {
     "firstSeen": 1767382339929,
-    "count": 10,
+    "count": 12,
     "sample": {
       "slot": 98,
       "durMs": null,
       "stack": 1
     }
+  },
+  "683602": {
+    "firstSeen": 1769931214573,
+    "count": 48
   },
   "683803": {
     "firstSeen": 1767677242527,
@@ -1790,18 +1933,30 @@
       "stack": 1
     }
   },
+  "700136": {
+    "firstSeen": 1769931019563,
+    "count": 1
+  },
+  "700138": {
+    "firstSeen": 1769931033094,
+    "count": 1
+  },
   "701008": {
     "firstSeen": 1767388858357,
-    "count": 711,
+    "count": 1178,
     "sample": {
       "slot": 90,
       "durMs": null,
       "stack": 1
     }
   },
+  "701010": {
+    "firstSeen": 1769930915476,
+    "count": 570
+  },
   "701017": {
     "firstSeen": 1767389037765,
-    "count": 1,
+    "count": 3,
     "sample": {
       "slot": 315,
       "durMs": 1000,
@@ -1837,16 +1992,226 @@
   },
   "823238": {
     "firstSeen": 1767273993264,
-    "count": 16,
+    "count": 18,
     "sample": {
       "slot": 97,
       "durMs": -1,
       "stack": 1
     }
   },
+  "827130": {
+    "firstSeen": 1769956636919,
+    "count": 1
+  },
+  "827135": {
+    "firstSeen": 1769956640350,
+    "count": 95
+  },
+  "827136": {
+    "firstSeen": 1769956642878,
+    "count": 1
+  },
+  "827152": {
+    "firstSeen": 1769956550745,
+    "count": 39
+  },
+  "827185": {
+    "firstSeen": 1769956452537,
+    "count": 4
+  },
+  "827186": {
+    "firstSeen": 1769956710929,
+    "count": 8
+  },
+  "827191": {
+    "firstSeen": 1769956401565,
+    "count": 3
+  },
+  "827192": {
+    "firstSeen": 1769956425759,
+    "count": 1
+  },
+  "827193": {
+    "firstSeen": 1769956649872,
+    "count": 1
+  },
+  "827195": {
+    "firstSeen": 1769956649872,
+    "count": 1
+  },
+  "827206": {
+    "firstSeen": 1769948771294,
+    "count": 4
+  },
+  "827207": {
+    "firstSeen": 1769948771295,
+    "count": 4
+  },
+  "827208": {
+    "firstSeen": 1769021443560,
+    "count": 145,
+    "sample": {
+      "slot": 2967,
+      "durMs": 500,
+      "stack": 3
+    }
+  },
+  "827209": {
+    "firstSeen": 1769021800144,
+    "count": 27,
+    "sample": {
+      "slot": 10021,
+      "durMs": 30000,
+      "stack": 1
+    }
+  },
+  "827210": {
+    "firstSeen": 1769021726341,
+    "count": 3,
+    "sample": {
+      "slot": 8576,
+      "durMs": 30000,
+      "stack": 3
+    }
+  },
+  "827215": {
+    "firstSeen": 1769948810914,
+    "count": 4
+  },
+  "827219": {
+    "firstSeen": 1769021542980,
+    "count": 8,
+    "sample": {
+      "slot": 5093,
+      "durMs": 4000,
+      "stack": 3
+    }
+  },
+  "827220": {
+    "firstSeen": 1769023598718,
+    "count": 3,
+    "sample": {
+      "slot": 38326,
+      "durMs": 3000,
+      "stack": 3
+    }
+  },
+  "827221": {
+    "firstSeen": 1769022187455,
+    "count": 7,
+    "sample": {
+      "slot": 16625,
+      "durMs": 3000,
+      "stack": 3
+    }
+  },
+  "827222": {
+    "firstSeen": 1769021467752,
+    "count": 14,
+    "sample": {
+      "slot": 3724,
+      "durMs": 3000,
+      "stack": 3
+    }
+  },
+  "827223": {
+    "firstSeen": 1769947125960,
+    "count": 3
+  },
+  "827224": {
+    "firstSeen": 1769021748626,
+    "count": 5,
+    "sample": {
+      "slot": 9115,
+      "durMs": 3000,
+      "stack": 3
+    }
+  },
+  "827226": {
+    "firstSeen": 1769948771295,
+    "count": 4
+  },
+  "827244": {
+    "firstSeen": 1769021692139,
+    "count": 2,
+    "sample": {
+      "slot": 7809,
+      "durMs": 2500,
+      "stack": 1
+    }
+  },
+  "827246": {
+    "firstSeen": 1769949232296,
+    "count": 1
+  },
+  "827251": {
+    "firstSeen": 1769021681653,
+    "count": 2,
+    "sample": {
+      "slot": 7716,
+      "durMs": 5000,
+      "stack": 3
+    }
+  },
+  "827260": {
+    "firstSeen": 1769021758082,
+    "count": 2,
+    "sample": {
+      "slot": 9497,
+      "durMs": null,
+      "stack": 3
+    }
+  },
+  "827263": {
+    "firstSeen": 1769947580600,
+    "count": 2
+  },
+  "827265": {
+    "firstSeen": 1769948411781,
+    "count": 15
+  },
+  "827267": {
+    "firstSeen": 1769021495101,
+    "count": 28,
+    "sample": {
+      "slot": 4517,
+      "durMs": 12000,
+      "stack": 3
+    }
+  },
+  "827269": {
+    "firstSeen": 1769947596192,
+    "count": 1
+  },
+  "827272": {
+    "firstSeen": 1769948771294,
+    "count": 4
+  },
+  "828114": {
+    "firstSeen": 1769021160946,
+    "count": 1,
+    "sample": {
+      "slot": 177,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "852007": {
+    "firstSeen": 1769931203640,
+    "count": 3
+  },
+  "880022": {
+    "firstSeen": 1769030354907,
+    "count": 8,
+    "sample": {
+      "slot": 135,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
   "880628": {
     "firstSeen": 1767389025278,
-    "count": 7,
+    "count": 9,
     "sample": {
       "slot": 99,
       "durMs": null,
@@ -1855,7 +2220,7 @@
   },
   "880629": {
     "firstSeen": 1767389025279,
-    "count": 7,
+    "count": 13,
     "sample": {
       "slot": 101,
       "durMs": 1500,
@@ -1873,34 +2238,168 @@
   },
   "880633": {
     "firstSeen": 1767389044160,
-    "count": 4,
+    "count": 5,
     "sample": {
       "slot": 374,
       "durMs": 15000,
       "stack": 1
     }
   },
+  "880636": {
+    "firstSeen": 1769953210237,
+    "count": 1
+  },
+  "880648": {
+    "firstSeen": 1769953205639,
+    "count": 1
+  },
   "880649": {
     "firstSeen": 1767389123861,
-    "count": 2,
+    "count": 4,
     "sample": {
       "slot": 1803,
       "durMs": 500,
       "stack": 3
     }
   },
+  "880662": {
+    "firstSeen": 1769953209906,
+    "count": 1
+  },
   "880672": {
     "firstSeen": 1767389025278,
-    "count": 7,
+    "count": 9,
     "sample": {
       "slot": 100,
       "durMs": null,
       "stack": 3
     }
   },
+  "881408": {
+    "firstSeen": 1769021683784,
+    "count": 2,
+    "sample": {
+      "slot": 7739,
+      "durMs": 6000,
+      "stack": 3
+    }
+  },
+  "881629": {
+    "firstSeen": 1769956452927,
+    "count": 3
+  },
+  "881665": {
+    "firstSeen": 1769956449238,
+    "count": 6
+  },
+  "881728": {
+    "firstSeen": 1769931242498,
+    "count": 1
+  },
+  "881753": {
+    "firstSeen": 1769029856611,
+    "count": 5,
+    "sample": {
+      "slot": 174,
+      "durMs": 15000,
+      "stack": 2
+    }
+  },
+  "881759": {
+    "firstSeen": 1769931247027,
+    "count": 1
+  },
+  "881803": {
+    "firstSeen": 1769931092712,
+    "count": 9
+  },
+  "881805": {
+    "firstSeen": 1769931165054,
+    "count": 7
+  },
+  "881815": {
+    "firstSeen": 1769931092713,
+    "count": 2
+  },
+  "881818": {
+    "firstSeen": 1769931103694,
+    "count": 13
+  },
+  "881819": {
+    "firstSeen": 1769931103534,
+    "count": 12
+  },
+  "881830": {
+    "firstSeen": 1769930936316,
+    "count": 6
+  },
+  "881836": {
+    "firstSeen": 1769930985696,
+    "count": 1
+  },
+  "881840": {
+    "firstSeen": 1769930975130,
+    "count": 1
+  },
+  "881841": {
+    "firstSeen": 1769930975130,
+    "count": 1
+  },
+  "881846": {
+    "firstSeen": 1769931094715,
+    "count": 1
+  },
+  "881852": {
+    "firstSeen": 1769931092713,
+    "count": 1
+  },
+  "881854": {
+    "firstSeen": 1769931076457,
+    "count": 5
+  },
+  "881855": {
+    "firstSeen": 1769931161823,
+    "count": 4
+  },
+  "882272": {
+    "firstSeen": 1769021146737,
+    "count": 3,
+    "sample": {
+      "slot": 118,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "882711": {
+    "firstSeen": 1769030369426,
+    "count": 1,
+    "sample": {
+      "slot": 154,
+      "durMs": 1100,
+      "stack": 3
+    }
+  },
+  "882731": {
+    "firstSeen": 1769030361831,
+    "count": 1,
+    "sample": {
+      "slot": 141,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "882811": {
+    "firstSeen": 1769030394587,
+    "count": 1,
+    "sample": {
+      "slot": 327,
+      "durMs": 5500,
+      "stack": 3
+    }
+  },
   "883028": {
     "firstSeen": 1767389110748,
-    "count": 1,
+    "count": 3,
     "sample": {
       "slot": 1571,
       "durMs": null,
@@ -1909,7 +2408,7 @@
   },
   "900122": {
     "firstSeen": 1767273946530,
-    "count": 15,
+    "count": 75,
     "sample": {
       "slot": 883,
       "durMs": 500,
@@ -1918,19 +2417,190 @@
   },
   "902901": {
     "firstSeen": 1767273983065,
-    "count": 21,
+    "count": 30,
     "sample": {
       "slot": 2949,
       "durMs": -1,
       "stack": 1
     }
   },
+  "960923": {
+    "firstSeen": 1769031217681,
+    "count": 1,
+    "sample": {
+      "slot": 90,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "960924": {
+    "firstSeen": 1769031216483,
+    "count": 1,
+    "sample": {
+      "slot": 88,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "960925": {
+    "firstSeen": 1769031217116,
+    "count": 1,
+    "sample": {
+      "slot": 89,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "960926": {
+    "firstSeen": 1769031218245,
+    "count": 1,
+    "sample": {
+      "slot": 91,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "960927": {
+    "firstSeen": 1769031216080,
+    "count": 1,
+    "sample": {
+      "slot": 87,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "970001": {
+    "firstSeen": 1768435026579,
+    "count": 1,
+    "sample": {
+      "slot": 574,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "970002": {
+    "firstSeen": 1768434995085,
+    "count": 5,
+    "sample": {
+      "slot": 563,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "972010": {
+    "firstSeen": 1768435009857,
+    "count": 1,
+    "sample": {
+      "slot": 567,
+      "durMs": 600000,
+      "stack": 1
+    }
+  },
+  "972011": {
+    "firstSeen": 1768434992346,
+    "count": 1,
+    "sample": {
+      "slot": 562,
+      "durMs": 600000,
+      "stack": 1
+    }
+  },
+  "972013": {
+    "firstSeen": 1768434968570,
+    "count": 1,
+    "sample": {
+      "slot": 534,
+      "durMs": 600000,
+      "stack": 1
+    }
+  },
+  "972014": {
+    "firstSeen": 1768434943522,
+    "count": 1,
+    "sample": {
+      "slot": 514,
+      "durMs": 600000,
+      "stack": 1
+    }
+  },
+  "972015": {
+    "firstSeen": 1768435025029,
+    "count": 1,
+    "sample": {
+      "slot": 572,
+      "durMs": 600000,
+      "stack": 1
+    }
+  },
+  "973013": {
+    "firstSeen": 1768434968570,
+    "count": 1,
+    "sample": {
+      "slot": 535,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "973014": {
+    "firstSeen": 1768434943522,
+    "count": 1,
+    "sample": {
+      "slot": 515,
+      "durMs": null,
+      "stack": 1
+    }
+  },
   "974005": {
     "firstSeen": 1767107734048,
-    "count": 56,
+    "count": 63,
     "sample": {
       "slot": 91,
       "durMs": -1,
+      "stack": 1
+    }
+  },
+  "974217": {
+    "firstSeen": 1769030047021,
+    "count": 3,
+    "sample": {
+      "slot": 88,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "990004": {
+    "firstSeen": 1769029663884,
+    "count": 6,
+    "sample": {
+      "slot": 95,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "990005": {
+    "firstSeen": 1769029702110,
+    "count": 4,
+    "sample": {
+      "slot": 433,
+      "durMs": 6000,
+      "stack": 1
+    }
+  },
+  "991051": {
+    "firstSeen": 1769029689984,
+    "count": 4,
+    "sample": {
+      "slot": 328,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "995279": {
+    "firstSeen": 1769029669685,
+    "count": 3,
+    "sample": {
+      "slot": 148,
+      "durMs": 2500,
       "stack": 1
     }
   },
@@ -1945,7 +2615,7 @@
   },
   "2010012": {
     "firstSeen": 1767273993259,
-    "count": 88,
+    "count": 100,
     "sample": {
       "slot": 7,
       "durMs": 70879000,
@@ -1954,7 +2624,7 @@
   },
   "2010060": {
     "firstSeen": 1767667518139,
-    "count": 7,
+    "count": 39,
     "sample": {
       "slot": 92,
       "durMs": -1,
@@ -1963,7 +2633,7 @@
   },
   "2031001": {
     "firstSeen": 1767306222506,
-    "count": 38,
+    "count": 130,
     "sample": {
       "slot": 485492,
       "durMs": -1,
@@ -1981,7 +2651,7 @@
   },
   "2031004": {
     "firstSeen": 1767185064601,
-    "count": 41,
+    "count": 185,
     "sample": {
       "slot": 2168,
       "durMs": -1,
@@ -2026,7 +2696,7 @@
   },
   "2031011": {
     "firstSeen": 1765988769964,
-    "count": 23,
+    "count": 40,
     "sample": {
       "slot": 179,
       "durMs": -1,
@@ -2035,7 +2705,7 @@
   },
   "2031101": {
     "firstSeen": 1767306222506,
-    "count": 38,
+    "count": 130,
     "sample": {
       "slot": 485493,
       "durMs": -1,
@@ -2053,7 +2723,7 @@
   },
   "2031104": {
     "firstSeen": 1767185064601,
-    "count": 41,
+    "count": 185,
     "sample": {
       "slot": 2169,
       "durMs": -1,
@@ -2098,7 +2768,7 @@
   },
   "2031111": {
     "firstSeen": 1765988769964,
-    "count": 23,
+    "count": 40,
     "sample": {
       "slot": 180,
       "durMs": -1,
@@ -2107,7 +2777,7 @@
   },
   "2032001": {
     "firstSeen": 1767093993004,
-    "count": 9,
+    "count": 36,
     "sample": {
       "slot": 1583,
       "durMs": 5000,
@@ -2116,16 +2786,24 @@
   },
   "2032002": {
     "firstSeen": 1767093993004,
-    "count": 7,
+    "count": 13,
     "sample": {
       "slot": 1584,
       "durMs": 600000,
       "stack": 1
     }
   },
+  "2032020": {
+    "firstSeen": 1769956940756,
+    "count": 1
+  },
+  "2032024": {
+    "firstSeen": 1769956940757,
+    "count": 1
+  },
   "2032050": {
     "firstSeen": 1767185211692,
-    "count": 1,
+    "count": 2,
     "sample": {
       "slot": 2244,
       "durMs": 5000,
@@ -2143,7 +2821,7 @@
   },
   "2032053": {
     "firstSeen": 1767384824708,
-    "count": 2,
+    "count": 3,
     "sample": {
       "slot": 5,
       "durMs": 1800000,
@@ -2152,7 +2830,7 @@
   },
   "2032060": {
     "firstSeen": 1767186140211,
-    "count": 1,
+    "count": 6,
     "sample": {
       "slot": 2906,
       "durMs": 5000,
@@ -2168,12 +2846,56 @@
       "stack": 1
     }
   },
+  "2032165": {
+    "firstSeen": 1769021173480,
+    "count": 8,
+    "sample": {
+      "slot": 234,
+      "durMs": 2340005,
+      "stack": 1
+    }
+  },
   "2033000": {
     "firstSeen": 1767093993003,
-    "count": 7,
+    "count": 13,
     "sample": {
       "slot": 1582,
       "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2033050": {
+    "firstSeen": 1769956943163,
+    "count": 2
+  },
+  "2033055": {
+    "firstSeen": 1769956943163,
+    "count": 1
+  },
+  "2033060": {
+    "firstSeen": 1769021189285,
+    "count": 12,
+    "sample": {
+      "slot": 279,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
+  "2033065": {
+    "firstSeen": 1769022801725,
+    "count": 7,
+    "sample": {
+      "slot": 27500,
+      "durMs": 780001,
+      "stack": 1
+    }
+  },
+  "2033066": {
+    "firstSeen": 1769021189286,
+    "count": 3,
+    "sample": {
+      "slot": 281,
+      "durMs": 780001,
       "stack": 1
     }
   },
@@ -2188,16 +2910,82 @@
   },
   "2100402": {
     "firstSeen": 1767277738812,
-    "count": 2,
+    "count": 75,
     "sample": {
       "slot": 1539,
       "durMs": 5000,
       "stack": 1
     }
   },
+  "2100405": {
+    "firstSeen": 1769021683807,
+    "count": 2,
+    "sample": {
+      "slot": 7740,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2100407": {
+    "firstSeen": 1769947187235,
+    "count": 2
+  },
+  "2100408": {
+    "firstSeen": 1769948025790,
+    "count": 1
+  },
+  "2100409": {
+    "firstSeen": 1768568380056,
+    "count": 4,
+    "sample": {
+      "slot": 2162,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
+  "2100410": {
+    "firstSeen": 1768568380057,
+    "count": 64,
+    "sample": {
+      "slot": 2163,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2100411": {
+    "firstSeen": 1768568380057,
+    "count": 64,
+    "sample": {
+      "slot": 2164,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2100412": {
+    "firstSeen": 1769022357386,
+    "count": 1,
+    "sample": {
+      "slot": 20007,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
+  "2110014": {
+    "firstSeen": 1769948777985,
+    "count": 18
+  },
+  "2110032": {
+    "firstSeen": 1769021772751,
+    "count": 3,
+    "sample": {
+      "slot": 9528,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
   "2110034": {
     "firstSeen": 1767086577238,
-    "count": 27,
+    "count": 96,
     "sample": {
       "slot": 2911,
       "durMs": 20000,
@@ -2213,27 +3001,63 @@
       "stack": 1
     }
   },
+  "2110055": {
+    "firstSeen": 1769022054577,
+    "count": 3,
+    "sample": {
+      "slot": 13677,
+      "durMs": 600000,
+      "stack": 1
+    }
+  },
   "2110056": {
     "firstSeen": 1767086577238,
-    "count": 27,
+    "count": 96,
     "sample": {
       "slot": 2912,
       "durMs": 60000,
       "stack": 1
     }
   },
+  "2110057": {
+    "firstSeen": 1769021772751,
+    "count": 4,
+    "sample": {
+      "slot": 9529,
+      "durMs": 600000,
+      "stack": 1
+    }
+  },
+  "2110061": {
+    "firstSeen": 1769022054577,
+    "count": 3,
+    "sample": {
+      "slot": 13676,
+      "durMs": 3000,
+      "stack": 1
+    }
+  },
   "2110062": {
     "firstSeen": 1767273951816,
-    "count": 5,
+    "count": 47,
     "sample": {
       "slot": 1037,
       "durMs": 20000,
       "stack": 1
     }
   },
+  "2110065": {
+    "firstSeen": 1769021471766,
+    "count": 317,
+    "sample": {
+      "slot": 3873,
+      "durMs": 1100,
+      "stack": 1
+    }
+  },
   "2110075": {
     "firstSeen": 1767381201621,
-    "count": 25,
+    "count": 111,
     "sample": {
       "slot": 4683,
       "durMs": 20000,
@@ -2242,7 +3066,7 @@
   },
   "2110093": {
     "firstSeen": 1765928527347,
-    "count": 167,
+    "count": 550,
     "sample": {
       "slot": 767,
       "durMs": 500,
@@ -2251,16 +3075,20 @@
   },
   "2110095": {
     "firstSeen": 1765928523433,
-    "count": 41,
+    "count": 48,
     "sample": {
       "slot": 764,
       "durMs": 20000,
       "stack": 1
     }
   },
+  "2110101": {
+    "firstSeen": 1769951362488,
+    "count": 1
+  },
   "2110102": {
     "firstSeen": 1767273950926,
-    "count": 10,
+    "count": 36,
     "sample": {
       "slot": 1018,
       "durMs": 20000,
@@ -2269,7 +3097,7 @@
   },
   "2110103": {
     "firstSeen": 1765928664322,
-    "count": 30,
+    "count": 31,
     "sample": {
       "slot": 770,
       "durMs": 20000,
@@ -2278,7 +3106,7 @@
   },
   "2110108": {
     "firstSeen": 1767273951815,
-    "count": 2,
+    "count": 24,
     "sample": {
       "slot": 1036,
       "durMs": 20000,
@@ -2287,19 +3115,32 @@
   },
   "2110109": {
     "firstSeen": 1767274361610,
-    "count": 3,
+    "count": 23,
     "sample": {
       "slot": 691,
       "durMs": 20000,
       "stack": 1
     }
   },
+  "2110113": {
+    "firstSeen": 1769951351042,
+    "count": 1
+  },
   "2110117": {
     "firstSeen": 1767389936917,
-    "count": 2,
+    "count": 11,
     "sample": {
       "slot": 424,
       "durMs": 1500,
+      "stack": 1
+    }
+  },
+  "2110119": {
+    "firstSeen": 1769173064173,
+    "count": 2,
+    "sample": {
+      "slot": 308,
+      "durMs": 20000,
       "stack": 1
     }
   },
@@ -2314,7 +3155,7 @@
   },
   "2110129": {
     "firstSeen": 1765928733155,
-    "count": 31,
+    "count": 130,
     "sample": {
       "slot": 778,
       "durMs": 20000,
@@ -2323,7 +3164,7 @@
   },
   "2200020": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485460,
       "durMs": -1,
@@ -2332,7 +3173,7 @@
   },
   "2200040": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485465,
       "durMs": -1,
@@ -2341,7 +3182,7 @@
   },
   "2200050": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485462,
       "durMs": -1,
@@ -2350,7 +3191,7 @@
   },
   "2200051": {
     "firstSeen": 1767088372769,
-    "count": 39,
+    "count": 47,
     "sample": {
       "slot": 2967,
       "durMs": null,
@@ -2359,7 +3200,7 @@
   },
   "2200060": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485466,
       "durMs": -1,
@@ -2395,7 +3236,7 @@
   },
   "2200100": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485464,
       "durMs": -1,
@@ -2431,7 +3272,7 @@
   },
   "2200160": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485473,
       "durMs": -1,
@@ -2440,7 +3281,7 @@
   },
   "2200170": {
     "firstSeen": 1767306222505,
-    "count": 22,
+    "count": 32,
     "sample": {
       "slot": 485487,
       "durMs": -1,
@@ -2449,7 +3290,7 @@
   },
   "2200180": {
     "firstSeen": 1767306222506,
-    "count": 24,
+    "count": 40,
     "sample": {
       "slot": 485490,
       "durMs": -1,
@@ -2458,7 +3299,7 @@
   },
   "2200182": {
     "firstSeen": 1767089169817,
-    "count": 40,
+    "count": 359,
     "sample": {
       "slot": 3075,
       "durMs": null,
@@ -2467,7 +3308,7 @@
   },
   "2200184": {
     "firstSeen": 1767089166951,
-    "count": 47,
+    "count": 214,
     "sample": {
       "slot": 3045,
       "durMs": null,
@@ -2476,7 +3317,7 @@
   },
   "2200200": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485482,
       "durMs": -1,
@@ -2485,7 +3326,7 @@
   },
   "2200210": {
     "firstSeen": 1767306222506,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485489,
       "durMs": -1,
@@ -2503,7 +3344,7 @@
   },
   "2200220": {
     "firstSeen": 1767388489059,
-    "count": 7,
+    "count": 17,
     "sample": {
       "slot": 97,
       "durMs": -1,
@@ -2512,7 +3353,7 @@
   },
   "2200221": {
     "firstSeen": 1767388508052,
-    "count": 3,
+    "count": 43,
     "sample": {
       "slot": 106,
       "durMs": 10000,
@@ -2521,7 +3362,7 @@
   },
   "2200230": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485475,
       "durMs": -1,
@@ -2530,7 +3371,7 @@
   },
   "2200231": {
     "firstSeen": 1767089169085,
-    "count": 295,
+    "count": 1292,
     "sample": {
       "slot": 3069,
       "durMs": null,
@@ -2539,7 +3380,7 @@
   },
   "2200240": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485485,
       "durMs": -1,
@@ -2548,7 +3389,7 @@
   },
   "2200241": {
     "firstSeen": 1766134523546,
-    "count": 50,
+    "count": 351,
     "sample": {
       "slot": 85,
       "durMs": null,
@@ -2557,7 +3398,7 @@
   },
   "2200250": {
     "firstSeen": 1767306222506,
-    "count": 23,
+    "count": 33,
     "sample": {
       "slot": 485491,
       "durMs": -1,
@@ -2582,9 +3423,18 @@
       "stack": 1
     }
   },
+  "2200300": {
+    "firstSeen": 1769022072104,
+    "count": 10,
+    "sample": {
+      "slot": 13749,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
   "2200310": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485459,
       "durMs": -1,
@@ -2593,7 +3443,7 @@
   },
   "2200311": {
     "firstSeen": 1767380747736,
-    "count": 1144,
+    "count": 1657,
     "sample": {
       "slot": 4650,
       "durMs": null,
@@ -2611,7 +3461,7 @@
   },
   "2200330": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485474,
       "durMs": -1,
@@ -2638,7 +3488,7 @@
   },
   "2200380": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485463,
       "durMs": -1,
@@ -2647,7 +3497,7 @@
   },
   "2200390": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485467,
       "durMs": -1,
@@ -2656,7 +3506,7 @@
   },
   "2200400": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485468,
       "durMs": -1,
@@ -2665,7 +3515,7 @@
   },
   "2200401": {
     "firstSeen": 1767089168188,
-    "count": 1477,
+    "count": 6461,
     "sample": {
       "slot": 3052,
       "durMs": 5000,
@@ -2728,7 +3578,7 @@
   },
   "2200500": {
     "firstSeen": 1767306222504,
-    "count": 26,
+    "count": 42,
     "sample": {
       "slot": 485461,
       "durMs": -1,
@@ -2773,7 +3623,7 @@
   },
   "2200570": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485477,
       "durMs": -1,
@@ -2791,7 +3641,7 @@
   },
   "2200590": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485469,
       "durMs": -1,
@@ -2800,7 +3650,7 @@
   },
   "2200600": {
     "firstSeen": 1767306222506,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485488,
       "durMs": -1,
@@ -2809,7 +3659,7 @@
   },
   "2200601": {
     "firstSeen": 1767089168108,
-    "count": 135,
+    "count": 544,
     "sample": {
       "slot": 3051,
       "durMs": null,
@@ -2818,7 +3668,7 @@
   },
   "2200602": {
     "firstSeen": 1767089168590,
-    "count": 143,
+    "count": 586,
     "sample": {
       "slot": 3057,
       "durMs": null,
@@ -2827,7 +3677,7 @@
   },
   "2200610": {
     "firstSeen": 1767306222505,
-    "count": 17,
+    "count": 33,
     "sample": {
       "slot": 485480,
       "durMs": -1,
@@ -2836,7 +3686,7 @@
   },
   "2200620": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485483,
       "durMs": -1,
@@ -2845,7 +3695,7 @@
   },
   "2200630": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485479,
       "durMs": -1,
@@ -2854,7 +3704,7 @@
   },
   "2200640": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485476,
       "durMs": -1,
@@ -2863,7 +3713,7 @@
   },
   "2200641": {
     "firstSeen": 1766134523208,
-    "count": 48,
+    "count": 242,
     "sample": {
       "slot": 83,
       "durMs": null,
@@ -2881,7 +3731,7 @@
   },
   "2200690": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485486,
       "durMs": -1,
@@ -2890,7 +3740,7 @@
   },
   "2200700": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485472,
       "durMs": -1,
@@ -2899,7 +3749,7 @@
   },
   "2200710": {
     "firstSeen": 1767306222505,
-    "count": 23,
+    "count": 39,
     "sample": {
       "slot": 485484,
       "durMs": -1,
@@ -2908,7 +3758,7 @@
   },
   "2200720": {
     "firstSeen": 1767306222505,
-    "count": 22,
+    "count": 38,
     "sample": {
       "slot": 485481,
       "durMs": -1,
@@ -2917,7 +3767,7 @@
   },
   "2200730": {
     "firstSeen": 1767306222505,
-    "count": 22,
+    "count": 38,
     "sample": {
       "slot": 485478,
       "durMs": -1,
@@ -3061,7 +3911,7 @@
   },
   "2201344": {
     "firstSeen": 1767389061069,
-    "count": 11,
+    "count": 21,
     "sample": {
       "slot": 696,
       "durMs": 5000,
@@ -3268,7 +4118,7 @@
   },
   "2202041": {
     "firstSeen": 1767186193563,
-    "count": 44,
+    "count": 196,
     "sample": {
       "slot": 2918,
       "durMs": 1500,
@@ -3340,7 +4190,7 @@
   },
   "2202091": {
     "firstSeen": 1766479021603,
-    "count": 237,
+    "count": 1573,
     "sample": {
       "slot": 286,
       "durMs": 400,
@@ -3376,7 +4226,7 @@
   },
   "2202112": {
     "firstSeen": 1767306381573,
-    "count": 22,
+    "count": 130,
     "sample": {
       "slot": 485508,
       "durMs": 10000,
@@ -3385,7 +4235,7 @@
   },
   "2202113": {
     "firstSeen": 1767306381573,
-    "count": 22,
+    "count": 130,
     "sample": {
       "slot": 485509,
       "durMs": 30000,
@@ -3403,7 +4253,7 @@
   },
   "2202121": {
     "firstSeen": 1767389059391,
-    "count": 35,
+    "count": 145,
     "sample": {
       "slot": 671,
       "durMs": 1000,
@@ -3592,7 +4442,7 @@
   },
   "2202261": {
     "firstSeen": 1766478568077,
-    "count": 360,
+    "count": 1960,
     "sample": {
       "slot": 263,
       "durMs": 1200,
@@ -3601,7 +4451,7 @@
   },
   "2202262": {
     "firstSeen": 1767665351042,
-    "count": 2,
+    "count": 91,
     "sample": {
       "slot": 330,
       "durMs": 5000,
@@ -3610,7 +4460,7 @@
   },
   "2202263": {
     "firstSeen": 1767665351042,
-    "count": 2,
+    "count": 91,
     "sample": {
       "slot": 329,
       "durMs": 45000,
@@ -3623,6 +4473,15 @@
     "sample": {
       "slot": 13390,
       "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2202271": {
+    "firstSeen": 1769022190828,
+    "count": 11,
+    "sample": {
+      "slot": 16726,
+      "durMs": 1000,
       "stack": 1
     }
   },
@@ -4105,7 +4964,7 @@
   },
   "2202705": {
     "firstSeen": 1767093034798,
-    "count": 9,
+    "count": 71,
     "sample": {
       "slot": 342,
       "durMs": 8000,
@@ -4420,7 +5279,7 @@
   },
   "2203291": {
     "firstSeen": 1767666010695,
-    "count": 4234,
+    "count": 4253,
     "sample": {
       "slot": 2,
       "durMs": null,
@@ -5149,7 +6008,7 @@
   },
   "2204471": {
     "firstSeen": 1765988271700,
-    "count": 30,
+    "count": 4969,
     "sample": {
       "slot": 104,
       "durMs": 1500,
@@ -5338,7 +6197,7 @@
   },
   "2205010": {
     "firstSeen": 1766661859476,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 158,
       "durMs": -1,
@@ -5347,16 +6206,25 @@
   },
   "2205030": {
     "firstSeen": 1766661859477,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 161,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205031": {
+    "firstSeen": 1768434919805,
+    "count": 138,
+    "sample": {
+      "slot": 39,
+      "durMs": 5000,
+      "stack": 1
+    }
+  },
   "2205040": {
     "firstSeen": 1766661859476,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 157,
       "durMs": -1,
@@ -5365,7 +6233,7 @@
   },
   "2205050": {
     "firstSeen": 1766661859477,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 163,
       "durMs": -1,
@@ -5374,7 +6242,7 @@
   },
   "2205060": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2071,
       "durMs": -1,
@@ -5383,16 +6251,25 @@
   },
   "2205070": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2067,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205071": {
+    "firstSeen": 1768434922394,
+    "count": 80,
+    "sample": {
+      "slot": 42,
+      "durMs": 8000,
+      "stack": 1
+    }
+  },
   "2205080": {
     "firstSeen": 1767184830227,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2057,
       "durMs": -1,
@@ -5401,7 +6278,7 @@
   },
   "2205090": {
     "firstSeen": 1767184830227,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2061,
       "durMs": -1,
@@ -5410,7 +6287,7 @@
   },
   "2205100": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2069,
       "durMs": -1,
@@ -5419,7 +6296,7 @@
   },
   "2205120": {
     "firstSeen": 1767184830227,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2063,
       "durMs": -1,
@@ -5428,7 +6305,7 @@
   },
   "2205121": {
     "firstSeen": 1766140207724,
-    "count": 17,
+    "count": 67,
     "sample": {
       "slot": 1157,
       "durMs": 10000,
@@ -5437,7 +6314,7 @@
   },
   "2205130": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2075,
       "durMs": -1,
@@ -5446,7 +6323,7 @@
   },
   "2205131": {
     "firstSeen": 1765927610333,
-    "count": 545,
+    "count": 1275,
     "sample": {
       "slot": 242,
       "durMs": 20000,
@@ -5455,7 +6332,7 @@
   },
   "2205132": {
     "firstSeen": 1766818955427,
-    "count": 1120,
+    "count": 2591,
     "sample": {
       "slot": 401,
       "durMs": 1000,
@@ -5464,7 +6341,7 @@
   },
   "2205133": {
     "firstSeen": 1765927590856,
-    "count": 202,
+    "count": 551,
     "sample": {
       "slot": 225,
       "durMs": null,
@@ -5473,7 +6350,7 @@
   },
   "2205134": {
     "firstSeen": 1765927699644,
-    "count": 188,
+    "count": 522,
     "sample": {
       "slot": 301,
       "durMs": null,
@@ -5482,16 +6359,25 @@
   },
   "2205140": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8285,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205141": {
+    "firstSeen": 1768434978705,
+    "count": 77,
+    "sample": {
+      "slot": 556,
+      "durMs": 1500,
+      "stack": 1
+    }
+  },
   "2205150": {
     "firstSeen": 1767306856599,
-    "count": 6,
+    "count": 7,
     "sample": {
       "slot": 8276,
       "durMs": -1,
@@ -5500,16 +6386,25 @@
   },
   "2205160": {
     "firstSeen": 1767306856599,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8272,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205161": {
+    "firstSeen": 1768566327055,
+    "count": 16,
+    "sample": {
+      "slot": 748,
+      "durMs": 15000,
+      "stack": 1
+    }
+  },
   "2205170": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8281,
       "durMs": -1,
@@ -5518,16 +6413,25 @@
   },
   "2205180": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8284,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205181": {
+    "firstSeen": 1768566319384,
+    "count": 24,
+    "sample": {
+      "slot": 724,
+      "durMs": null,
+      "stack": 1
+    }
+  },
   "2205190": {
     "firstSeen": 1767306856599,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8275,
       "durMs": -1,
@@ -5536,7 +6440,7 @@
   },
   "2205200": {
     "firstSeen": 1767306856599,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8274,
       "durMs": -1,
@@ -5545,16 +6449,25 @@
   },
   "2205210": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8277,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205211": {
+    "firstSeen": 1768434976408,
+    "count": 52,
+    "sample": {
+      "slot": 546,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
   "2205220": {
     "firstSeen": 1767184830228,
-    "count": 19,
+    "count": 87,
     "sample": {
       "slot": 2076,
       "durMs": -1,
@@ -5563,7 +6476,7 @@
   },
   "2205221": {
     "firstSeen": 1765927513368,
-    "count": 70,
+    "count": 157,
     "sample": {
       "slot": 222,
       "durMs": null,
@@ -5572,7 +6485,7 @@
   },
   "2205230": {
     "firstSeen": 1767306856600,
-    "count": 13,
+    "count": 14,
     "sample": {
       "slot": 8288,
       "durMs": -1,
@@ -5581,7 +6494,7 @@
   },
   "2205260": {
     "firstSeen": 1766661859477,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 166,
       "durMs": -1,
@@ -5590,7 +6503,7 @@
   },
   "2205261": {
     "firstSeen": 1765927531218,
-    "count": 112,
+    "count": 377,
     "sample": {
       "slot": 224,
       "durMs": 8000,
@@ -5599,7 +6512,7 @@
   },
   "2205270": {
     "firstSeen": 1766661859477,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 165,
       "durMs": -1,
@@ -5608,7 +6521,7 @@
   },
   "2205271": {
     "firstSeen": 1765927608731,
-    "count": 67,
+    "count": 305,
     "sample": {
       "slot": 232,
       "durMs": 5000,
@@ -5617,7 +6530,7 @@
   },
   "2205280": {
     "firstSeen": 1766661859476,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 160,
       "durMs": -1,
@@ -5626,7 +6539,7 @@
   },
   "2205290": {
     "firstSeen": 1767306856599,
-    "count": 11,
+    "count": 12,
     "sample": {
       "slot": 8269,
       "durMs": -1,
@@ -5635,7 +6548,7 @@
   },
   "2205300": {
     "firstSeen": 1766661864241,
-    "count": 24,
+    "count": 94,
     "sample": {
       "slot": 167,
       "durMs": -1,
@@ -5644,7 +6557,7 @@
   },
   "2205301": {
     "firstSeen": 1766136031702,
-    "count": 327,
+    "count": 1042,
     "sample": {
       "slot": 160,
       "durMs": 10000,
@@ -5653,7 +6566,7 @@
   },
   "2205310": {
     "firstSeen": 1767184830227,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2060,
       "durMs": -1,
@@ -5662,7 +6575,7 @@
   },
   "2205311": {
     "firstSeen": 1765928018669,
-    "count": 63,
+    "count": 162,
     "sample": {
       "slot": 744,
       "durMs": null,
@@ -5671,7 +6584,7 @@
   },
   "2205312": {
     "firstSeen": 1765928018669,
-    "count": 63,
+    "count": 162,
     "sample": {
       "slot": 746,
       "durMs": 16000,
@@ -5680,7 +6593,7 @@
   },
   "2205320": {
     "firstSeen": 1767677031251,
-    "count": 1,
+    "count": 2,
     "sample": {
       "slot": 525,
       "durMs": -1,
@@ -5689,7 +6602,7 @@
   },
   "2205340": {
     "firstSeen": 1766661859476,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 159,
       "durMs": -1,
@@ -5698,7 +6611,7 @@
   },
   "2205350": {
     "firstSeen": 1766661859477,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 162,
       "durMs": -1,
@@ -5707,7 +6620,7 @@
   },
   "2205360": {
     "firstSeen": 1766661859477,
-    "count": 33,
+    "count": 118,
     "sample": {
       "slot": 164,
       "durMs": -1,
@@ -5716,16 +6629,25 @@
   },
   "2205370": {
     "firstSeen": 1767675168443,
-    "count": 2,
+    "count": 7,
     "sample": {
       "slot": 112,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205371": {
+    "firstSeen": 1768470833469,
+    "count": 3,
+    "sample": {
+      "slot": 111,
+      "durMs": 15000,
+      "stack": 1
+    }
+  },
   "2205380": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 70,
     "sample": {
       "slot": 2073,
       "durMs": -1,
@@ -5734,7 +6656,7 @@
   },
   "2205390": {
     "firstSeen": 1767184830227,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2062,
       "durMs": -1,
@@ -5743,7 +6665,7 @@
   },
   "2205391": {
     "firstSeen": 1765927613320,
-    "count": 77,
+    "count": 186,
     "sample": {
       "slot": 251,
       "durMs": 12000,
@@ -5752,7 +6674,7 @@
   },
   "2205392": {
     "firstSeen": 1765927613320,
-    "count": 77,
+    "count": 186,
     "sample": {
       "slot": 252,
       "durMs": 30000,
@@ -5761,7 +6683,7 @@
   },
   "2205400": {
     "firstSeen": 1767184830227,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2059,
       "durMs": -1,
@@ -5770,7 +6692,7 @@
   },
   "2205401": {
     "firstSeen": 1765927612263,
-    "count": 228,
+    "count": 700,
     "sample": {
       "slot": 247,
       "durMs": null,
@@ -5779,7 +6701,7 @@
   },
   "2205420": {
     "firstSeen": 1767184830227,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2064,
       "durMs": -1,
@@ -5788,7 +6710,7 @@
   },
   "2205421": {
     "firstSeen": 1766139469681,
-    "count": 131,
+    "count": 363,
     "sample": {
       "slot": 935,
       "durMs": 10000,
@@ -5797,7 +6719,7 @@
   },
   "2205440": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2068,
       "durMs": -1,
@@ -5806,7 +6728,7 @@
   },
   "2205450": {
     "firstSeen": 1767676940030,
-    "count": 1,
+    "count": 24,
     "sample": {
       "slot": 487,
       "durMs": -1,
@@ -5815,7 +6737,7 @@
   },
   "2205451": {
     "firstSeen": 1766140206907,
-    "count": 1,
+    "count": 416,
     "sample": {
       "slot": 1141,
       "durMs": 1500,
@@ -5824,7 +6746,7 @@
   },
   "2205460": {
     "firstSeen": 1767184830227,
-    "count": 21,
+    "count": 89,
     "sample": {
       "slot": 2065,
       "durMs": -1,
@@ -5842,7 +6764,7 @@
   },
   "2205480": {
     "firstSeen": 1767184830228,
-    "count": 7,
+    "count": 77,
     "sample": {
       "slot": 2077,
       "durMs": -1,
@@ -5851,7 +6773,7 @@
   },
   "2205481": {
     "firstSeen": 1766140206663,
-    "count": 5,
+    "count": 54,
     "sample": {
       "slot": 1133,
       "durMs": 5000,
@@ -5860,7 +6782,7 @@
   },
   "2205490": {
     "firstSeen": 1767184830227,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2058,
       "durMs": -1,
@@ -5869,7 +6791,7 @@
   },
   "2205491": {
     "firstSeen": 1765928018669,
-    "count": 63,
+    "count": 162,
     "sample": {
       "slot": 745,
       "durMs": null,
@@ -5878,7 +6800,7 @@
   },
   "2205500": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2074,
       "durMs": -1,
@@ -5887,7 +6809,7 @@
   },
   "2205501": {
     "firstSeen": 1765927675759,
-    "count": 200,
+    "count": 542,
     "sample": {
       "slot": 272,
       "durMs": 10000,
@@ -5896,7 +6818,7 @@
   },
   "2205510": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2070,
       "durMs": -1,
@@ -5905,7 +6827,7 @@
   },
   "2205520": {
     "firstSeen": 1767184830228,
-    "count": 23,
+    "count": 93,
     "sample": {
       "slot": 2072,
       "durMs": -1,
@@ -5914,7 +6836,7 @@
   },
   "2205521": {
     "firstSeen": 1766821749424,
-    "count": 154,
+    "count": 422,
     "sample": {
       "slot": 307,
       "durMs": 10000,
@@ -5932,7 +6854,7 @@
   },
   "2205540": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8283,
       "durMs": -1,
@@ -5941,16 +6863,25 @@
   },
   "2205560": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8279,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205561": {
+    "firstSeen": 1768566327055,
+    "count": 16,
+    "sample": {
+      "slot": 749,
+      "durMs": 15000,
+      "stack": 1
+    }
+  },
   "2205570": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8278,
       "durMs": -1,
@@ -5959,16 +6890,25 @@
   },
   "2205590": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8289,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2205591": {
+    "firstSeen": 1768434978958,
+    "count": 2,
+    "sample": {
+      "slot": 561,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
   "2205600": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8282,
       "durMs": -1,
@@ -5986,7 +6926,7 @@
   },
   "2205620": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8280,
       "durMs": -1,
@@ -5995,7 +6935,7 @@
   },
   "2205640": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8287,
       "durMs": -1,
@@ -6004,7 +6944,7 @@
   },
   "2205650": {
     "firstSeen": 1767306856600,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8286,
       "durMs": -1,
@@ -6031,7 +6971,7 @@
   },
   "2205680": {
     "firstSeen": 1767306856599,
-    "count": 10,
+    "count": 11,
     "sample": {
       "slot": 8273,
       "durMs": -1,
@@ -6046,6 +6986,10 @@
       "durMs": -1,
       "stack": 1
     }
+  },
+  "2206011": {
+    "firstSeen": 1769943878316,
+    "count": 1
   },
   "2206020": {
     "firstSeen": 1767279399394,
@@ -6065,6 +7009,10 @@
       "stack": 1
     }
   },
+  "2206031": {
+    "firstSeen": 1769943889661,
+    "count": 4
+  },
   "2206040": {
     "firstSeen": 1767279399394,
     "count": 11,
@@ -6073,6 +7021,14 @@
       "durMs": -1,
       "stack": 1
     }
+  },
+  "2206042": {
+    "firstSeen": 1769943909302,
+    "count": 1
+  },
+  "2206043": {
+    "firstSeen": 1769943909302,
+    "count": 1
   },
   "2206050": {
     "firstSeen": 1767279399394,
@@ -6181,6 +7137,14 @@
       "durMs": -1,
       "stack": 1
     }
+  },
+  "2206171": {
+    "firstSeen": 1769943901187,
+    "count": 2
+  },
+  "2206173": {
+    "firstSeen": 1769943902709,
+    "count": 1
   },
   "2206180": {
     "firstSeen": 1767279399395,
@@ -6299,6 +7263,15 @@
       "stack": 1
     }
   },
+  "2206331": {
+    "firstSeen": 1769021477325,
+    "count": 88,
+    "sample": {
+      "slot": 4104,
+      "durMs": 10000,
+      "stack": 1
+    }
+  },
   "2206340": {
     "firstSeen": 1767279399394,
     "count": 11,
@@ -6334,6 +7307,10 @@
       "durMs": -1,
       "stack": 1
     }
+  },
+  "2206381": {
+    "firstSeen": 1769943879442,
+    "count": 1
   },
   "2206390": {
     "firstSeen": 1767676751277,
@@ -6371,6 +7348,10 @@
       "stack": 1
     }
   },
+  "2206421": {
+    "firstSeen": 1769943877912,
+    "count": 10
+  },
   "2206450": {
     "firstSeen": 1767676751277,
     "count": 8,
@@ -6380,6 +7361,10 @@
       "stack": 1
     }
   },
+  "2206451": {
+    "firstSeen": 1769943878465,
+    "count": 5
+  },
   "2206460": {
     "firstSeen": 1767676939949,
     "count": 2,
@@ -6388,6 +7373,10 @@
       "durMs": -1,
       "stack": 1
     }
+  },
+  "2206461": {
+    "firstSeen": 1769943883309,
+    "count": 17
   },
   "2206470": {
     "firstSeen": 1767676751277,
@@ -6406,6 +7395,10 @@
       "durMs": -1,
       "stack": 1
     }
+  },
+  "2206481": {
+    "firstSeen": 1769943878948,
+    "count": 1
   },
   "2206500": {
     "firstSeen": 1767279399395,
@@ -6544,7 +7537,7 @@
   },
   "2207010": {
     "firstSeen": 1765988769960,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 143,
       "durMs": -1,
@@ -6553,7 +7546,7 @@
   },
   "2207011": {
     "firstSeen": 1767273952154,
-    "count": 83,
+    "count": 176,
     "sample": {
       "slot": 1055,
       "durMs": 10000,
@@ -6562,7 +7555,7 @@
   },
   "2207012": {
     "firstSeen": 1767273949303,
-    "count": 7,
+    "count": 18,
     "sample": {
       "slot": 936,
       "durMs": null,
@@ -6571,7 +7564,7 @@
   },
   "2207020": {
     "firstSeen": 1765988769960,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 147,
       "durMs": -1,
@@ -6580,7 +7573,7 @@
   },
   "2207030": {
     "firstSeen": 1765988769961,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 149,
       "durMs": -1,
@@ -6589,7 +7582,7 @@
   },
   "2207050": {
     "firstSeen": 1765988769960,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 144,
       "durMs": -1,
@@ -6598,7 +7591,7 @@
   },
   "2207060": {
     "firstSeen": 1765988769961,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 152,
       "durMs": -1,
@@ -6607,7 +7600,7 @@
   },
   "2207070": {
     "firstSeen": 1765988769960,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 146,
       "durMs": -1,
@@ -6616,7 +7609,7 @@
   },
   "2207071": {
     "firstSeen": 1767273958495,
-    "count": 4,
+    "count": 7,
     "sample": {
       "slot": 1575,
       "durMs": null,
@@ -6625,7 +7618,7 @@
   },
   "2207080": {
     "firstSeen": 1765988769961,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 153,
       "durMs": -1,
@@ -6634,7 +7627,7 @@
   },
   "2207090": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 62,
       "durMs": -1,
@@ -6643,7 +7636,7 @@
   },
   "2207100": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 70,
       "durMs": -1,
@@ -6652,7 +7645,7 @@
   },
   "2207110": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 69,
       "durMs": -1,
@@ -6661,7 +7654,7 @@
   },
   "2207120": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 66,
       "durMs": -1,
@@ -6670,7 +7663,7 @@
   },
   "2207121": {
     "firstSeen": 1767273993263,
-    "count": 65,
+    "count": 207,
     "sample": {
       "slot": 86,
       "durMs": 2000,
@@ -6679,7 +7672,7 @@
   },
   "2207122": {
     "firstSeen": 1767273950101,
-    "count": 656,
+    "count": 991,
     "sample": {
       "slot": 972,
       "durMs": 2000,
@@ -6688,7 +7681,7 @@
   },
   "2207130": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 67,
       "durMs": -1,
@@ -6697,7 +7690,7 @@
   },
   "2207131": {
     "firstSeen": 1767273948647,
-    "count": 173,
+    "count": 354,
     "sample": {
       "slot": 899,
       "durMs": null,
@@ -6706,7 +7699,7 @@
   },
   "2207132": {
     "firstSeen": 1767273948647,
-    "count": 170,
+    "count": 346,
     "sample": {
       "slot": 905,
       "durMs": null,
@@ -6724,7 +7717,7 @@
   },
   "2207141": {
     "firstSeen": 1767273948970,
-    "count": 8871,
+    "count": 13165,
     "sample": {
       "slot": 917,
       "durMs": 10100,
@@ -6733,7 +7726,7 @@
   },
   "2207150": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 75,
       "durMs": -1,
@@ -6742,7 +7735,7 @@
   },
   "2207151": {
     "firstSeen": 1767273949858,
-    "count": 68,
+    "count": 122,
     "sample": {
       "slot": 958,
       "durMs": 99000,
@@ -6751,7 +7744,7 @@
   },
   "2207160": {
     "firstSeen": 1767273993263,
-    "count": 9,
+    "count": 21,
     "sample": {
       "slot": 82,
       "durMs": -1,
@@ -6760,7 +7753,7 @@
   },
   "2207161": {
     "firstSeen": 1767273948483,
-    "count": 3,
+    "count": 8,
     "sample": {
       "slot": 895,
       "durMs": null,
@@ -6769,7 +7762,7 @@
   },
   "2207170": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 68,
       "durMs": -1,
@@ -6778,7 +7771,7 @@
   },
   "2207171": {
     "firstSeen": 1767273953052,
-    "count": 369,
+    "count": 677,
     "sample": {
       "slot": 1100,
       "durMs": 10000,
@@ -6787,7 +7780,7 @@
   },
   "2207180": {
     "firstSeen": 1765988769961,
-    "count": 5,
+    "count": 6,
     "sample": {
       "slot": 156,
       "durMs": -1,
@@ -6796,7 +7789,7 @@
   },
   "2207190": {
     "firstSeen": 1765988769962,
-    "count": 5,
+    "count": 6,
     "sample": {
       "slot": 160,
       "durMs": -1,
@@ -6823,7 +7816,7 @@
   },
   "2207220": {
     "firstSeen": 1765988769963,
-    "count": 5,
+    "count": 6,
     "sample": {
       "slot": 166,
       "durMs": -1,
@@ -6841,7 +7834,7 @@
   },
   "2207240": {
     "firstSeen": 1765988769962,
-    "count": 5,
+    "count": 6,
     "sample": {
       "slot": 162,
       "durMs": -1,
@@ -6850,7 +7843,7 @@
   },
   "2207250": {
     "firstSeen": 1765988769962,
-    "count": 5,
+    "count": 6,
     "sample": {
       "slot": 159,
       "durMs": -1,
@@ -6859,7 +7852,7 @@
   },
   "2207252": {
     "firstSeen": 1767089352140,
-    "count": 35,
+    "count": 2361,
     "sample": {
       "slot": 3270,
       "durMs": 1500,
@@ -6877,16 +7870,25 @@
   },
   "2207270": {
     "firstSeen": 1767273993262,
-    "count": 10,
+    "count": 23,
     "sample": {
       "slot": 73,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2207301": {
+    "firstSeen": 1768569439025,
+    "count": 1,
+    "sample": {
+      "slot": 5061,
+      "durMs": 10000,
+      "stack": 30
+    }
+  },
   "2207320": {
     "firstSeen": 1765988769963,
-    "count": 16,
+    "count": 28,
     "sample": {
       "slot": 176,
       "durMs": -1,
@@ -6895,7 +7897,7 @@
   },
   "2207330": {
     "firstSeen": 1765988769961,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 155,
       "durMs": -1,
@@ -6904,7 +7906,7 @@
   },
   "2207331": {
     "firstSeen": 1765988769972,
-    "count": 17,
+    "count": 28,
     "sample": {
       "slot": 242,
       "durMs": null,
@@ -6913,7 +7915,7 @@
   },
   "2207340": {
     "firstSeen": 1765988769961,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 154,
       "durMs": -1,
@@ -6922,7 +7924,7 @@
   },
   "2207350": {
     "firstSeen": 1765988769960,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 145,
       "durMs": -1,
@@ -6931,7 +7933,7 @@
   },
   "2207360": {
     "firstSeen": 1765988769961,
-    "count": 17,
+    "count": 30,
     "sample": {
       "slot": 150,
       "durMs": -1,
@@ -6940,7 +7942,7 @@
   },
   "2207370": {
     "firstSeen": 1767273993263,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 83,
       "durMs": -1,
@@ -6949,7 +7951,7 @@
   },
   "2207371": {
     "firstSeen": 1767273949858,
-    "count": 68,
+    "count": 122,
     "sample": {
       "slot": 957,
       "durMs": null,
@@ -6967,7 +7969,7 @@
   },
   "2207390": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 74,
       "durMs": -1,
@@ -6983,6 +7985,15 @@
       "stack": 1
     }
   },
+  "2207411": {
+    "firstSeen": 1768480953437,
+    "count": 54,
+    "sample": {
+      "slot": 120,
+      "durMs": 1000,
+      "stack": 1
+    }
+  },
   "2207420": {
     "firstSeen": 1767676626185,
     "count": 3,
@@ -6994,7 +8005,7 @@
   },
   "2207430": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 79,
       "durMs": -1,
@@ -7003,7 +8014,7 @@
   },
   "2207431": {
     "firstSeen": 1767273948483,
-    "count": 3,
+    "count": 8,
     "sample": {
       "slot": 896,
       "durMs": null,
@@ -7012,7 +8023,7 @@
   },
   "2207440": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 77,
       "durMs": -1,
@@ -7021,7 +8032,7 @@
   },
   "2207450": {
     "firstSeen": 1767676626184,
-    "count": 3,
+    "count": 5,
     "sample": {
       "slot": 127,
       "durMs": -1,
@@ -7030,7 +8041,7 @@
   },
   "2207460": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 71,
       "durMs": -1,
@@ -7039,7 +8050,7 @@
   },
   "2207461": {
     "firstSeen": 1767273953895,
-    "count": 73,
+    "count": 144,
     "sample": {
       "slot": 1212,
       "durMs": null,
@@ -7048,7 +8059,7 @@
   },
   "2207462": {
     "firstSeen": 1767273953895,
-    "count": 73,
+    "count": 144,
     "sample": {
       "slot": 1213,
       "durMs": null,
@@ -7057,7 +8068,7 @@
   },
   "2207470": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 81,
       "durMs": -1,
@@ -7066,7 +8077,7 @@
   },
   "2207480": {
     "firstSeen": 1767273993262,
-    "count": 11,
+    "count": 23,
     "sample": {
       "slot": 78,
       "durMs": -1,
@@ -7084,7 +8095,7 @@
   },
   "2207500": {
     "firstSeen": 1767273993263,
-    "count": 8,
+    "count": 18,
     "sample": {
       "slot": 84,
       "durMs": -1,
@@ -7093,7 +8104,7 @@
   },
   "2207510": {
     "firstSeen": 1767273993263,
-    "count": 6,
+    "count": 16,
     "sample": {
       "slot": 85,
       "durMs": -1,
@@ -7102,7 +8113,7 @@
   },
   "2207520": {
     "firstSeen": 1767273993262,
-    "count": 8,
+    "count": 18,
     "sample": {
       "slot": 76,
       "durMs": -1,
@@ -7111,7 +8122,7 @@
   },
   "2207521": {
     "firstSeen": 1767273949303,
-    "count": 7,
+    "count": 18,
     "sample": {
       "slot": 943,
       "durMs": 10000,
@@ -7120,16 +8131,20 @@
   },
   "2207530": {
     "firstSeen": 1765988769962,
-    "count": 5,
+    "count": 6,
     "sample": {
       "slot": 161,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2207540": {
+    "firstSeen": 1769953186296,
+    "count": 1
+  },
   "2207560": {
     "firstSeen": 1765988769962,
-    "count": 4,
+    "count": 5,
     "sample": {
       "slot": 163,
       "durMs": -1,
@@ -7138,7 +8153,7 @@
   },
   "2207570": {
     "firstSeen": 1765988769962,
-    "count": 5,
+    "count": 6,
     "sample": {
       "slot": 164,
       "durMs": -1,
@@ -7183,7 +8198,7 @@
   },
   "2207620": {
     "firstSeen": 1765988769963,
-    "count": 4,
+    "count": 5,
     "sample": {
       "slot": 167,
       "durMs": -1,
@@ -7237,7 +8252,7 @@
   },
   "2300020": {
     "firstSeen": 1765988769971,
-    "count": 69,
+    "count": 125,
     "sample": {
       "slot": 238,
       "durMs": -1,
@@ -7246,7 +8261,7 @@
   },
   "2300080": {
     "firstSeen": 1767676784448,
-    "count": 2,
+    "count": 25,
     "sample": {
       "slot": 177,
       "durMs": -1,
@@ -7264,7 +8279,7 @@
   },
   "2300220": {
     "firstSeen": 1767382313641,
-    "count": 57,
+    "count": 59,
     "sample": {
       "slot": 20,
       "durMs": -1,
@@ -7273,7 +8288,7 @@
   },
   "2300310": {
     "firstSeen": 1767674943810,
-    "count": 20,
+    "count": 31,
     "sample": {
       "slot": 231,
       "durMs": -1,
@@ -7300,7 +8315,7 @@
   },
   "2300620": {
     "firstSeen": 1767382313641,
-    "count": 29,
+    "count": 58,
     "sample": {
       "slot": 21,
       "durMs": -1,
@@ -7354,7 +8369,7 @@
   },
   "2302121": {
     "firstSeen": 1767388858356,
-    "count": 4865,
+    "count": 8042,
     "sample": {
       "slot": 84,
       "durMs": 1100,
@@ -7363,7 +8378,7 @@
   },
   "2302420": {
     "firstSeen": 1767184850307,
-    "count": 39,
+    "count": 49,
     "sample": {
       "slot": 2110,
       "durMs": -1,
@@ -7372,7 +8387,7 @@
   },
   "2302421": {
     "firstSeen": 1767184850307,
-    "count": 2316,
+    "count": 2423,
     "sample": {
       "slot": 2111,
       "durMs": 5000,
@@ -7381,7 +8396,7 @@
   },
   "2401130": {
     "firstSeen": 1767306222504,
-    "count": 66,
+    "count": 84,
     "sample": {
       "slot": 485458,
       "durMs": -1,
@@ -7390,7 +8405,7 @@
   },
   "2401140": {
     "firstSeen": 1767306222504,
-    "count": 54,
+    "count": 69,
     "sample": {
       "slot": 485457,
       "durMs": -1,
@@ -7399,7 +8414,7 @@
   },
   "2401260": {
     "firstSeen": 1767306222499,
-    "count": 87,
+    "count": 145,
     "sample": {
       "slot": 485448,
       "durMs": -1,
@@ -7408,7 +8423,7 @@
   },
   "2401261": {
     "firstSeen": 1767086753617,
-    "count": 72,
+    "count": 2329,
     "sample": {
       "slot": 2917,
       "durMs": null,
@@ -7417,7 +8432,7 @@
   },
   "2401270": {
     "firstSeen": 1767306222499,
-    "count": 68,
+    "count": 99,
     "sample": {
       "slot": 485447,
       "durMs": -1,
@@ -7426,7 +8441,7 @@
   },
   "2401271": {
     "firstSeen": 1767089176726,
-    "count": 45,
+    "count": 180,
     "sample": {
       "slot": 3180,
       "durMs": null,
@@ -7489,7 +8504,7 @@
   },
   "2403140": {
     "firstSeen": 1766661853779,
-    "count": 187,
+    "count": 480,
     "sample": {
       "slot": 152,
       "durMs": -1,
@@ -7498,9 +8513,18 @@
   },
   "2403150": {
     "firstSeen": 1766661853779,
-    "count": 128,
+    "count": 374,
     "sample": {
       "slot": 151,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "2403160": {
+    "firstSeen": 1768435490891,
+    "count": 194,
+    "sample": {
+      "slot": 12,
       "durMs": -1,
       "stack": 1
     }
@@ -7534,16 +8558,34 @@
   },
   "2403270": {
     "firstSeen": 1767306856599,
-    "count": 68,
+    "count": 71,
     "sample": {
       "slot": 8270,
       "durMs": -1,
       "stack": 1
     }
   },
+  "2403271": {
+    "firstSeen": 1768566336834,
+    "count": 20,
+    "sample": {
+      "slot": 775,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "2403272": {
+    "firstSeen": 1768566336834,
+    "count": 20,
+    "sample": {
+      "slot": 776,
+      "durMs": null,
+      "stack": 1
+    }
+  },
   "2403280": {
     "firstSeen": 1767306856599,
-    "count": 128,
+    "count": 132,
     "sample": {
       "slot": 8271,
       "durMs": -1,
@@ -7588,7 +8630,7 @@
   },
   "2404261": {
     "firstSeen": 1766478907085,
-    "count": 26,
+    "count": 349,
     "sample": {
       "slot": 274,
       "durMs": 10000,
@@ -7606,7 +8648,7 @@
   },
   "2404271": {
     "firstSeen": 1766479048350,
-    "count": 12,
+    "count": 250,
     "sample": {
       "slot": 305,
       "durMs": 10000,
@@ -7703,6 +8745,10 @@
       "stack": 1
     }
   },
+  "2407141": {
+    "firstSeen": 1769943878949,
+    "count": 14
+  },
   "2407150": {
     "firstSeen": 1767279399394,
     "count": 55,
@@ -7711,6 +8757,10 @@
       "durMs": -1,
       "stack": 1
     }
+  },
+  "2407151": {
+    "firstSeen": 1769943878316,
+    "count": 1
   },
   "2407280": {
     "firstSeen": 1767279399392,
@@ -7732,7 +8782,7 @@
   },
   "2408130": {
     "firstSeen": 1765988769960,
-    "count": 83,
+    "count": 147,
     "sample": {
       "slot": 142,
       "durMs": -1,
@@ -7741,7 +8791,7 @@
   },
   "2408140": {
     "firstSeen": 1765988769960,
-    "count": 68,
+    "count": 111,
     "sample": {
       "slot": 141,
       "durMs": -1,
@@ -7750,7 +8800,7 @@
   },
   "2408230": {
     "firstSeen": 1767273993259,
-    "count": 23,
+    "count": 36,
     "sample": {
       "slot": 11,
       "durMs": -1,
@@ -7759,7 +8809,7 @@
   },
   "2408260": {
     "firstSeen": 1765988769958,
-    "count": 63,
+    "count": 66,
     "sample": {
       "slot": 135,
       "durMs": -1,
@@ -7768,7 +8818,7 @@
   },
   "2408270": {
     "firstSeen": 1765988769957,
-    "count": 32,
+    "count": 35,
     "sample": {
       "slot": 134,
       "durMs": -1,
@@ -7777,7 +8827,7 @@
   },
   "3002010": {
     "firstSeen": 1767273993260,
-    "count": 35,
+    "count": 59,
     "sample": {
       "slot": 23,
       "durMs": -1,
@@ -7786,7 +8836,7 @@
   },
   "3002011": {
     "firstSeen": 1766866532833,
-    "count": 301,
+    "count": 1179,
     "sample": {
       "slot": 388,
       "durMs": 15000,
@@ -7795,7 +8845,7 @@
   },
   "3002020": {
     "firstSeen": 1767273993260,
-    "count": 33,
+    "count": 36,
     "sample": {
       "slot": 22,
       "durMs": -1,
@@ -7804,7 +8854,7 @@
   },
   "3002030": {
     "firstSeen": 1767661759070,
-    "count": 2,
+    "count": 23,
     "sample": {
       "slot": 22,
       "durMs": -1,
@@ -7813,7 +8863,7 @@
   },
   "3002040": {
     "firstSeen": 1767273993260,
-    "count": 6,
+    "count": 9,
     "sample": {
       "slot": 25,
       "durMs": -1,
@@ -7822,7 +8872,7 @@
   },
   "3002050": {
     "firstSeen": 1767382272883,
-    "count": 29,
+    "count": 50,
     "sample": {
       "slot": 16216,
       "durMs": -1,
@@ -7831,7 +8881,7 @@
   },
   "3002070": {
     "firstSeen": 1767273993260,
-    "count": 35,
+    "count": 59,
     "sample": {
       "slot": 24,
       "durMs": -1,
@@ -7840,7 +8890,7 @@
   },
   "3002080": {
     "firstSeen": 1767273993260,
-    "count": 7,
+    "count": 89,
     "sample": {
       "slot": 27,
       "durMs": -1,
@@ -7858,7 +8908,7 @@
   },
   "3002100": {
     "firstSeen": 1767273993260,
-    "count": 35,
+    "count": 59,
     "sample": {
       "slot": 26,
       "durMs": -1,
@@ -7867,7 +8917,7 @@
   },
   "3002102": {
     "firstSeen": 1766866530116,
-    "count": 1710,
+    "count": 6899,
     "sample": {
       "slot": 353,
       "durMs": 5000,
@@ -7876,7 +8926,7 @@
   },
   "3002410": {
     "firstSeen": 1766137637898,
-    "count": 17,
+    "count": 75,
     "sample": {
       "slot": 640,
       "durMs": -1,
@@ -7885,7 +8935,7 @@
   },
   "3002411": {
     "firstSeen": 1765927590856,
-    "count": 221,
+    "count": 678,
     "sample": {
       "slot": 226,
       "durMs": 30000,
@@ -7894,7 +8944,7 @@
   },
   "3002412": {
     "firstSeen": 1765927590856,
-    "count": 221,
+    "count": 677,
     "sample": {
       "slot": 227,
       "durMs": 7000,
@@ -7903,7 +8953,7 @@
   },
   "3002413": {
     "firstSeen": 1765927590856,
-    "count": 221,
+    "count": 677,
     "sample": {
       "slot": 228,
       "durMs": 61000,
@@ -7912,7 +8962,7 @@
   },
   "3002414": {
     "firstSeen": 1766477047508,
-    "count": 7,
+    "count": 116,
     "sample": {
       "slot": 133,
       "durMs": 2000,
@@ -7921,7 +8971,7 @@
   },
   "3002430": {
     "firstSeen": 1766137637898,
-    "count": 17,
+    "count": 75,
     "sample": {
       "slot": 637,
       "durMs": -1,
@@ -7930,7 +8980,7 @@
   },
   "3002450": {
     "firstSeen": 1766137637898,
-    "count": 17,
+    "count": 75,
     "sample": {
       "slot": 638,
       "durMs": -1,
@@ -7948,7 +8998,7 @@
   },
   "3002470": {
     "firstSeen": 1766137637898,
-    "count": 17,
+    "count": 75,
     "sample": {
       "slot": 636,
       "durMs": -1,
@@ -7957,7 +9007,7 @@
   },
   "3002480": {
     "firstSeen": 1766137637898,
-    "count": 17,
+    "count": 75,
     "sample": {
       "slot": 639,
       "durMs": -1,
@@ -7966,7 +9016,7 @@
   },
   "3002610": {
     "firstSeen": 1765929200085,
-    "count": 3,
+    "count": 4,
     "sample": {
       "slot": 847,
       "durMs": -1,
@@ -7975,7 +9025,7 @@
   },
   "3002611": {
     "firstSeen": 1765929206344,
-    "count": 32,
+    "count": 33,
     "sample": {
       "slot": 860,
       "durMs": 8000,
@@ -7984,7 +9034,7 @@
   },
   "3002620": {
     "firstSeen": 1765929200085,
-    "count": 2,
+    "count": 3,
     "sample": {
       "slot": 846,
       "durMs": -1,
@@ -8011,7 +9061,7 @@
   },
   "3002650": {
     "firstSeen": 1765929200085,
-    "count": 1,
+    "count": 2,
     "sample": {
       "slot": 851,
       "durMs": -1,
@@ -8020,7 +9070,7 @@
   },
   "3002660": {
     "firstSeen": 1765929200085,
-    "count": 2,
+    "count": 3,
     "sample": {
       "slot": 850,
       "durMs": -1,
@@ -8029,7 +9079,7 @@
   },
   "3002670": {
     "firstSeen": 1765929200085,
-    "count": 2,
+    "count": 3,
     "sample": {
       "slot": 849,
       "durMs": -1,
@@ -8047,7 +9097,7 @@
   },
   "3002680": {
     "firstSeen": 1765929200085,
-    "count": 2,
+    "count": 3,
     "sample": {
       "slot": 848,
       "durMs": -1,
@@ -8101,25 +9151,43 @@
   },
   "3003010": {
     "firstSeen": 1767676034075,
-    "count": 3,
+    "count": 4,
     "sample": {
       "slot": 118,
       "durMs": -1,
       "stack": 1
     }
   },
+  "3003012": {
+    "firstSeen": 1768434917319,
+    "count": 5,
+    "sample": {
+      "slot": 35,
+      "durMs": 1100,
+      "stack": 1
+    }
+  },
   "3003013": {
     "firstSeen": 1767093905736,
-    "count": 4,
+    "count": 136,
     "sample": {
       "slot": 1540,
       "durMs": 1100,
       "stack": 1
     }
   },
+  "3003014": {
+    "firstSeen": 1768434917319,
+    "count": 5,
+    "sample": {
+      "slot": 36,
+      "durMs": 1100,
+      "stack": 1
+    }
+  },
   "3003030": {
     "firstSeen": 1767676187801,
-    "count": 3,
+    "count": 4,
     "sample": {
       "slot": 130,
       "durMs": -1,
@@ -8128,7 +9196,7 @@
   },
   "3003031": {
     "firstSeen": 1767676187801,
-    "count": 3,
+    "count": 4,
     "sample": {
       "slot": 131,
       "durMs": null,
@@ -8137,16 +9205,25 @@
   },
   "3003040": {
     "firstSeen": 1767676034075,
-    "count": 3,
+    "count": 4,
     "sample": {
       "slot": 119,
       "durMs": -1,
       "stack": 1
     }
   },
+  "3003041": {
+    "firstSeen": 1768434917322,
+    "count": 4,
+    "sample": {
+      "slot": 99,
+      "durMs": null,
+      "stack": 1
+    }
+  },
   "3003050": {
     "firstSeen": 1767676524757,
-    "count": 2,
+    "count": 3,
     "sample": {
       "slot": 932,
       "durMs": -1,
@@ -8155,10 +9232,28 @@
   },
   "3003052": {
     "firstSeen": 1767094188890,
-    "count": 12,
+    "count": 241,
     "sample": {
       "slot": 1589,
       "durMs": 8000,
+      "stack": 1
+    }
+  },
+  "3003053": {
+    "firstSeen": 1768434917322,
+    "count": 8,
+    "sample": {
+      "slot": 100,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3003054": {
+    "firstSeen": 1768434917323,
+    "count": 8,
+    "sample": {
+      "slot": 102,
+      "durMs": 15000,
       "stack": 1
     }
   },
@@ -8173,7 +9268,7 @@
   },
   "3003070": {
     "firstSeen": 1767676034075,
-    "count": 3,
+    "count": 4,
     "sample": {
       "slot": 120,
       "durMs": -1,
@@ -8182,7 +9277,7 @@
   },
   "3003071": {
     "firstSeen": 1767088698785,
-    "count": 135,
+    "count": 2353,
     "sample": {
       "slot": 3014,
       "durMs": 1100,
@@ -8191,12 +9286,28 @@
   },
   "3003080": {
     "firstSeen": 1767676189818,
-    "count": 3,
+    "count": 4,
     "sample": {
       "slot": 132,
       "durMs": -1,
       "stack": 1
     }
+  },
+  "3003211": {
+    "firstSeen": 1769943877670,
+    "count": 7
+  },
+  "3003212": {
+    "firstSeen": 1769943881457,
+    "count": 7
+  },
+  "3003213": {
+    "firstSeen": 1769943877670,
+    "count": 12
+  },
+  "3003291": {
+    "firstSeen": 1769943877670,
+    "count": 1
   },
   "3003410": {
     "firstSeen": 1767666695330,
@@ -8254,7 +9365,7 @@
   },
   "3003660": {
     "firstSeen": 1767273993260,
-    "count": 35,
+    "count": 59,
     "sample": {
       "slot": 32,
       "durMs": -1,
@@ -8263,7 +9374,7 @@
   },
   "3003680": {
     "firstSeen": 1766137637898,
-    "count": 17,
+    "count": 75,
     "sample": {
       "slot": 645,
       "durMs": -1,
@@ -8272,7 +9383,7 @@
   },
   "3003690": {
     "firstSeen": 1765929200086,
-    "count": 2,
+    "count": 3,
     "sample": {
       "slot": 854,
       "durMs": -1,
@@ -8290,7 +9401,7 @@
   },
   "3003710": {
     "firstSeen": 1767676034075,
-    "count": 3,
+    "count": 4,
     "sample": {
       "slot": 124,
       "durMs": -1,
@@ -8326,7 +9437,7 @@
   },
   "3050070": {
     "firstSeen": 1767382462183,
-    "count": 17,
+    "count": 31,
     "sample": {
       "slot": 129,
       "durMs": -1,
@@ -8335,7 +9446,7 @@
   },
   "3050100": {
     "firstSeen": 1767306222500,
-    "count": 22,
+    "count": 36,
     "sample": {
       "slot": 485452,
       "durMs": -1,
@@ -8362,7 +9473,7 @@
   },
   "3051030": {
     "firstSeen": 1766137637898,
-    "count": 18,
+    "count": 77,
     "sample": {
       "slot": 644,
       "durMs": -1,
@@ -8371,7 +9482,7 @@
   },
   "3051060": {
     "firstSeen": 1766137637898,
-    "count": 20,
+    "count": 79,
     "sample": {
       "slot": 641,
       "durMs": -1,
@@ -8560,7 +9671,7 @@
   },
   "3056061": {
     "firstSeen": 1767396378397,
-    "count": 1,
+    "count": 70,
     "sample": {
       "slot": 437,
       "durMs": 8000,
@@ -8621,9 +9732,18 @@
       "stack": 1
     }
   },
+  "3057080": {
+    "firstSeen": 1768568208048,
+    "count": 3,
+    "sample": {
+      "slot": 28,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
   "3057100": {
     "firstSeen": 1767273993260,
-    "count": 6,
+    "count": 9,
     "sample": {
       "slot": 28,
       "durMs": -1,
@@ -8632,7 +9752,7 @@
   },
   "3057111": {
     "firstSeen": 1767089696353,
-    "count": 1,
+    "count": 120,
     "sample": {
       "slot": 3698,
       "durMs": 20000,
@@ -8641,7 +9761,7 @@
   },
   "3058050": {
     "firstSeen": 1767674930188,
-    "count": 23,
+    "count": 25,
     "sample": {
       "slot": 3182,
       "durMs": -1,
@@ -8650,7 +9770,7 @@
   },
   "3058060": {
     "firstSeen": 1767273993260,
-    "count": 53,
+    "count": 79,
     "sample": {
       "slot": 29,
       "durMs": -1,
@@ -8659,7 +9779,7 @@
   },
   "3058070": {
     "firstSeen": 1767666695330,
-    "count": 20,
+    "count": 21,
     "sample": {
       "slot": 13739,
       "durMs": -1,
@@ -8668,7 +9788,7 @@
   },
   "3058080": {
     "firstSeen": 1767306222500,
-    "count": 38,
+    "count": 57,
     "sample": {
       "slot": 485453,
       "durMs": -1,
@@ -8686,7 +9806,7 @@
   },
   "3058100": {
     "firstSeen": 1765988769958,
-    "count": 21,
+    "count": 86,
     "sample": {
       "slot": 139,
       "durMs": -1,
@@ -8704,7 +9824,7 @@
   },
   "3059050": {
     "firstSeen": 1765988769958,
-    "count": 87,
+    "count": 114,
     "sample": {
       "slot": 138,
       "durMs": -1,
@@ -8713,7 +9833,7 @@
   },
   "3059060": {
     "firstSeen": 1765929200085,
-    "count": 13,
+    "count": 14,
     "sample": {
       "slot": 852,
       "durMs": -1,
@@ -8722,7 +9842,7 @@
   },
   "3059061": {
     "firstSeen": 1765929200086,
-    "count": 19,
+    "count": 21,
     "sample": {
       "slot": 853,
       "durMs": null,
@@ -8731,7 +9851,7 @@
   },
   "3059062": {
     "firstSeen": 1765929208074,
-    "count": 18,
+    "count": 19,
     "sample": {
       "slot": 862,
       "durMs": 10000,
@@ -8749,7 +9869,7 @@
   },
   "3059080": {
     "firstSeen": 1767675052536,
-    "count": 7,
+    "count": 8,
     "sample": {
       "slot": 467,
       "durMs": -1,
@@ -8767,7 +9887,7 @@
   },
   "3059130": {
     "firstSeen": 1767675184510,
-    "count": 2,
+    "count": 59,
     "sample": {
       "slot": 273,
       "durMs": -1,
@@ -8800,6 +9920,10 @@
       "durMs": -1,
       "stack": 1
     }
+  },
+  "3059181": {
+    "firstSeen": 1769943877912,
+    "count": 3
   },
   "3059210": {
     "firstSeen": 1767675167659,
@@ -8848,16 +9972,20 @@
   },
   "3200009": {
     "firstSeen": 1767273950926,
-    "count": 11,
+    "count": 37,
     "sample": {
       "slot": 1020,
       "durMs": 20000,
       "stack": 1
     }
   },
+  "3200020": {
+    "firstSeen": 1769951348004,
+    "count": 1
+  },
   "3200024": {
     "firstSeen": 1767273951816,
-    "count": 3,
+    "count": 26,
     "sample": {
       "slot": 1038,
       "durMs": 20000,
@@ -8866,7 +9994,7 @@
   },
   "3200025": {
     "firstSeen": 1767273950926,
-    "count": 10,
+    "count": 37,
     "sample": {
       "slot": 1021,
       "durMs": 20000,
@@ -8875,7 +10003,7 @@
   },
   "3210020": {
     "firstSeen": 1767273993261,
-    "count": 5,
+    "count": 27,
     "sample": {
       "slot": 45,
       "durMs": -1,
@@ -8920,7 +10048,7 @@
   },
   "3210050": {
     "firstSeen": 1767273950926,
-    "count": 11,
+    "count": 37,
     "sample": {
       "slot": 1022,
       "durMs": 20000,
@@ -8929,7 +10057,7 @@
   },
   "3210080": {
     "firstSeen": 1767273950926,
-    "count": 13,
+    "count": 39,
     "sample": {
       "slot": 1019,
       "durMs": 20000,
@@ -8945,12 +10073,70 @@
       "stack": 1
     }
   },
+  "3210101": {
+    "firstSeen": 1769946565889,
+    "count": 763
+  },
   "3210120": {
     "firstSeen": 1767675093666,
     "count": 3,
     "sample": {
       "slot": 366,
       "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3210130": {
+    "firstSeen": 1769172881433,
+    "count": 6,
+    "sample": {
+      "slot": 227,
+      "durMs": -1,
+      "stack": 1
+    }
+  },
+  "3210131": {
+    "firstSeen": 1769172881433,
+    "count": 6,
+    "sample": {
+      "slot": 228,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3210132": {
+    "firstSeen": 1769172901443,
+    "count": 3,
+    "sample": {
+      "slot": 235,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3210133": {
+    "firstSeen": 1769172951476,
+    "count": 4,
+    "sample": {
+      "slot": 262,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3210134": {
+    "firstSeen": 1769172981454,
+    "count": 2,
+    "sample": {
+      "slot": 283,
+      "durMs": null,
+      "stack": 1
+    }
+  },
+  "3210135": {
+    "firstSeen": 1769172921417,
+    "count": 4,
+    "sample": {
+      "slot": 242,
+      "durMs": null,
       "stack": 1
     }
   },

@@ -11,11 +11,6 @@ start "Overlay" cmd /k node tools\serve_overlay.js
 
 
 REM 给服务器 0.6 秒启动时间（避免浏览器打开太快404）
-timeout /t 1 /nobreak >nul
-
-echo Opening browser...
-start "" "http://127.0.0.1:3000/overlay.html"
-
 echo.
 echo If it doesn't open, manually visit:
 echo http://127.0.0.1:3000/overlay.html

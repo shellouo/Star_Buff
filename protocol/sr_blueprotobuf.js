@@ -1,4 +1,5 @@
 /*eslint-disable block-scoped-var, id-length, no-control-regex, no-magic-numbers, no-prototype-builtins, no-redeclare, no-shadow, no-var, sort-vars*/
+//直接把Dimole大佬插件的js文件拖过来用了（
 console.log("[BOOT] sr_blueprotobuf LOADED", __filename);
 global.__SR_ON_AOI_FIELD10__ = global.__SR_ON_AOI_FIELD10__ || null;
 const fs = require("fs");
@@ -994,6 +995,10 @@ const fs = require("fs");
         });
     
         AoiSyncDelta.decode = function decode(r, l, e) {
+            if (process.env.SR_DBG_AOI_ENTER === "1") {
+                console.log("[AOI-ENTER]", "pos=", r.pos, "len=", l);
+            }
+
             if (!(r instanceof $Reader))
                 r = $Reader.create(r);
             var c = l === undefined ? r.len : r.pos + l, m = new $root.AoiSyncDelta();
@@ -1011,7 +1016,7 @@ const fs = require("fs");
                     break;
                 }
 
-                    case 2: {
+                case 2: {
                         m.Attrs = $root.AttrCollection.decode(r, r.uint32());
                         break;
                     }
@@ -1070,6 +1075,29 @@ const fs = require("fs");
                     const start = r.pos;
                     const end = start + len;
                     const payloadBytes = r.buf.subarray(start, end);
+                    // ===== [STEP1] 临时验证：把 field10 当 BuffInfoSync 解一次 =====
+                    const cb2 = global.__SR_ON_AOI_BUFF_STATE__;
+                    if (typeof cb2 === "function") {
+                        try {
+                            const subReader = $Reader.create(payloadBytes);
+                            const buffSync = $root.BuffInfoSync.decode(subReader);
+                            // 只打印一条，避免刷屏
+                            const n = buffSync?.BuffInfos?.length || 0;
+                            if (n > 0 && process.env.SR_LOG_BUFF_STATE === "1") {
+                                const b = buffSync.BuffInfos[0];
+                                console.log(
+                                    `[BUFF_STATE] uid=${entityUid} n=${n} baseId=${b.BaseId} layer=${b.Layer} count=${b.Count} dur=${b.Duration}`
+                                );
+                            }
+
+                            cb2(buffSync, { entityUid });
+                        } catch (e) {
+                            if (process.env.SR_LOG_BUFF_STATE === "1") {
+                                console.log("[BUFF_STATE decode FAILED]", e.message);
+                            }
+                        }
+                    }
+
 
                     // ✅ 日志做成开关：不开就不会在人多时刷屏
                     if (process.env.SR_LOG_FIELD10 === "1") {
@@ -1137,6 +1165,7 @@ const fs = require("fs");
                 default:
                     r.skipType(t & 7);
                     break;
+
                 }
             }
             return m;

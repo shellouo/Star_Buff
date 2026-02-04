@@ -44,7 +44,6 @@ class SRPacketParser {
     reader.readUInt64(); // serviceUuid
     reader.readUInt32(); // stubId
     const methodId = reader.readUInt32();
-
     let payload = reader.readBytes(reader.remaining());
     if (isZstd) payload = this._decompressZstd(payload);
 

@@ -42,7 +42,8 @@ function createWriter({ outPath = "./state.json" } = {}) {
     }
 
 
-    return { state, setOne, delOne, flush };
+    return { state, setOne, delOne, flush, resetAll };
+
 }
 
 module.exports = { createWriter };

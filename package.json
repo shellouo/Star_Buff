@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/shellouo/Star_Buff#readme",
   "dependencies": {
+    "body-parser": "^2.2.2",
     "cap": "^0.2.1",
-    "protobufjs": "^7.5.4"
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "protobufjs": "^7.5.4",
+    "winston": "^3.19.0",
+    "ws": "^8.19.0"
   }
 }

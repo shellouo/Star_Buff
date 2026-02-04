@@ -1,46 +1,61 @@
-﻿// buff_monitor_cli.js - 内嵌解析逻辑，无需 buff_decode_min.js
+﻿// buff_monitor_cli.js
+const monCore = require("./mon_core");
+const { resetAllState } = require("./mon_core");
+
 const http = require("node:http");
-const { createWriter } = require("../io/writer");
 const path = require("path");
-
-const overlayWriter = createWriter({
-  outPath: path.join(__dirname, "..", "data", "state.json"),
-});
-
 const fs = require("fs");
+// ===== 全局 Buff 状态表（key = uid:buffId）=====
+global.__BUFF_STATE_MAP__ = new Map();
+
 const { listDevices, resolveDevice, startLive } = require("../net/capture_core");
 const readline = require("node:readline");
+// ===== timestamp patch: prefix all console logs =====
+(function patchConsoleTimestamp(){
+  const pad2 = (n) => String(n).padStart(2, "0");
+  const pad3 = (n) => String(n).padStart(3, "0");
 
+  function ts() {
+    const d = new Date();
+    return `${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}.${pad3(d.getMilliseconds())}`;
+  }
+
+  const wrap = (orig) => (...args) => orig(`[${ts()}]`, ...args);
+
+  console.log = wrap(console.log);
+  console.warn = wrap(console.warn);
+  console.error = wrap(console.error);
+})();
+
+// ===== 显示范围开关 =====
+// true = 只显示自己（默认）
+// false = 显示所有实体
+global.__SR_ONLY_SELF__ = true;
 // ✅ 统一用户配置文件
 const USER_CONFIG_PATH = path.join(__dirname, "../config/user_config.json");
-
 // ===== 日志分级 & 开关（Step 1）=====
 function envOn(key, def = "0") {
   const v = String(process.env[key] ?? def).trim();
   return v === "1" || v.toLowerCase() === "true" || v.toLowerCase() === "yes";
 }
-
 const LOG = {
   // 总开关（可选）：SR_SILENT=1 直接静音（除了 error）
   SILENT: envOn("SR_SILENT", "0"),
-
   // 细分开关：默认全关
   BUFF: envOn("SR_LOG_BUFF", "1"),        // BUFF+/BUFF- 细节
   FIELD10: envOn("SR_LOG_FIELD10", "0"),  // field10 收包长度/条数
-  RAW: envOn("SR_LOG_RAW", "0"),          // 原始事件/兜底调试
+  RAW: envOn("SR_LOG_RAW", "0"), // 原始事件/兜底调试
+  PRO: envOn("SR_LOG_PRO", "0"),      // 处理后日志（默认关）
 };
-
 const logger = {
   info(...a) { if (!LOG.SILENT) console.log(...a); },
   warn(...a) { if (!LOG.SILENT) console.warn(...a); },
   error(...a){ console.error(...a); },
-
   buff(...a) { if (!LOG.SILENT && LOG.BUFF) console.log(...a); },
   field10(...a){ if (!LOG.SILENT && LOG.FIELD10) console.log(...a); },
   raw(...a)  { if (!LOG.SILENT && LOG.RAW) console.log(...a); },
+  pro(...a)  { if (!LOG.SILENT && LOG.PRO) console.log(...a); },
 };
-
-
 function loadUserConfig() {
   try {
     return JSON.parse(fs.readFileSync(USER_CONFIG_PATH, "utf8"));
@@ -48,14 +63,9 @@ function loadUserConfig() {
     return {};
   }
 }
-
 function saveUserConfig(cfg) {
   fs.writeFileSync(USER_CONFIG_PATH, JSON.stringify(cfg, null, 2), "utf8");
 }
-
-
-
-
 function loadJson(path, def = {}) {
   try { return JSON.parse(fs.readFileSync(path, "utf8")); }
   catch { return def; }
@@ -64,75 +74,7 @@ function saveJson(path, obj) {
   fs.writeFileSync(path, JSON.stringify(obj, null, 2), "utf8");
 }
 const BUFF_MAP_PATH  = path.join(__dirname, "../config/buff_map.json");
-const BUFF_SEEN_PATH = path.join(__dirname, "../data/buff_seen.json");
-const STATE_PATH     = path.join(__dirname, "../data/state.json");
-
-// state.json 的内存副本
-let state = loadJson(STATE_PATH, {});
-let stateDirty = false;
-
-// 删除一个 buff
-function delBuff(idStr) {
-  if (state[idStr] !== undefined) {
-    delete state[idStr];
-    stateDirty = true;
-  }
-}
-
-// 自动过期回收（GC）
-function gcExpired(now = Date.now()) {
-  for (const [idStr, v] of Object.entries(state)) {
-    if (!v || typeof v.durUntil !== "number") continue;
-
-    // ✅ durUntil === 0 → 表示“无持续时间的存在型 buff”
-    // 只能靠 BUFF- 删除，GC 不处理
-    if (v.durUntil === 0) continue;
-
-    // ✅ 只有“真的有持续时间”的 buff，才走过期回收
-    if (v.durUntil <= now) {
-      delete state[idStr];
-      stateDirty = true;
-    }
-  }
-}
-
-
-// 写回 state.json（只有真的变了才写）
-function flushState() {
-  if (!stateDirty) return;
-  saveJson(STATE_PATH, state);
-  stateDirty = false;
-}
-
-
-
-
-let buffMap = loadJson(BUFF_MAP_PATH, {});
-let buffSeen = loadJson(BUFF_SEEN_PATH, {});
-
-// slot -> last buffId（为了解决 remove 不带 buffId）
-const slotLastBuffId = new Map();
-// buffId(string) -> Map(slot(number) -> {durUntil, cdUntil, stack})
-const activeSlotsById = new Map();
-
-function aggSlots(slots) {
-  let durUntil = 0, cdUntil = 0, stack = 1;
-
-  // dur/cd 取最大（最晚结束的那层）；stack 取最大（层数buff更稳）
-  for (const s of slots.values()) {
-    const du = Number(s.durUntil ?? 0);
-    const cu = Number(s.cdUntil  ?? 0);
-    const st = Number(s.stack    ?? 1);
-    if (du > durUntil) durUntil = du;
-    if (cu > cdUntil)  cdUntil  = cu;
-    if (st > stack)    stack    = st;
-  }
-  return { durUntil, cdUntil, stack };
-}
-
-
-
-// ===== 1. 内嵌所有解析逻辑（原 buff_decode_min.js 代码） =====
+// ===== 1. 内嵌所有解析逻辑=====
 function readVarint(buf, pos) {
   let x = 0;
   let s = 0;
@@ -147,8 +89,6 @@ function readVarint(buf, pos) {
   }
   return null;
 }
-
-
 function printDevicesPretty() {
   const devs = listDevices();
 
@@ -184,7 +124,6 @@ function printDevicesPretty() {
   console.log(""); // 结尾空行
   return devs;
 }
-
 function startConfigServer({ port = 8787, logger = console, capture, writer } = {}) {
 
   const server = http.createServer(async (req, res) => {
@@ -215,8 +154,7 @@ function startConfigServer({ port = 8787, logger = console, capture, writer } = 
       // POST /capture/reset -> 重置抓包重组 + 清空 state.json
       if (req.method === "POST" && url.pathname === "/capture/reset") {
         try { capture && capture.reset && capture.reset("ui"); } catch {}
-        try { writer && writer.resetAll && writer.resetAll(); } catch {}
-
+        resetAllState("capture reset");
         res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
         return res.end(JSON.stringify({ ok: true }));
       }
@@ -282,6 +220,27 @@ function startConfigServer({ port = 8787, logger = console, capture, writer } = 
         return res.end(JSON.stringify({ ok: true, index: idx }));
       }
 
+      // POST /overlay/pin  body: { id: "2205391", value: true/false }
+      if (req.method === "POST" && url.pathname === "/overlay/pin") {
+        const body = await readJsonBody();
+        const id = String(body?.id ?? "");
+        const value = !!body?.value;
+
+        if (!id) {
+          res.writeHead(400, { "Content-Type": "application/json; charset=utf-8" });
+          return res.end(JSON.stringify({ ok: false, error: "missing id" }));
+        }
+
+        const cfg = loadUserConfig();
+        cfg.overlay = cfg.overlay || {};
+        cfg.overlay.pin = cfg.overlay.pin || {};
+        cfg.overlay.pin[id] = value;
+
+        saveUserConfig(cfg);
+
+        res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+        return res.end(JSON.stringify({ ok: true, id, value }));
+      }
 
 
       // POST /overlay/watch  body: { id: "2205391", value: true/false }
@@ -313,6 +272,13 @@ function startConfigServer({ port = 8787, logger = console, capture, writer } = 
         res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
         return res.end(JSON.stringify(watch));
       }
+      // POST /state/clear -> 清空 Buff 栏（等价 CLI 的 c）
+      if (req.method === "POST" && url.pathname === "/state/clear") {
+        resetAllState("ui clear");
+        res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+        return res.end(JSON.stringify({ ok: true }));
+      }
+
 
       res.writeHead(404, { "Content-Type": "application/json; charset=utf-8" });
       res.end(JSON.stringify({ ok: false, error: "not found" }));
@@ -328,8 +294,6 @@ function startConfigServer({ port = 8787, logger = console, capture, writer } = 
 
   return server;
 }
-
-
 function ask(question) {
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
   return new Promise((resolve) =>
@@ -339,7 +303,6 @@ function ask(question) {
       })
   );
 }
-
 async function selectDeviceInteractive() {
   const devs = printDevicesPretty(); // ✅ 你已经写好了：打印并返回 dev 列表
   if (!devs || devs.length === 0) {
@@ -366,15 +329,12 @@ async function selectDeviceInteractive() {
     return n;
   }
 }
-
-
 function readInt32(buf, pos) {
   const info = readVarint(buf, pos);
   if (!info) return null;
   let v = info.value | 0;
   return { value: v, pos: info.pos };
 }
-
 function skipByWireType(buf, pos, wt) {
   switch (wt) {
     case 0: {
@@ -394,7 +354,6 @@ function skipByWireType(buf, pos, wt) {
       return buf.length;
   }
 }
-
 function decodeBuffData(bytes) {
   let pos = 0;
   const len = bytes.length;
@@ -402,14 +361,9 @@ function decodeBuffData(bytes) {
     ownerSlot: null,
     buffId: null,
     stack: null,
-    buffId2: null,
-    time1: null,
-    time2: null,
-    flag: null,
-    undef10: null,
     durationMs: null,
-    extraBytes: null,
   };
+
   while (pos < len) {
     const tagInfo = readVarint(bytes, pos);
     if (!tagInfo) break;
@@ -454,7 +408,6 @@ function decodeBuffData(bytes) {
   }
   return d;
 }
-
 function decodeBuffPayload(bytes) {
   let pos = 0;
   const len = bytes.length;
@@ -493,7 +446,6 @@ function decodeBuffPayload(bytes) {
   }
   return { payloadType, data, dataRaw: data };
 }
-
 function decodeBuffEntry(bytes) {
   let pos = 0;
   const len = bytes.length;
@@ -548,7 +500,6 @@ function decodeBuffEntry(bytes) {
   }
   return ev;
 }
-
 function decodeBuffField10(bytes) {
   const buf = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes);
   const len = buf.length;
@@ -572,33 +523,28 @@ function decodeBuffField10(bytes) {
       if (ev) events.push(ev);
       pos = end;
     } else {
+      // pos = skipByWireType(buf, pos, wt);
       pos = skipByWireType(buf, pos, wt);
     }
   }
   return events;
 }
-
 // ===== 2. 全局回调（解析field10） =====
-
-
 function loadJson(p, def = {}) {
   try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch { return def; }
 }
 function saveJson(p, obj) {
   fs.writeFileSync(p, JSON.stringify(obj, null, 2), "utf8");
 }
-
-
 // ===== field10 回调 =====
 global.__SR_ON_AOI_FIELD10__ = (payloadBytes, meta) => {
   const selfUid = global.__SR_SELF_UID__;
   const entityUid = meta?.entityUid;
+  // selfUid 还没拿到就先不输出（避免刷屏）
+  if (selfUid == null) return;
 
-  // selfUid 还没拿到就先不输出（避免前期刷屏）fs
-  //if (selfUid == null) return;
-
-  // 只要自己的
-  //if (entityUid !== selfUid) return;
+  // 根据开关决定是否只看自己
+  if (global.__SR_ONLY_SELF__ && entityUid !== selfUid) return;
 
   // 可选：field10 收到日志（默认关，避免刷屏）
   logger.field10(`[📥 field10] uid=${entityUid} len=${payloadBytes.length}`);
@@ -608,130 +554,9 @@ global.__SR_ON_AOI_FIELD10__ = (payloadBytes, meta) => {
 
     let seenChanged = false;
     for (const ev of buffEvents) {
-      // ===== MON / SNIFF（只观察，不改状态）=====
-      const TARGET = "3002611";
-      if (String(ev.buffId) === TARGET) {
-        console.log("[MON]", {
-          opType: ev.opType,
-          slot: ev.slot,
-          buffId: ev.buffId,
-          stack: ev.stack,
-          durationMs: ev.durationMs,
-          allVarints: ev._allVarints,
-        });
-      }
-      // ===== 1) REMOVE =====
-      if (ev.opType === 2) {
-        const lastId = slotLastBuffId.get(ev.slot);
-
-        // buffId=1 / null 都当不可信：优先用 lastId
-        const trustedId =
-            (ev.buffId != null && ev.buffId > 0 && ev.buffId !== 1) ? ev.buffId : lastId;
-
-        const trustedStr = (trustedId != null) ? String(trustedId) : null;
-        const name = trustedStr ? (buffMap[trustedStr] ?? "(未映射)") : "(unknown)";
-
-        logger.buff(`[BUFF-] slot=${ev.slot} buffId=${trustedStr ?? "?"} name=${name}`);
-
-        // 删 state：只删“已映射(=写入过 overlay)”的 buffId
-        // 删 state：按 slot 删（避免覆盖/刷新误删）
-        if (trustedStr && buffMap[trustedStr]) {
-          const idStr = trustedStr;
-          const slot = ev.slot;
-
-          const slots = activeSlotsById.get(idStr);
-          if (slots) {
-            slots.delete(slot);
-
-            if (slots.size === 0) {
-              activeSlotsById.delete(idStr);
-              overlayWriter.delOne(idStr);
-              logger.buff(`[BUFF-DEL] slot=${slot} deleted id=${idStr} (no slots left)`);
-            } else {
-              const agg = aggSlots(slots);
-              overlayWriter.setOne(idStr, agg);
-              logger.buff(`[BUFF-DEL] slot=${slot} keep id=${idStr} (slots left=${slots.size})`);
-            }
-          } else {
-            // 没有 slots 记录，兜底：直接删（理论上不该常发生）
-            overlayWriter.delOne(idStr);
-            logger.buff(`[BUFF-DEL] slot=${slot} deleted id=${idStr} (no slot record)`);
-          }
-        } else {
-          // 未映射：不删，避免误删
-        }
-
-
-        // 解绑 slot
-        slotLastBuffId.delete(ev.slot);
-        continue;
-      }
-
-      // ===== 2) ADD/UPDATE =====
-
-      // if (ev.buffId != null && ev.buffId > 0) {
-      if (ev.opType === 1 && ev.buffId != null && ev.buffId > 0 && ev.buffId !== 1) {
-
-        // 记录 slot 当前对应的 buffId（给 REMOVE 用）
-        slotLastBuffId.set(ev.slot, ev.buffId);
-
-        const idStr = String(ev.buffId);
-        const name = buffMap[idStr] ?? "(未映射)";
-
-        // 自动收集未知 buffId（终端可见，用于补 buff_map.json）
-        if (!buffSeen[idStr]) {
-          buffSeen[idStr] = {
-            firstSeen: Date.now(),
-            count: 0,
-            sample: { slot: ev.slot, durMs: ev.durationMs ?? null, stack: ev.stack ?? null }
-          };
-          seenChanged = true;
-        }
-        buffSeen[idStr].count++;
-
-        const durUntil =
-            (ev.durationMs != null && ev.durationMs > 0) ? (Date.now() + ev.durationMs) : 0;
-
-        const durSec = (ev.durationMs != null && ev.durationMs > 0)
-            ? (ev.durationMs / 1000)
-            : 0;
-
-        logger.buff(
-            `[BUFF+] buffId=${idStr} name=${name} slot=${ev.slot}` +
-            ` dur=${durSec.toFixed(1)}s` +
-            ` durUntil=${durUntil}` +
-            ` stack=${ev.stack ?? "?"}` +
-            ` op=${ev.opType}`
-        );
-
-        // overlay/state：只写已映射的
-        if (buffMap[idStr]) {
-          const slot = ev.slot;
-          let slots = activeSlotsById.get(idStr);
-          if (!slots) { slots = new Map(); activeSlotsById.set(idStr, slots); }
-
-          slots.set(slot, { durUntil, cdUntil: 0, stack: ev.stack ?? 1 });
-
-          const agg = aggSlots(slots);
-          overlayWriter.setOne(idStr, agg);
-          // flush 仍旧用你的定时器
-        }
-
-
-        continue;
-      }
-
-      // ===== 3) 其他原始事件 =====
-      if (process.env.SR_LOG_RAW_BUFF === "1") {
-        console.log(`[RAW] opType=${ev.opType} slot=${ev.slot} payloadType=${ev.raw?.payloadType}`);
-      }
+      monCore.onBuffEvent(ev, meta, logger);
     }
-
-
-    // 有新 buffId 才落盘，避免频繁写文件
-    if (seenChanged) saveJson(BUFF_SEEN_PATH, buffSeen);
-
-    // 保留 dump（你原有功能）
+    // 保留 dump
     if (process.env.SR_DUMP_FIELD10 === "1") {
       const dumpName = `dump_field10_${Date.now()}.bin`;
       fs.writeFileSync(dumpName, payloadBytes);
@@ -741,47 +566,36 @@ global.__SR_ON_AOI_FIELD10__ = (payloadBytes, meta) => {
     console.error("[❌ 解析错误]", e.message);
   }
 };
+// ===== [STEP2] 监听状态流（只验证，不处理）=====
+// ===== [STEP3] 把 BuffInfo 转成最小状态对象=====
+// BuffInfoSync
 
-setInterval(() => {
-  overlayWriter.flush();
-}, 200);
-// global.__SR_ON_AOI_FIELD10__ = (payloadBytes, meta) => {
-//   const selfUid = global.__SR_SELF_UID__;   // 你自己存起来
-//   const entityUid = meta?.entityUid;
-//   // ✅ selfUid 还没拿到就先不输出（避免前期刷屏）
-//   if (selfUid == null) return;
-//
-//   // ✅ 只要自己的
-//   if (entityUid !== selfUid) return;
-//
-//   console.log(`[📥 收到field10] 字节长度：${payloadBytes.length}`);
-//   try {
-//     const buffEvents = decodeBuffField10(payloadBytes);
-//     console.log(`[🔨 解析结果] 找到Buff事件：${buffEvents.length}个`);
-//
-//     buffEvents.forEach(ev => {
-//       if (ev.buffId > 0 && ev.durationMs > 0) {
-//         console.log(`[✅ 有效Buff] opType=${ev.opType} | slot=${ev.slot} | buffId=${ev.buffId} | 持续=${ev.durationMs/1000}秒`);
-//       } else {
-//         console.log(`[⚠️  原始Buff] opType=${ev.opType} | slot=${ev.slot} | payloadType=${ev.raw.payloadType}`);
-//       }
-//     });
-//
-//     // 保存dump文件
-//     if (process.env.SR_DUMP_FIELD10 === "1") {
-//       const dumpName = `dump_field10_${Date.now()}.bin`;
-//       fs.writeFileSync(dumpName, payloadBytes);
-//       console.log(`[📤 Dump] 保存到：${dumpName}`);
-//     }
-//   } catch (e) {
-//     console.error("[❌ 解析错误]", e.message);
-//   }
-// };
+global.__SR_ON_AOI_BUFF_STATE__ = function (buffSync, meta) {
+  const list = buffSync?.BuffInfos;
+  if (!Array.isArray(list) || list.length === 0) return;
+
+  for (const b of list) {
+    const state = {
+      uid: meta.entityUid,
+      baseId: b.BaseId,
+      layer: b.Layer ?? null,
+      count: b.Count ?? null,
+      durationMs: b.Duration ?? null,
+    };
+    // ===== STEP5: 只缓存“像 buff 的状态” =====
+    if (state.layer != null || state.durationMs != null) {
+      const buffIdStr = String(state.baseId);
+      const key = `${state.uid}:${buffIdStr}`;
+      global.__BUFF_STATE_MAP__.set(key, state);
+    }
+
+  }
+};
+
 
 // ===== 3. CLI 逻辑 =====
 const args = process.argv.slice(2);
 const cmd = args[0];
-
 (async () => {
   if (cmd === "list") {
     printDevicesPretty();
@@ -792,7 +606,7 @@ const cmd = args[0];
 
 
 
-    // 1) 先尝试从命令行拿 --dev（保持老用法）
+    // 1) 先尝试从命令行拿
     let devInput = args.find(arg => arg.startsWith("--dev="))?.split("=")[1];
 
     const devFlagPos = args.indexOf("--dev");
@@ -801,7 +615,7 @@ const cmd = args[0];
     }
 
 
-    // 2) 如果没传 --dev，就用 user_config 记住的 dev
+    // 2) 用 user_config 记住的 dev
     if (!devInput && cfg?.device?.index != null) {
       devInput = String(cfg.device.index);
       console.log(`🔁 使用已保存网卡 dev=${devInput}（user_config.json）`);
@@ -838,30 +652,93 @@ const cmd = args[0];
       console.error("❌ 设备不存在！运行 node buff_monitor_cli.js list 查看设备");
       process.exit(1);
     }
-
     const capture = startLive({
       device,
       logger: console,
-      onAoiDelta: (delta) => {}
+      onAoiDelta: (delta, meta) => {
+      }
+
+
     });
     const cfgServer = startConfigServer({
       port: 8787,
       logger: console,
       capture,
-      writer: overlayWriter,
     });
     process.stdin.setEncoding("utf8");
     process.stdin.resume();
     process.stdin.on("data", (s) => {
       const cmd = String(s).trim().toLowerCase();
+
+      // reset
       if (cmd === "r" || cmd === "reset") {
         try { capture.reset("manual"); } catch {}
-        try { overlayWriter.resetAll(); } catch {}
-        console.log("[reset] ok");
+        resetAllState("manual reset");
+        console.log("[reset] capture + state reset");
+        return;
       }
 
+
+      // clear state (buff bar)
+      if (cmd === "c" || cmd === "clear") {
+        resetAllState("manual clear");
+        console.log("[clear] state cleared (buff bar)");
+        return;
+      }
+
+      // ===== 日志热开关（按键 + Enter）=====
+      if (cmd === "b") {
+        LOG.BUFF = !LOG.BUFF;
+        console.log(`[toggle] LOG.BUFF = ${LOG.BUFF ? "ON" : "OFF"}`);
+        return;
+      }
+
+      if (cmd === "f") {
+        LOG.FIELD10 = !LOG.FIELD10;
+        console.log(`[toggle] LOG.FIELD10 = ${LOG.FIELD10 ? "ON" : "OFF"}`);
+        return;
+      }
+
+      if (cmd === "w") {
+        LOG.RAW = !LOG.RAW;
+        console.log(`[toggle] LOG.RAW = ${LOG.RAW ? "ON" : "OFF"}`);
+        return;
+      }
+
+      if (cmd === "s") {
+        LOG.SILENT = !LOG.SILENT;
+        console.log(`[toggle] LOG.SILENT = ${LOG.SILENT ? "ON" : "OFF"} (error 仍会输出)`);
+        return;
+      }
+      if (cmd === "p") {
+        LOG.PRO = !LOG.PRO;
+        console.log(`[toggle] LOG.PRO = ${LOG.PRO ? "ON" : "OFF"}`);
+        return;
+      }
+      if (cmd === "a") {
+        global.__SR_ONLY_SELF__ = !global.__SR_ONLY_SELF__;
+        console.log(
+            `[toggle] ONLY_SELF = ${global.__SR_ONLY_SELF__ ? "ON (只看自己)" : "OFF (显示全部实体)"}`
+        );
+        return;
+      }
+
+      if (cmd === "?" || cmd === "h" || cmd === "help") {
+        console.log(
+            `[keys]\n` +
+            `  r + Enter  reset capture+state\n` +
+            `  b + Enter  toggle BUFF+/BUFF-\n` +
+            `  f + Enter  toggle field10 log\n` +
+            `  w + Enter  toggle RAW log\n` +
+            `  s + Enter  toggle SILENT\n` +
+            `  a + Enter  toggle ONLY_SELF (self / all)\n`
+        );
+        return;
+      }
     });
-    console.log('[hint] type "r" + Enter to reset capture+state');
+
+    console.log('[hint] r=reset, b=buffLog, f=field10Log, w=rawLog, s=silent, h=help  (都需要 + Enter)');
+
 
     global.__cap = capture;
     console.log("[cap] expose: global.__cap.reset('manual')");

@@ -3,8 +3,43 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Star Resonance Overlay (Mock)</title>
+    <title>Star Resonance Overlay</title>
     <style>
+        #topActions{
+            position: fixed;
+            right: 8px;
+            top: 8px;
+            z-index: 10001;
+            display: flex;
+            gap: 6px;
+        }
+
+        #topActions .act{
+            padding: 6px 10px;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.55);
+            border: 1px solid rgba(255,255,255,0.12);
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        #topActions .act:hover{
+            background: rgba(0,0,0,0.75);
+        }
+
+        :root{
+            --scale: 1;
+            --opacity: 0.85;
+        }
+        body{
+            margin:0;
+            background: transparent;
+            font-family: "Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+        }
+
+        /* toast */
         #toast{
             position: fixed;
             right: 8px;
@@ -25,22 +60,13 @@
             transform: translateY(0);
         }
 
-        :root{
-            --scale: 1;
-            --opacity: 0.85;
-        }
-        body{
-            margin:0;
-            background: transparent;
-            font-family: "Segoe UI","Microsoft YaHei",system-ui,sans-serif;
-        }
         /* 整条底板 */
         #bar{
             display: inline-flex;
             flex-wrap: wrap;
             gap: 8px;
-            padding: 4px 6px;     /* 👈 明显变小 */
-            border-radius: 8px;   /* 👈 圆角跟着收 */
+            padding: 4px 6px;
+            border-radius: 8px;
             background: rgba(0,0,0,var(--opacity));
             transform: scale(var(--scale));
             transform-origin: top left;
@@ -56,7 +82,7 @@
             background: rgba(255,255,255,0.12);
             box-shadow: 0 0 0 1px rgba(255,255,255,0.10) inset;
         }
-        /* 先用渐变当占位图标 */
+
         .icon::before{
             content:"";
             position:absolute; inset:0;
@@ -83,7 +109,7 @@
             color: #2affc6;
             text-shadow:0 2px 6px rgba(0,0,0,0.9);
         }
-        /* 叠层数（可选） */
+        /* 叠层数*/
         .stack{
             position:absolute;
             right: 4px;
@@ -93,110 +119,48 @@
             color:#fff;
             text-shadow: 0 2px 6px rgba(0,0,0,0.9);
             opacity: 0.95;
-            display: none;
+            display: block;
         }
-        #panel{
-            position: fixed;
-            right: 8px;
-            top: 8px;
-            left: auto;
-            z-index: 9999;
-            color: #fff;
-            font-size: 12px;
-        }
-
-
-        #panel .btn{
-            display:inline-block;
-            padding:6px 10px;
-            border-radius:10px;
-            background: rgba(0,0,0,0.55);
-            cursor:pointer;
-            user-select:none;
-        }
-
-        #panel .box{
-            margin-top:6px;
-            padding:10px;
-            border-radius:12px;
-            background: rgba(0,0,0,0.70);
-            width: 260px;
-            max-height: 320px;
-            overflow:auto;
-            display:none;
-        }
-
-        #panel .row{
-            display:flex;
-            align-items:center;
-            gap:8px;
-            padding:4px 2px;
-        }
-
-        #panel input[type="checkbox"]{
-            transform: scale(1.05);
-        }
-
-        #panel .meta{
-            opacity: 0.85;
-        }
-
-
-        select option {
-            color: #000;
-        }
-
     </style>
 </head>
 <body>
-<div id="panel"></div>
+<div id="topActions">
+    <div class="act" id="btnClear">🧹 清空</div>
+    <div class="act" id="btnConfig">⚙ 配置</div>
+</div>
+
 <div id="toast"></div>
 <div id="bar"></div>
+
 <script>
     const everSeen = Object.create(null);
 
     const CFG_API = "http://127.0.0.1:8787";
 
-    // ====== 静态文件路径（以后换目录只改这里）======
-    const STATE_URL = "/state.json";
-    const OVERLAY_MAP_URL = "/overlay_map.json";
+    // ===== 静态文件路径=====
+    const STATE_URL = "state.json";
+    const OVERLAY_MAP_URL = "overlay_map.json";
 
     let userCfg = {};
 
-    let panelInited = false;
-
-    let panelOpen = false;
     const lastDur = {};
-
     let watchById = {};
     const localCdUntil = {}; // { [buffId]: ms }
+
     let state = {};
     let overlayMap = {};
     let watchlist = [];
-    // ====== 前端自选监控（纯前端：localStorage） ======
-    // const LS_KEY = "sr_overlay_enabled_v1";
-    // let enabledSet = null; // null = 全部启用；Set = 只启用集合
-
-    async function apiGetDeviceList(){
-        const res = await fetch(CFG_API + "/device/list?_=" + Date.now());
-        return await res.json();
-    }
-
-
-    async function apiSelectDevice(index){
-        const res = await fetch(CFG_API + "/device/select", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ index })
-        });
-        return await res.json();
-    }
-
-    function fmtDevLabel(d){
-        const ip = d.ipv4 ? `  ${d.ipv4}` : "";
-        const tag = d.tag ? ` [${d.tag}]` : "";
-        const desc = d.description || d.name || "Unknown";
-        return `[${d.index}]${tag} ${desc}${ip}`;
+    window.__setPanelHidden = function(hidden){
+        const bar = document.getElementById("topActions");
+        if (bar) bar.style.display = hidden ? "none" : "flex";
+    };
+    function toast(msg, ms = 900){
+        const t = document.getElementById("toast");
+        if (!t) return;
+        t.textContent = msg;
+        t.classList.add("show");
+        clearTimeout(t.__timer);
+        t.__timer = setTimeout(() => t.classList.remove("show"), ms);
     }
 
     async function loadUserConfig(){
@@ -210,44 +174,81 @@
     function getWatchOverride(){
         return userCfg?.overlay?.watch || {};
     }
+    function getPinOverride(){
+        return userCfg?.overlay?.pin || {};
+    }
+
     function isWatchedByUser(id){
         const ov = getWatchOverride();
         const k = String(id);
         return (k in ov) ? !!ov[k] : true; // 默认 true：没写过就当选中
     }
 
-
     async function loadState() {
         try {
             const res = await fetch(STATE_URL + "?_=" + Date.now());
-
             state = await res.json();
-            console.log("[state]", JSON.stringify(state));
             for (const k of Object.keys(state)) everSeen[String(k)] = true;
-
         } catch (e) {
             console.error("[loadState] failed:", e);
         }
-
     }
 
     const bar = document.getElementById("bar");
+    function getPriority(w, s, now) {
+        const pinGroup = w.pin ? 0 : 1;
+
+        let typeGroup = 2; // 普通
+        if (w.hasCd) typeGroup = 0;
+        else if (s?.durUntil && s.durUntil > now) typeGroup = 1; // 正在计时的持续
+
+        return pinGroup * 10000 + typeGroup * 1000 + (w.order ?? 9999);
+    }
 
     function render() {
         bar.innerHTML = "";
-
         const now = Date.now();
 
-        for (const w of watchlist) {
+        const list = watchlist.slice().sort((a, b) => {
+            const sa = state[a.id];
+            const sb = state[b.id];
+
+            const aActive = !!(sa && sa.durUntil && sa.durUntil > now);
+            const bActive = !!(sb && sb.durUntil && sb.durUntil > now);
+
+            // 置顶 + CD（A）——永远第一
+            if (a.pin && a.hasCd && !(b.pin && b.hasCd)) return -1;
+            if (b.pin && b.hasCd && !(a.pin && a.hasCd)) return 1;
+
+            // 置顶 + 正在触发（B / C）——插在 A 后面
+            if (a.pin && aActive && !(b.pin && bActive)) return -1;
+            if (b.pin && bActive && !(a.pin && aActive)) return 1;
+
+            // 非置顶 + CD（A1）——永远在非置顶区最前
+            if (!a.pin && a.hasCd && !(!b.pin && b.hasCd)) return -1;
+            if (!b.pin && b.hasCd && !(!a.pin && a.hasCd)) return 1;
+
+            // 非置顶 + 正在触发（B1 / C1）
+            if (aActive && !bActive) return -1;
+            if (bActive && !aActive) return 1;
+
+            // 同组内稳定顺序
+            return (a.order ?? 9999) - (b.order ?? 9999);
+        });
+
+
+        for (const w of list) {
+
             const isPermanent = !!w.permanent;
             const isEnabled = (w.enabled ?? w.show) !== false;
             if (!isEnabled) continue;
-
-
+// ===== 特判：气劲加持 =====
+// 不勾选常驻 → 永远不显示（无论 CD / dur）
+            if (w.id === "2205391" && !w.permanent) {
+                continue;
+            }
             const id = String(w.id);
-            const wantPinned = !!w.pin || !!w.hasCd; // ✅ hasCd 视为常驻
             const s = state[id]; // 可能 undefined
-
 
             const durRemain = s?.durUntil ? Math.max(0, (s.durUntil - now) / 1000) : 0;
 
@@ -262,15 +263,13 @@
             const durAlive = durRemain > 0;
             const cdAlive  = cdRemain > 0;
 
-            // ✅ 显示条件说明：
-// 1) 有 dur 在跑 → 显示
-// 2) 有 CD 在跑 → 显示
-// 3) 被 pin / hasCd → 常驻
-// 4) permanent → 常驻
             const hasState = !!s;
 
-
-            if (!hasState && !wantPinned && !isPermanent) continue;
+            // 没状态且不是 permanent 就不显示
+            // 没 state 且不是永久 → 只有“带CD监控”的也允许显示占位
+            if (!hasState && !isPermanent && !w.hasCd) {
+                continue;
+            }
 
 
             const el = document.createElement("div");
@@ -290,7 +289,6 @@
                 ? (durRemain >= 10 ? Math.ceil(durRemain) : durRemain.toFixed(1))
                 : (isPermanent && !w.hasCd ? "∞" : "");
 
-
             // cd（红字）：只有 hasCd 且 cdAlive 才显示；到 0 自动消失
             let cdEl = null;
             if (w.hasCd && cdAlive) {
@@ -303,22 +301,20 @@
             const stackEl = document.createElement("div");
             stackEl.className = "stack";
             const st = s?.stack ?? 0;
-            stackEl.textContent = st > 1 ? st : "";
+
+// 只有 overlay_map 里明确声明 stacked 的，才显示层数
+            if (w.stacked && st > 1) {
+                stackEl.textContent = st;
+            } else {
+                stackEl.textContent = "";
+            }
+
 
             el.appendChild(durEl);
             if (cdEl) el.appendChild(cdEl);
             el.appendChild(stackEl);
             bar.appendChild(el);
-
         }
-
-    }
-
-
-    // 简单倒计时动画（仅用于预览效果）
-    function getLeftSec(untilMs){
-        if (!untilMs) return 0;
-        return Math.max(0, (untilMs - Date.now()) / 1000);
     }
 
     function tick() {
@@ -327,7 +323,6 @@
         for (const w of watchlist) {
             const id = String(w.id);
             const s = state[id]; // 可能 undefined
-
             const hasState = !!s;
             const isPermanent = hasState && s.durUntil === 0;
 
@@ -335,11 +330,9 @@
                 ? 0
                 : Math.max(0, (s.durUntil - now) / 1000);
 
-
-            // 记录 dur 变化（用于“触发瞬间”）
             const prevDur = lastDur[id] ?? 0;
 
-            // ===== 气劲加持：本地固定 30s CD（你原逻辑保留，但不依赖 state 循环）=====
+            // ===== 气劲加持：本地固定 30s CD =====
             if (id === "2205391") {
                 if (prevDur <= 0 && durRemain > 0) {
                     localCdUntil[id] = now + 30_000;
@@ -347,7 +340,6 @@
             }
 
             // ===== 通用本地 CD 兜底：hasCd + baseCd（且后端没给 cdUntil）=====
-            // 触发瞬间：dur 从 0 -> >0 时启动一次本地 CD
             if (w.hasCd && (w.baseCd ?? 0) > 0) {
                 const backendCdUntil = s?.cdUntil ?? 0;
                 if (backendCdUntil <= 0) {
@@ -364,246 +356,15 @@
         requestAnimationFrame(tick);
     }
 
-    setInterval(loadState, 200);
-    setInterval(loadOverlayMap, 1000);
-    loadState();
-    loadOverlayMap();
-    // loadEnabled();
-    //renderPanel(); // 面板
-    function toast(msg, ms = 900){
-        const t = document.getElementById("toast");
-        if (!t) return;
-        t.textContent = msg;
-        t.classList.add("show");
-        clearTimeout(t.__timer);
-        t.__timer = setTimeout(() => t.classList.remove("show"), ms);
-    }
-
-    async function apiCaptureReset(){
-        const res = await fetch(CFG_API + "/capture/reset", { method: "POST" });
-        const j = await res.json().catch(() => null);
-        if (!j || !j.ok) throw new Error(j?.error || "reset failed");
-        return j;
-    }
-
-    function renderPanel(){
-        const panel = document.getElementById("panel");
-        if (!panel) return;
-
-        panel.innerHTML = `
-  <div style="display:flex; gap:8px; justify-content:flex-end;">
-    <div class="btn" id="resetCapBtn">⟳ 重置</div>
-    <div class="btn" id="toggleBtn">⚙ 监控列表</div>
-  </div>
-  <div class="box" id="cfgBox"></div>
-`;
-
-        const box = panel.querySelector("#cfgBox");
-        const btn = panel.querySelector("#toggleBtn");
-
-        btn.onclick = () => {
-            panelOpen = !panelOpen;
-            box.style.display = panelOpen ? "block" : "none";
-        };
-        const resetBtn = panel.querySelector("#resetCapBtn");
-        resetBtn.onclick = async () => {
-            resetBtn.textContent = "⟳ 重置中...";
-            try{
-                await apiCaptureReset();
-                toast("✅ 已重置（抓包+状态）");
-            }catch(e){
-                toast("❌ 重置失败：" + (e?.message || e));
-            }finally{
-                resetBtn.textContent = "⟳ 重置";
-            }
-        };
-
-
-        // 构建列表：不依赖 watchlist（因为 watchlist 已过滤），直接用 overlayMap 全量
-        const entries = Object.entries(overlayMap)
-            .filter(([id, cfg]) => cfg && cfg.show === true)
-            .sort((a,b) => (a[1]?.order ?? 9999) - (b[1]?.order ?? 9999));
-
-        const rows = entries.map(([id, cfg]) => {
-            const checked = isWatchedByUser(id) ? "checked" : "";
-            //const checked = isEnabled(id) ? "checked" : "";
-            return `
-      <div class="row">
-        <input type="checkbox" data-id="${id}" ${checked}/>
-        <div>
-          <div>${cfg?.name ?? id}</div>
-          <div class="meta">${id}${cfg?.hasCd ? " · CD" : ""}${(cfg?.pin ?? cfg?.hasCd) ? " · 常驻" : ""}</div>
-        </div>
-      </div>
-    `;
-        }).join("");
-
-        box.innerHTML = `
-  <div style="margin-bottom:10px;">
-    <div style="opacity:.9; margin-bottom:6px;">网卡选择（首次配置一次即可）</div>
-    <select id="devSel" style="width:100%; padding:6px; border-radius:10px; background:rgba(255,255,255,.08); color:#fff; border:1px solid rgba(255,255,255,.12);">
-      <option value="">(加载中...)</option>
-    </select>
-    <div style="opacity:.7; font-size:12px; margin-top:6px;">
-      选择后会写入 user_config.json；需要重启监控进程才生效。
-    </div>
-  </div>
-
-  <div style="display:flex; gap:8px; margin-bottom:8px;">
-    <div class="btn" id="allBtn">全选</div>
-    <div class="btn" id="noneBtn">全不选</div>
-    <div class="btn" id="resetBtn">重置(跟随show)</div>
-  </div>
-  ${rows}
-`;
-
-        box.style.display = panelOpen ? "block" : "none";
-
-        box.querySelector("#allBtn").onclick = async () => {
-            for (const [id] of entries) {
-                await saveWatch(id, true);
-            }
-            await loadUserConfig();
-            await loadOverlayMap();
-            renderPanel();
-        };
-
-        box.querySelector("#noneBtn").onclick = async () => {
-            for (const [id] of entries) {
-                await saveWatch(id, false);
-            }
-            await loadUserConfig();
-            await loadOverlayMap();
-            renderPanel();
-        };
-
-        box.querySelector("#resetBtn").onclick = async () => {
-            // reset = 删除用户覆盖（回到默认 true）
-            // 最省事做法：全设为 true
-            for (const [id] of entries) {
-                await saveWatch(id, true);
-            }
-            await loadUserConfig();
-            await loadOverlayMap();
-            renderPanel();
-        };
-
-
-
-        box.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-            cb.onchange = async () => {
-                const id = cb.getAttribute("data-id");
-                const value = cb.checked;
-
-                // 1) 立刻更新内存（显示立刻变化）
-                const w = watchById[String(id)];
-                if (w) w.enabled = value;
-
-                // 2) 落盘到 user_config.json
-                await saveWatch(id, value);
-
-                // 3) 更新 userCfg（避免下次 renderPanel 用旧 cfg）
-                userCfg.overlay = userCfg.overlay || {};
-                userCfg.overlay.watch = userCfg.overlay.watch || {};
-                userCfg.overlay.watch[String(id)] = value;
-            };
-        });
-        // 填充网卡列表（只显示，不保存）
-        (async () => {
-            try{
-                const sel = box.querySelector("#devSel");
-                if (!sel) return;
-
-                const data = await apiGetDeviceList();
-                const devs = data.devices || [];
-
-                sel.innerHTML = devs.map(d =>
-                    `<option value="${d.index}">${fmtDevLabel(d)}</option>`
-                ).join("");
-                // === 默认选中当前 cfg 里的网卡 ===
-                const cur = userCfg?.device?.index;
-                if (cur != null) {
-                    sel.value = String(cur);
-                }
-
-// === 选中时：确认 → 保存 → 提醒重启 ===
-                sel.onchange = async () => {
-                    const idx = Number(sel.value);
-                    const old = userCfg?.device?.index;
-
-                    // 兜底：非法值直接回滚
-                    if (!Number.isInteger(idx)) {
-                        sel.value = (old != null) ? String(old) : "";
-                        return;
-                    }
-
-                    const label = sel.options[sel.selectedIndex]?.text || String(idx);
-
-                    // ① 确认弹窗
-                    const ok = confirm(
-                        `确认将默认网卡设置为：\n\n${label}\n\n` +
-                        `注意：需要重启监控进程后才会生效。`
-                    );
-
-                    if (!ok) {
-                        // 用户取消：回滚
-                        sel.value = (old != null) ? String(old) : "";
-                        return;
-                    }
-
-                    // ② 写 cfg
-                    try {
-                        const ret = await apiSelectDevice(idx);
-                        if (!ret?.ok) {
-                            alert("保存失败：" + (ret?.error || "unknown"));
-                            sel.value = (old != null) ? String(old) : "";
-                            return;
-                        }
-
-                        // ③ 同步更新前端内存 cfg
-                        userCfg.device = userCfg.device || {};
-                        userCfg.device.index = idx;
-
-                        // ④ 保存成功 + 重启提醒
-                        alert(
-                            `已保存默认网卡：\n\n${label}\n\n` +
-                            `请重启监控进程后生效：\n` +
-                            `- 关闭当前 buff_monitor_cli\n` +
-                            `- 重新启动（或重启 Launcher）`
-                        );
-
-                    } catch (e) {
-                        alert("保存失败：" + (e?.message || e));
-                        sel.value = (old != null) ? String(old) : "";
-                    }
-                };
-
-
-            }catch(e){
-                const sel = box.querySelector("#devSel");
-                if (sel) sel.innerHTML = `<option value="">(读取失败)</option>`;
-            }
-        })();
-
-    }
-
-    async function saveWatch(id, value){
-        try{
-            await fetch(CFG_API + "/overlay/watch", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ id, value })
-            });
-        }catch(e){}
-    }
     async function loadOverlayMap(){
-        console.log("[DBG] loadOverlayMap()");
         try{
             await loadUserConfig();
+
             const res = await fetch(OVERLAY_MAP_URL + "?_=" + Date.now());
             overlayMap = await res.json();
-            const watchOverride = getWatchOverride();
 
+            const watchOverride = getWatchOverride();
+            const pinOverride = getPinOverride();
             watchlist = Object.entries(overlayMap)
                 .filter(([id, cfg]) => cfg && cfg.show === true)
                 .map(([id, cfg]) => {
@@ -616,39 +377,77 @@
                         icon: cfg?.icon ?? "",
                         hasCd: !!cfg?.hasCd,
                         baseCd: Number(cfg?.baseCd ?? 0),
-                        pin: !!cfg?.pin,
-                        permanent: !!cfg?.permanent,   // ✅ 加这一行
+                        pin: (idStr in pinOverride) ? !!pinOverride[idStr] : !!cfg?.pin,
+                        permanent: !!cfg?.permanent,
                         order: cfg?.order ?? 9999,
                         enabled
                     };
+                });
 
 
-                })
-
-                .sort((a,b) => a.order - b.order);
             watchById = Object.create(null);
-            for (const w of watchlist) {
-                watchById[w.id] = w;
-            }
-
-            if (!panelInited) {
-                renderPanel();
-                panelInited = true;
-            }
+            for (const w of watchlist) watchById[w.id] = w;
         }catch(e){
             console.error("[loadOverlayMap] failed:", e);
+            toast("overlay_map 读取失败");
         }
     }
-
-
-    requestAnimationFrame(tick);
-    console.log("FORCE STATE", state);
-    // CT=ON 时隐藏右上角面板；EDIT 时恢复
-    window.__setPanelHidden = function(hidden){
-        const panel = document.getElementById("panel");
-        if (panel) panel.style.display = hidden ? "none" : "block";
+    document.getElementById("btnConfig").onclick = () => {
+        window.open("config.html", "_blank");
+    };
+    document.getElementById("btnClear").onclick = async () => {
+        try{
+            await fetch("http://127.0.0.1:8787/state/clear", { method: "POST" });
+            toast("🧹 Buff 已清空");
+        }catch(e){
+            toast("❌ 清空失败");
+        }
     };
 
+    // ===== 启动 =====
+    setInterval(loadState, 200);
+    loadState();
+    loadOverlayMap();
+    requestAnimationFrame(tick);
+    // ===== 同步用户配置（勾选 / 置顶变更）=====
+    setInterval(async () => {
+        try {
+            await loadUserConfig();
+
+            const watchOverride = getWatchOverride();
+            const pinOverride = getPinOverride();
+
+            let changed = false;
+
+            for (const w of watchlist) {
+                const id = String(w.id);
+
+                const newEnabled =
+                    (id in watchOverride) ? !!watchOverride[id] : true;
+
+                const newPin =
+                    (id in pinOverride) ? !!pinOverride[id] : w.pin;
+
+                if (w.enabled !== newEnabled || w.pin !== newPin) {
+                    w.enabled = newEnabled;
+                    w.pin = newPin;
+                    changed = true;
+                }
+            }
+
+            if (changed) {
+                render(); //
+            }
+        } catch (e) {
+            //
+        }
+    }, 300);
+
+    // CT=ON 时隐藏右上角按钮
+    window.__setPanelHidden = function(hidden){
+        const btn = document.getElementById("cfgBtn");
+        if (btn) btn.style.display = hidden ? "none" : "block";
+    };
 </script>
 </body>
 </html>

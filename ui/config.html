@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SR Config</title>
+    <style>
+        /* ====== 配置页：固定深色底，滚动 ====== */
+        :root{ --bg: #0f1115; }
+        html,body{ height:100%; }
+        body{
+            margin:0;
+            background: var(--bg);
+            font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+            color:#fff;
+            font-size:12px;
+        }
+
+        /* ===== toast ===== */
+        #toast{
+            position: fixed;
+            right: 12px;
+            top: 12px;
+            z-index: 10000;
+            padding: 6px 10px;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.70);
+            color: #fff;
+            font-size: 12px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-6px);
+            transition: opacity .15s ease, transform .15s ease;
+        }
+        #toast.show{
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== 页面容器 ===== */
+        #wrap{
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 12px;
+        }
+
+        /* 顶部工具条 */
+        #topbar{
+            display:flex;
+            gap:8px;
+            align-items:center;
+            justify-content:flex-end;
+            margin-bottom: 8px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:6px 10px;
+            border-radius:10px;
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.10);
+            cursor:pointer;
+            user-select:none;
+        }
+        .btn:hover{
+            background: rgba(255,255,255,0.14);
+        }
+
+        /* 面板盒子 */
+        #cfgBox{
+            padding:10px;
+            border-radius:12px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.10);
+            max-height: calc(100vh - 64px);
+            overflow:auto;
+        }
+
+        .row{
+            display:flex;
+            align-items:center;
+            gap:8px;
+            padding:4px 2px;
+        }
+        input[type="checkbox"]{ transform: scale(1.05); }
+        .meta{ opacity: 0.85; }
+
+        select{
+            width:100%;
+            padding:6px;
+            border-radius:10px;
+            background:rgba(255,255,255,.08);
+            color:#fff;
+            border:1px solid rgba(255,255,255,.12);
+        }
+        select option { color:#000; }
+
+        /* ===== 折叠标题 ===== */
+        .fold{
+            cursor:pointer;
+            user-select:none;
+            display:flex;
+            align-items:center;
+            gap:6px;
+        }
+
+        .fold.cat{
+            font-size: 20px;
+            font-weight: 800;
+            opacity: 1;
+            margin: 10px 0 6px;
+        }
+        .fold.cat::before{
+            content:"−";
+            width: 18px;
+            text-align:center;
+            display:inline-block;
+            font-size: 18px;
+            line-height: 18px;
+            color: rgba(255,255,255,.70);
+        }
+        .fold.cat.closed::before{ content:"+"; }
+
+        .fold.src{
+            font-size: 17px;
+            font-weight: 650;
+            opacity: .9;
+            margin: 8px 0 4px;
+        }
+        .fold.src::before{
+            content:"−";
+            width: 16px;
+            text-align:center;
+            display:inline-block;
+            font-size: 16px;
+            line-height: 16px;
+            color: rgba(255,255,255,.60);
+        }
+        .fold.src.closed::before{ content:"+"; }
+
+        .fold.job{
+            font-size: 13px;
+            font-weight: 600;
+            opacity: .75;
+            margin: 6px 0 2px;
+        }
+        .fold.job::before{
+            content:"−";
+            width: 12px;
+            text-align:center;
+            display:inline-block;
+            font-size: 12px;
+            line-height: 12px;
+            color: rgba(255,255,255,.55);
+        }
+        .fold.job.closed::before{ content:"+"; }
+        .fold.spec{
+            font-size: 12px;
+            font-weight: 500;
+            opacity: .65;
+            margin: 4px 0 2px 18px;
+        }
+
+        .fold.spec::before{
+            content:"−";
+            width: 10px;
+            text-align:center;
+            display:inline-block;
+            font-size: 10px;
+            line-height: 10px;
+            color: rgba(255,255,255,.45);
+        }
+
+        .fold.spec.closed::before{ content:"+"; }
+
+        /* ===== 📌 置顶按钮 ===== */
+        .pinbtn{
+            cursor: pointer;
+            opacity: 0.45;
+            margin-left: auto;
+            display: inline-block;
+            transform: rotate(-30deg);
+            transition: transform .15s ease, opacity .15s ease;
+        }
+        .pinbtn:hover{
+            opacity: 0.9;
+            transform: rotate(-15deg) scale(1.1);
+        }
+        .pinbtn.on{
+            opacity: 1;
+            color: #ffd75a;
+            text-shadow: 0 0 6px rgba(255,215,90,0.6);
+            transform: rotate(0deg);
+        }
+
+        .unpinbtn{
+            cursor: pointer;
+            margin-left: 8px;
+            opacity: .5;
+            font-weight: 700;
+        }
+        .unpinbtn:hover{
+            opacity: 1;
+            color: #ff6b6b;
+            transform: scale(1.1);
+        }
+
+        /* item 容器（用于折叠隐藏） */
+        .item{ display:block; }
+    </style>
+</head>
+<body>
+<div id="toast"></div>
+
+<div id="wrap">
+    <div id="topbar">
+        <div class="btn" id="resetCapBtn">⟳ 重置抓包</div>
+        <div class="btn" id="reloadBtn">⟳ 刷新列表</div>
+    </div>
+
+    <div id="cfgBox"></div>
+</div>
+
+<script>
+    const CFG_API = "http://127.0.0.1:8787";
+    const OVERLAY_MAP_URL = "/overlay_map.json";
+
+    let userCfg = {};
+    let overlayMap = {};
+    let watchById = {};
+    let panelOpen = true;
+    function getPinOverride(){
+        return userCfg?.overlay?.pin || {};
+    }
+    function toast(msg, ms = 900){
+        const t = document.getElementById("toast");
+        if (!t) return;
+        t.textContent = msg;
+        t.classList.add("show");
+        clearTimeout(t.__timer);
+        t.__timer = setTimeout(() => t.classList.remove("show"), ms);
+    }
+
+    async function apiCaptureReset(){
+        const res = await fetch(CFG_API + "/capture/reset", { method: "POST" });
+        const j = await res.json().catch(() => null);
+        if (!j || !j.ok) throw new Error(j?.error || "reset failed");
+        return j;
+    }
+
+    async function apiGetDeviceList(){
+        const res = await fetch(CFG_API + "/device/list?_=" + Date.now());
+        return await res.json();
+    }
+    async function apiSelectDevice(index){
+        const res = await fetch(CFG_API + "/device/select", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ index })
+        });
+        return await res.json();
+    }
+    function fmtDevLabel(d){
+        const ip = d.ipv4 ? `  ${d.ipv4}` : "";
+        const tag = d.tag ? ` [${d.tag}]` : "";
+        const desc = d.description || d.name || "Unknown";
+        return `[${d.index}]${tag} ${desc}${ip}`;
+    }
+
+    async function loadUserConfig(){
+        try{
+            const res = await fetch(CFG_API + "/config?_=" + Date.now());
+            userCfg = await res.json();
+        }catch(e){
+            userCfg = {};
+        }
+    }
+
+    function getWatchOverride(){ return userCfg?.overlay?.watch || {}; }
+    function isWatchedByUser(id){
+        const ov = getWatchOverride();
+        const k = String(id);
+        return (k in ov) ? !!ov[k] : true; // 默认 true
+    }
+
+    function getPinOverride(){ return userCfg?.overlay?.pin || {}; }
+    function isPinnedByUser(id){
+        const ov = getPinOverride();
+        const k = String(id);
+        return ov[k] === true;
+    }
+
+    async function saveWatch(id, value){
+        try{
+            await fetch(CFG_API + "/overlay/watch", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ id, value })
+            });
+        }catch(e){}
+    }
+
+    async function savePin(id, value){
+        try{
+            await fetch(CFG_API + "/overlay/pin", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ id, value })
+            });
+        }catch(e){}
+    }
+    function syncWatchUI(id) {
+        id = String(id);
+
+        const checked = isWatchedByUser(id);
+
+        //所有 checkbox 同步
+        document
+            .querySelectorAll(`input[type="checkbox"][data-id="${id}"]`)
+            .forEach(cb => {
+                cb.checked = checked;
+            });
+
+        // ② 置顶区数量同步
+        syncPinnedCount();
+    }
+
+    function setWatchState(id, value) {
+        id = String(id);
+
+        // 更新内存状态
+        userCfg.overlay = userCfg.overlay || {};
+        userCfg.overlay.watch = userCfg.overlay.watch || {};
+        userCfg.overlay.watch[id] = value;
+
+        // 同步 UI（所有 checkbox + 置顶数量）
+        syncWatchUI(id);
+
+        // 异步落盘（不阻塞 UI）
+        saveWatch(id, value);
+    }
+    function syncPinnedCount() {
+        const cnt = document.querySelector(
+            '[data-key="cat:pinned"] .cnt'
+        );
+        if (!cnt) return;
+
+        const n = Object.entries(overlayMap).filter(([id, cfg]) =>
+            cfg?.show === true &&
+            isPinnedByUser(id) &&
+            isWatchedByUser(id)
+        ).length;
+
+        cnt.textContent = `(${n})`;
+    }
+
+    // ===== Panel 分组：category -> source -> job -> spec -> [{id,cfg}] =====
+    function groupForPanel(overlayMap){
+        const root = {};
+        for (const [id, cfg] of Object.entries(overlayMap)){
+            if (!cfg || !cfg.category || !cfg.source) continue;
+
+            const cat = cfg.category;
+            const sources = Array.isArray(cfg.source) ? cfg.source : [cfg.source];
+            const job = cfg.job ?? "none";
+
+            root[cat] ??= {};
+            for (const src of sources){
+                root[cat][src] ??= {};
+
+                const useJob = (src === "self" || src === "set");
+                const jobKey = useJob ? job : "none";
+                root[cat][src][jobKey] ??= {};
+
+                const hasSpecs = useJob && job !== "none" && Array.isArray(cfg.specs) && cfg.specs.length > 0;
+                const specs = hasSpecs ? cfg.specs : ["_nospec"];
+
+                for (const spec of specs){
+                    root[cat][src][jobKey][spec] ??= [];
+                    root[cat][src][jobKey][spec].push({ id, cfg });
+                }
+            }
+        }
+        return root;
+    }
+
+    function countShown(node){
+        if (!node) return 0;
+        if (Array.isArray(node)) {
+            let n = 0;
+            for (const it of node) if (it?.cfg?.show === true) n++;
+            return n;
+        }
+        let sum = 0;
+        for (const k of Object.keys(node)) sum += countShown(node[k]);
+        return sum;
+    }
+
+    function renderPanel(){
+        const box = document.getElementById("cfgBox");
+        if (!box) return;
+
+        // ===== 保存 UI 状态（折叠 + 滚动）=====
+        const prev = { scrollTop: box.scrollTop, closedKeys: new Set() };
+        box.querySelectorAll(".fold").forEach(h => {
+            const key = h.dataset.key || "";
+            if (key && h.classList.contains("closed")) prev.closedKeys.add(key);
+        });
+
+        const CAT_NAME = { damage: "增伤类Buff" };
+        const SRC_NAME = {
+            self: "职业",
+            party: "团辅",
+            fantasy: "幻想",
+            module: "模组",
+            astrolabe: "星象仪",
+            set: "套装",
+            other: "其他"
+        };
+        const JOB_NAME = {
+            qinglan: "青岚骑士",
+            leiying: "雷影剑士",
+            soul: "灵魂乐手",
+            none: ""
+        };
+        const SPEC_NAME = {
+            qinglan: {
+                heavy: "重装流",
+                air: "空战流",
+            },
+            leiying: {
+                moon: "月刃召唤流",
+            },
+            _nospec: {
+                _nospec: ""
+            }
+        };
+        function specLabel(job, spec){
+            // job/spec 都当字符串用
+            job = String(job ?? "");
+            spec = String(spec ?? "");
+            // _nospec 不显示标题
+            if (spec === "_nospec") return "";
+            return (SPEC_NAME?.[job]?.[spec]) ?? spec; // 没映射就显示原 key
+        }
+
+        const entries = Object.entries(overlayMap)
+            .filter(([id, cfg]) => cfg && cfg.show === true)
+            .sort((a,b) => (a[1]?.order ?? 9999) - (b[1]?.order ?? 9999));
+
+        // ===== 📌 置顶区 =====
+        const pinned = entries.filter(([id, cfg]) =>
+            isPinnedByUser(id) && isWatchedByUser(id)
+        );
+
+        let html = "";
+
+        // ===== 网卡选择 =====
+        html += `
+      <div style="margin-bottom:10px;">
+        <div style="opacity:.9; margin-bottom:6px;">网卡选择（首次配置一次即可）</div>
+        <select id="devSel">
+          <option value="">(加载中...)</option>
+        </select>
+        <div style="opacity:.7; font-size:12px; margin-top:6px;">
+          选择后会写入 user_config.json；需要重启监控进程才生效。
+        </div>
+      </div>
+
+      <div style="display:flex; gap:8px; margin-bottom:8px; flex-wrap:wrap;">
+        <div class="btn" id="allBtn">全选</div>
+        <div class="btn" id="noneBtn">全不选</div>
+        <div class="btn" id="resetBtn">重置(跟随show)</div>
+      </div>
+    `;
+
+        html += `
+  <div class="fold cat" data-level="cat" data-key="cat:pinned">
+    📌 置顶 <span class="cnt">(${pinned.length})</span>
+  </div>
+`;
+            for (const [id, cfg] of pinned) {
+                const checked = isWatchedByUser(id) ? "checked" : "";
+                html += `
+          <div class="item pinned-item" data-cat="pinned" data-src="pinned" data-job="none">
+            <div class="row">
+              <input type="checkbox" data-id="${id}" ${checked}/>
+              <div>
+                <div>${cfg?.name ?? id}</div>
+                <div class="meta">${id}</div>
+              </div>
+              <span class="unpinbtn" data-id="${id}" title="取消置顶">✕</span>
+            </div>
+          </div>
+        `;
+            }
+
+        // ===== 正常分组树 =====
+        const tree = groupForPanel(overlayMap);
+
+        for (const cat of Object.keys(tree)) {
+            const nCat = countShown(tree[cat]);
+            html += `
+        <div class="fold cat" data-level="cat" data-key="cat:${cat}">
+          ${CAT_NAME[cat] ?? cat} <span class="cnt">(${nCat})</span>
+        </div>
+      `;
+
+            for (const src of Object.keys(tree[cat])) {
+                const nSrc = countShown(tree[cat][src]);
+                html += `
+          <div class="fold src" data-level="src" data-key="src:${cat}/${src}">
+            ${SRC_NAME[src] ?? src} <span class="cnt">(${nSrc})</span>
+          </div>
+        `;
+
+                const jobs = tree[cat][src];
+
+                for (const job of Object.keys(jobs)) {
+                    if (job !== "none") {
+                        const nJob = countShown(jobs[job]);
+                        html += `
+            <div class="fold job" data-level="job" data-key="job:${cat}/${src}/${job}">
+                ${JOB_NAME[job] ?? job} <span class="cnt">(${nJob})</span>
+            </div>
+        `;
+                    }
+
+                    const specs = jobs[job];
+                    for (const spec of Object.keys(specs)) {
+
+                        const list = specs[spec];
+
+                        // 先算这个流派下面有多少“show=true”的 buff
+                        const nSpec = countShown(list);
+
+                        // 流派标题（0 也要显示）
+                        const sl = specLabel(job, spec);
+                        if (sl !== "") {
+                            html += `
+    <div class="fold spec"
+         data-level="spec"
+         data-key="spec:${cat}/${src}/${job}/${spec}">
+      ${sl} <span class="cnt">(${nSpec})</span>
+    </div>
+  `;
+                        }
+
+
+                        // 再画具体 buff（这里才过滤 show）
+                        for (const { id, cfg } of list) {
+                            if (cfg.show !== true) continue;
+
+                            const checked = isWatchedByUser(id) ? "checked" : "";
+                            const pinOn = isPinnedByUser(id);
+
+                            html += `
+            <div class="item"
+                 data-cat="${cat}"
+                 data-src="${src}"
+                 data-job="${job}"
+                 data-spec="${spec}">
+              <div class="row">
+                <input type="checkbox" data-id="${id}" ${checked}/>
+                <div>
+                  <div>${cfg?.name ?? id}</div>
+                  <div class="meta">${id}${cfg?.hasCd ? " · CD" : ""}</div>
+                </div>
+                <span class="pinbtn ${pinOn ? "on" : ""}"
+                      data-id="${id}"
+                      title="置顶">📌</span>
+              </div>
+            </div>
+        `;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        box.innerHTML = html;
+
+        // ===== 折叠逻辑：cat/src/job 分层 =====
+        const LEVEL = { cat: 0, src: 1, job: 2, spec: 3 };
+
+
+        function setClosed(h, closing){
+            const lv = LEVEL[h.dataset.level] ?? 99;
+            h.classList.toggle("closed", closing);
+
+            let el = h.nextElementSibling;
+            let hasNextFoldLevel = false;
+
+            // 扫描：当前分支下是否存在“更深一层 fold”
+            {
+                let t = el;
+                while (t) {
+                    if (t.classList.contains("fold")) {
+                        const tLv = LEVEL[t.dataset.level] ?? 99;
+                        if (tLv <= lv) break;
+                        if (tLv === lv + 1) hasNextFoldLevel = true;
+                        break;
+                    }
+                    t = t.nextElementSibling;
+                }
+            }
+
+            while (el) {
+                if (el.classList.contains("fold")) {
+                    const elLv = LEVEL[el.dataset.level] ?? 99;
+                    if (elLv <= lv) break;
+
+                    if (closing) el.style.display = "none";
+                    else el.style.display = (elLv === lv + 1) ? "" : "none";
+
+                } else if (el.classList.contains("item")) {
+                    if (closing) el.style.display = "none";
+                    else el.style.display = hasNextFoldLevel ? "none" : "";
+                }
+
+                el = el.nextElementSibling;
+            }
+        }
+
+        // 点击折叠
+        box.querySelectorAll(".fold").forEach(h => {
+            h.onclick = () => setClosed(h, !h.classList.contains("closed"));
+        });
+
+        // 默认：折叠 src/job
+        box.querySelectorAll(".fold.src, .fold.job").forEach(h => setClosed(h, true));
+
+        // 恢复折叠状态（如果之前有）
+        const folds = Array.from(box.querySelectorAll(".fold"));
+        if (prev.closedKeys.size > 0) {
+            folds.forEach(h => setClosed(h, false));
+            folds.forEach(h => {
+                const key = h.dataset.key || "";
+                if (key && prev.closedKeys.has(key)) setClosed(h, true);
+            });
+        }
+
+        // 恢复滚动
+        box.scrollTop = prev.scrollTop;
+
+        // ===== 勾选事件 =====
+        // ===== 勾选事件（统一入口）=====
+        box.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+            cb.onchange = () => {
+                const id = cb.getAttribute("data-id");
+                setWatchState(id, cb.checked);
+            };
+        });
+        // ===== 顶部按钮：全选/全不选/重置 =====
+    box.querySelector("#allBtn").onclick = async () => {
+        for (const [id] of entries) await saveWatch(id, true);
+        await loadOverlayMap();
+        renderPanel();
+    };
+    box.querySelector("#noneBtn").onclick = async () => {
+        for (const [id] of entries) await saveWatch(id, false);
+        await loadOverlayMap();
+        renderPanel();
+    };
+    box.querySelector("#resetBtn").onclick = async () => {
+        for (const [id] of entries) await saveWatch(id, true);
+        await loadOverlayMap();
+        renderPanel();
+    };
+
+    // ===== 网卡列表 =====
+    (async () => {
+        try{
+            const sel = box.querySelector("#devSel");
+            if (!sel) return;
+
+            const data = await apiGetDeviceList();
+            const devs = data.devices || [];
+
+            sel.innerHTML = devs.map(d =>
+                `<option value="${d.index}">${fmtDevLabel(d)}</option>`
+            ).join("");
+
+            const cur = userCfg?.device?.index;
+            if (cur != null) sel.value = String(cur);
+
+            sel.onchange = async () => {
+                const idx = Number(sel.value);
+                const old = userCfg?.device?.index;
+
+                if (!Number.isInteger(idx)) {
+                    sel.value = (old != null) ? String(old) : "";
+                    return;
+                }
+
+                const label = sel.options[sel.selectedIndex]?.text || String(idx);
+                const ok = confirm(
+                    `确认将默认网卡设置为：\n\n${label}\n\n注意：需要重启监控进程后才会生效。`
+                );
+                if (!ok) {
+                    sel.value = (old != null) ? String(old) : "";
+                    return;
+                }
+
+                try{
+                    const ret = await apiSelectDevice(idx);
+                    if (!ret?.ok) {
+                        alert("保存失败：" + (ret?.error || "unknown"));
+                        sel.value = (old != null) ? String(old) : "";
+                        return;
+                    }
+
+                    userCfg.device = userCfg.device || {};
+                    userCfg.device.index = idx;
+
+                    alert(
+                        `已保存默认网卡：\n\n${label}\n\n` +
+                        `请重启监控进程后生效：\n` +
+                        `- 关闭当前 buff_monitor_cli\n` +
+                        `- 重新启动（或重启 Launcher）`
+                    );
+                }catch(e){
+                    alert("保存失败：" + (e?.message || e));
+                    sel.value = (old != null) ? String(old) : "";
+                }
+            };
+        }catch(e){
+            const sel = box.querySelector("#devSel");
+            if (sel) sel.innerHTML = `<option value="">(读取失败)</option>`;
+        }
+    })();
+    }
+    // ===== 置顶 / 取消置顶：事件委托（只绑定一次）=====
+    const cfgBox = document.getElementById("cfgBox");
+
+    cfgBox.addEventListener("click", async (e) => {
+        // ① 取消置顶（置顶区 ✕）
+        const unpin = e.target.closest(".unpinbtn");
+        if (unpin) {
+            e.stopPropagation();
+            const id = unpin.getAttribute("data-id");
+            if (!id) return;
+
+            userCfg.overlay = userCfg.overlay || {};
+            userCfg.overlay.pin = userCfg.overlay.pin || {};
+            userCfg.overlay.pin[id] = false;
+
+            // UI 同步
+            const pinnedItem = unpin.closest(".item");
+            if (pinnedItem) pinnedItem.remove();
+
+            const pinBtn = cfgBox.querySelector(`.pinbtn[data-id="${id}"]`);
+            if (pinBtn) pinBtn.classList.remove("on");
+
+            await savePin(id, false);
+            return;
+        }
+
+        // ② 普通列表里的 📌
+        const pin = e.target.closest(".pinbtn");
+        if (pin) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const id = pin.getAttribute("data-id");
+            if (!id) return;
+
+            userCfg.overlay = userCfg.overlay || {};
+            userCfg.overlay.pin = userCfg.overlay.pin || {};
+            const cur = userCfg.overlay.pin[id] === true;
+            const next = !cur;
+            userCfg.overlay.pin[id] = next;
+
+            // UI：按钮本身
+            pin.classList.toggle("on", next);
+
+            // UI：置顶区
+            const pinnedCat = cfgBox.querySelector('[data-key="cat:pinned"]');
+
+            if (next) {
+                const item = pin.closest(".item");
+                if (item && pinnedCat) {
+                    const clone = item.cloneNode(true);
+                    clone.classList.add("pinned-item");
+
+                    const pinBtn = clone.querySelector(".pinbtn");
+                    if (pinBtn) {
+                        const id2 = pinBtn.getAttribute("data-id");
+                        pinBtn.outerHTML =
+                            `<span class="unpinbtn" data-id="${id2}" title="取消置顶">✕</span>`;
+                    }
+
+                    pinnedCat.after(clone);
+                }
+            } else {
+                const pinnedItem = cfgBox.querySelector(
+                    `.pinned-item .unpinbtn[data-id="${id}"]`
+                )?.closest(".item");
+
+                if (pinnedItem) pinnedItem.remove();
+            }
+
+            await savePin(id, next);
+        }
+    });
+
+    async function loadOverlayMap(){
+        try{
+            await loadUserConfig();
+            const res = await fetch(OVERLAY_MAP_URL + "?_=" + Date.now());
+            overlayMap = await res.json();
+
+            // 给 checkbox 的“立刻更新内存”用
+            const watchOverride = getWatchOverride();
+            const entries = Object.entries(overlayMap)
+                .filter(([id, cfg]) => cfg && cfg.show === true)
+                .sort((a,b) => (a[1]?.order ?? 9999) - (b[1]?.order ?? 9999));
+
+            watchById = Object.create(null);
+            for (const [id, cfg] of entries) {
+                const idStr = String(id);
+                const enabled = (idStr in watchOverride) ? !!watchOverride[idStr] : true;
+                watchById[idStr] = { id:idStr, enabled };
+            }
+        }catch(e){
+            console.error("[loadOverlayMap] failed:", e);
+            overlayMap = {};
+            watchById = {};
+        }
+    }
+
+    // ===== 顶部按钮事件 =====
+    document.getElementById("reloadBtn").onclick = async () => {
+        await loadOverlayMap();
+        renderPanel();
+        toast("✅ 已刷新");
+    };
+
+    document.getElementById("resetCapBtn").onclick = async () => {
+        const btn = document.getElementById("resetCapBtn");
+        btn.textContent = "⟳ 重置中...";
+        try{
+            await apiCaptureReset();
+            toast("✅ 已重置（抓包+状态）");
+        }catch(e){
+            toast("❌ 重置失败：" + (e?.message || e));
+        }finally{
+            btn.textContent = "⟳ 重置抓包";
+        }
+    };
+
+    // ===== 启动：只加载一次（低频页）=====
+    (async () => {
+        await loadOverlayMap();
+        renderPanel();
+    })();
+</script>
+</body>
+</html>
